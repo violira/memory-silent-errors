@@ -1,0 +1,2377 @@
+{
+ "система": "mem0",
+ "набор": "А",
+ "сек": 70.9,
+ "расход": {
+  "sonnet_вызовов": 18,
+  "sonnet_in": 232050,
+  "sonnet_out": 2434,
+  "emb_токенов": 1334,
+  "usd": 0.4885,
+  "deepseek_вызовов": 0,
+  "версия_mem0": "2.2.1"
+ },
+ "шаги": [
+  {
+   "№": 1,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "Walker 6F PREMIUM EX стоит 21 500 крон с МВА"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 3483
+  },
+  {
+   "№": 2,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "следующая поставка от Nordvik придёт в конце ноября"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "dce573c1-3ea4-481d-a4ea-3c5f9e293f48",
+        "memory": "User noted on October 19, 2026 that the next delivery from Nordvik will arrive at the end of November 2026",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2641
+  },
+  {
+   "№": 3,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "у Ингрид Берг Pfaff 160s, сервис 2300, скидка VIP 150"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "54dc7ddc-9c89-4ea0-be74-2aebd92fa79b",
+        "memory": "Ingrid Berg has a Pfaff 160s sewing machine; the service costs 2300 (crowns) and she has a VIP discount of 150, as noted on October 19, 2026",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 3046
+  },
+  {
+   "№": 4,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "мастерская по субботам работает до 14"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 11110
+  },
+  {
+   "№": 5,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "Нина по субботам в ателье до 16"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2017
+  },
+  {
+   "№": 6,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда: во сколько мастерская в субботу?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "hash": "b3b4d9bac4cfce484a6895855c7fb17b",
+        "metadata": null,
+        "score": 0.5560805237467217,
+        "created_at": "2026-10-19T21:07:13.546185+00:00",
+        "updated_at": "2026-10-19T21:07:13.546185+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "hash": "fcd31f2bffc34e8be98f66e9c2ade4f6",
+        "metadata": null,
+        "score": 0.4112374952471452,
+        "created_at": "2026-10-19T21:07:15.561735+00:00",
+        "updated_at": "2026-10-19T21:07:15.561735+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "54dc7ddc-9c89-4ea0-be74-2aebd92fa79b",
+        "memory": "Ingrid Berg has a Pfaff 160s sewing machine; the service costs 2300 (crowns) and she has a VIP discount of 150, as noted on October 19, 2026",
+        "hash": "18c92e0c22e066687483da343e4c6fd0",
+        "metadata": null,
+        "score": 0.2191550944326825,
+        "created_at": "2026-10-19T21:07:02.433397+00:00",
+        "updated_at": "2026-10-19T21:07:02.433397+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "hash": "767a1d5d6255c5e4df1dd1ece526619b",
+        "metadata": null,
+        "score": 0.14259464219635867,
+        "created_at": "2026-10-19T21:06:56.746110+00:00",
+        "updated_at": "2026-10-19T21:06:56.746110+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 203
+  },
+  {
+   "№": 7,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "Walker теперь продаю за 19 900"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "489d9bc4-e9b8-430a-85eb-e141ae6a62fa",
+        "memory": "User now sells the Walker for 19,900 as of October 19, 2026, which differs from the previously noted Walker 6F PREMIUM EX price of 21,500 crowns including VAT",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2010
+  },
+  {
+   "№": 8,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда: сколько стоит Walker?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "489d9bc4-e9b8-430a-85eb-e141ae6a62fa",
+        "memory": "User now sells the Walker for 19,900 as of October 19, 2026, which differs from the previously noted Walker 6F PREMIUM EX price of 21,500 crowns including VAT",
+        "hash": "4a892932be18bc7fcf8a87c8982d0424",
+        "metadata": null,
+        "score": 0.5679031272332123,
+        "created_at": "2026-10-19T21:07:17.781068+00:00",
+        "updated_at": "2026-10-19T21:07:17.781068+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "hash": "767a1d5d6255c5e4df1dd1ece526619b",
+        "metadata": null,
+        "score": 0.5264144673602511,
+        "created_at": "2026-10-19T21:06:56.746110+00:00",
+        "updated_at": "2026-10-19T21:06:56.746110+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "54dc7ddc-9c89-4ea0-be74-2aebd92fa79b",
+        "memory": "Ingrid Berg has a Pfaff 160s sewing machine; the service costs 2300 (crowns) and she has a VIP discount of 150, as noted on October 19, 2026",
+        "hash": "18c92e0c22e066687483da343e4c6fd0",
+        "metadata": null,
+        "score": 0.15053503785294028,
+        "created_at": "2026-10-19T21:07:02.433397+00:00",
+        "updated_at": "2026-10-19T21:07:02.433397+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "hash": "b3b4d9bac4cfce484a6895855c7fb17b",
+        "metadata": null,
+        "score": 0.11887674678105725,
+        "created_at": "2026-10-19T21:07:13.546185+00:00",
+        "updated_at": "2026-10-19T21:07:13.546185+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "hash": "fcd31f2bffc34e8be98f66e9c2ade4f6",
+        "metadata": null,
+        "score": 0.11178765565442753,
+        "created_at": "2026-10-19T21:07:15.561735+00:00",
+        "updated_at": "2026-10-19T21:07:15.561735+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 165
+  },
+  {
+   "№": 9,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "Nordvik написала, поставка сдвинулась на середину декабря"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "67409e7a-b328-458a-965a-64098c82d78a",
+        "memory": "User learned on October 19, 2026 that Nordvik wrote that their next delivery was postponed to mid-December 2026, instead of the end of November 2026 as previously noted",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2281
+  },
+  {
+   "№": 10,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "с 1 ноября сервис для всех 2100 крон"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "fca60a1d-15c5-431e-8787-2900ae647733",
+        "memory": "User noted on October 19, 2026 that starting November 1, 2026, the service price for everyone will be 2100 crowns (крон), down from the previously noted 2300 service price for Ingrid Berg's Pfaff 160s",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2453
+  },
+  {
+   "№": 11,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "в эту субботу 24 октября мастерская закрыта"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "42502dd3-7d33-4029-9293-1daf3c3538d4",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) will be closed this coming Saturday, October 24, 2026, an exception to its usual Saturday hours (open until 14:00)",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2368
+  },
+  {
+   "№": 12,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 24.10: мастерская в субботу?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "42502dd3-7d33-4029-9293-1daf3c3538d4",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) will be closed this coming Saturday, October 24, 2026, an exception to its usual Saturday hours (open until 14:00)",
+        "hash": "3a610867f6f461142395871c189106b4",
+        "metadata": null,
+        "score": 0.6312142416822462,
+        "created_at": "2026-10-19T21:07:25.046316+00:00",
+        "updated_at": "2026-10-19T21:07:25.046316+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "hash": "b3b4d9bac4cfce484a6895855c7fb17b",
+        "metadata": null,
+        "score": 0.6232399391266596,
+        "created_at": "2026-10-19T21:07:13.546185+00:00",
+        "updated_at": "2026-10-19T21:07:13.546185+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "hash": "fcd31f2bffc34e8be98f66e9c2ade4f6",
+        "metadata": null,
+        "score": 0.4591960305808598,
+        "created_at": "2026-10-19T21:07:15.561735+00:00",
+        "updated_at": "2026-10-19T21:07:15.561735+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fca60a1d-15c5-431e-8787-2900ae647733",
+        "memory": "User noted on October 19, 2026 that starting November 1, 2026, the service price for everyone will be 2100 crowns (крон), down from the previously noted 2300 service price for Ingrid Berg's Pfaff 160s",
+        "hash": "ff367c7382075591a612931b6ea8c4b6",
+        "metadata": null,
+        "score": 0.2465101715482148,
+        "created_at": "2026-10-19T21:07:22.677070+00:00",
+        "updated_at": "2026-10-19T21:07:22.677070+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "54dc7ddc-9c89-4ea0-be74-2aebd92fa79b",
+        "memory": "Ingrid Berg has a Pfaff 160s sewing machine; the service costs 2300 (crowns) and she has a VIP discount of 150, as noted on October 19, 2026",
+        "hash": "18c92e0c22e066687483da343e4c6fd0",
+        "metadata": null,
+        "score": 0.23799619032286518,
+        "created_at": "2026-10-19T21:07:02.433397+00:00",
+        "updated_at": "2026-10-19T21:07:02.433397+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "67409e7a-b328-458a-965a-64098c82d78a",
+        "memory": "User learned on October 19, 2026 that Nordvik wrote that their next delivery was postponed to mid-December 2026, instead of the end of November 2026 as previously noted",
+        "hash": "49b7d1c6c0bd99149c0f358377ee9a31",
+        "metadata": null,
+        "score": 0.20138487096006213,
+        "created_at": "2026-10-19T21:07:20.221468+00:00",
+        "updated_at": "2026-10-19T21:07:20.221468+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "dce573c1-3ea4-481d-a4ea-3c5f9e293f48",
+        "memory": "User noted on October 19, 2026 that the next delivery from Nordvik will arrive at the end of November 2026",
+        "hash": "5a176a08518f54e687545e69cbf7ea0c",
+        "metadata": null,
+        "score": 0.1757768097523548,
+        "created_at": "2026-10-19T21:06:59.387664+00:00",
+        "updated_at": "2026-10-19T21:06:59.387664+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "hash": "767a1d5d6255c5e4df1dd1ece526619b",
+        "metadata": null,
+        "score": 0.15069402916687483,
+        "created_at": "2026-10-19T21:06:56.746110+00:00",
+        "updated_at": "2026-10-19T21:06:56.746110+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "489d9bc4-e9b8-430a-85eb-e141ae6a62fa",
+        "memory": "User now sells the Walker for 19,900 as of October 19, 2026, which differs from the previously noted Walker 6F PREMIUM EX price of 21,500 crowns including VAT",
+        "hash": "4a892932be18bc7fcf8a87c8982d0424",
+        "metadata": null,
+        "score": 0.12774586017331274,
+        "created_at": "2026-10-19T21:07:17.781068+00:00",
+        "updated_at": "2026-10-19T21:07:17.781068+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 206
+  },
+  {
+   "№": 13,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 31.10: мастерская в субботу?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "42502dd3-7d33-4029-9293-1daf3c3538d4",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) will be closed this coming Saturday, October 24, 2026, an exception to its usual Saturday hours (open until 14:00)",
+        "hash": "3a610867f6f461142395871c189106b4",
+        "metadata": null,
+        "score": 0.6299964889254619,
+        "created_at": "2026-10-19T21:07:25.046316+00:00",
+        "updated_at": "2026-10-19T21:07:25.046316+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "hash": "b3b4d9bac4cfce484a6895855c7fb17b",
+        "metadata": null,
+        "score": 0.6147813578909934,
+        "created_at": "2026-10-19T21:07:13.546185+00:00",
+        "updated_at": "2026-10-19T21:07:13.546185+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "hash": "fcd31f2bffc34e8be98f66e9c2ade4f6",
+        "metadata": null,
+        "score": 0.47496367666989303,
+        "created_at": "2026-10-19T21:07:15.561735+00:00",
+        "updated_at": "2026-10-19T21:07:15.561735+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fca60a1d-15c5-431e-8787-2900ae647733",
+        "memory": "User noted on October 19, 2026 that starting November 1, 2026, the service price for everyone will be 2100 crowns (крон), down from the previously noted 2300 service price for Ingrid Berg's Pfaff 160s",
+        "hash": "ff367c7382075591a612931b6ea8c4b6",
+        "metadata": null,
+        "score": 0.2813785906488009,
+        "created_at": "2026-10-19T21:07:22.677070+00:00",
+        "updated_at": "2026-10-19T21:07:22.677070+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "54dc7ddc-9c89-4ea0-be74-2aebd92fa79b",
+        "memory": "Ingrid Berg has a Pfaff 160s sewing machine; the service costs 2300 (crowns) and she has a VIP discount of 150, as noted on October 19, 2026",
+        "hash": "18c92e0c22e066687483da343e4c6fd0",
+        "metadata": null,
+        "score": 0.24789947173227928,
+        "created_at": "2026-10-19T21:07:02.433397+00:00",
+        "updated_at": "2026-10-19T21:07:02.433397+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "67409e7a-b328-458a-965a-64098c82d78a",
+        "memory": "User learned on October 19, 2026 that Nordvik wrote that their next delivery was postponed to mid-December 2026, instead of the end of November 2026 as previously noted",
+        "hash": "49b7d1c6c0bd99149c0f358377ee9a31",
+        "metadata": null,
+        "score": 0.22714440600483682,
+        "created_at": "2026-10-19T21:07:20.221468+00:00",
+        "updated_at": "2026-10-19T21:07:20.221468+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "dce573c1-3ea4-481d-a4ea-3c5f9e293f48",
+        "memory": "User noted on October 19, 2026 that the next delivery from Nordvik will arrive at the end of November 2026",
+        "hash": "5a176a08518f54e687545e69cbf7ea0c",
+        "metadata": null,
+        "score": 0.19868956585855135,
+        "created_at": "2026-10-19T21:06:59.387664+00:00",
+        "updated_at": "2026-10-19T21:06:59.387664+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "hash": "767a1d5d6255c5e4df1dd1ece526619b",
+        "metadata": null,
+        "score": 0.17795048321881557,
+        "created_at": "2026-10-19T21:06:56.746110+00:00",
+        "updated_at": "2026-10-19T21:06:56.746110+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "489d9bc4-e9b8-430a-85eb-e141ae6a62fa",
+        "memory": "User now sells the Walker for 19,900 as of October 19, 2026, which differs from the previously noted Walker 6F PREMIUM EX price of 21,500 crowns including VAT",
+        "hash": "4a892932be18bc7fcf8a87c8982d0424",
+        "metadata": null,
+        "score": 0.147885448087747,
+        "created_at": "2026-10-19T21:07:17.781068+00:00",
+        "updated_at": "2026-10-19T21:07:17.781068+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 241
+  },
+  {
+   "№": 14,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "TRONIC 5F стоит 19 900"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "d5154d05-8f8d-4235-a3fb-5660958f5a13",
+        "memory": "User noted on October 19, 2026 that the TRONIC 5F costs 19,900 (crowns)",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2200
+  },
+  {
+   "№": 15,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "что стоит 19 900?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "d5154d05-8f8d-4235-a3fb-5660958f5a13",
+        "memory": "User noted on October 19, 2026 that the TRONIC 5F costs 19,900 (crowns)",
+        "hash": "38f795ad1e0b4f73a994bd6bf96e7a78",
+        "metadata": null,
+        "score": 0.5001247589835371,
+        "created_at": "2026-10-19T21:07:27.698121+00:00",
+        "updated_at": "2026-10-19T21:07:27.698121+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "hash": "767a1d5d6255c5e4df1dd1ece526619b",
+        "metadata": null,
+        "score": 0.4137373037177318,
+        "created_at": "2026-10-19T21:06:56.746110+00:00",
+        "updated_at": "2026-10-19T21:06:56.746110+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "489d9bc4-e9b8-430a-85eb-e141ae6a62fa",
+        "memory": "User now sells the Walker for 19,900 as of October 19, 2026, which differs from the previously noted Walker 6F PREMIUM EX price of 21,500 crowns including VAT",
+        "hash": "4a892932be18bc7fcf8a87c8982d0424",
+        "metadata": null,
+        "score": 0.40727916869076336,
+        "created_at": "2026-10-19T21:07:17.781068+00:00",
+        "updated_at": "2026-10-19T21:07:17.781068+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fca60a1d-15c5-431e-8787-2900ae647733",
+        "memory": "User noted on October 19, 2026 that starting November 1, 2026, the service price for everyone will be 2100 crowns (крон), down from the previously noted 2300 service price for Ingrid Berg's Pfaff 160s",
+        "hash": "ff367c7382075591a612931b6ea8c4b6",
+        "metadata": null,
+        "score": 0.3006286302474277,
+        "created_at": "2026-10-19T21:07:22.677070+00:00",
+        "updated_at": "2026-10-19T21:07:22.677070+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "54dc7ddc-9c89-4ea0-be74-2aebd92fa79b",
+        "memory": "Ingrid Berg has a Pfaff 160s sewing machine; the service costs 2300 (crowns) and she has a VIP discount of 150, as noted on October 19, 2026",
+        "hash": "18c92e0c22e066687483da343e4c6fd0",
+        "metadata": null,
+        "score": 0.2370815736644773,
+        "created_at": "2026-10-19T21:07:02.433397+00:00",
+        "updated_at": "2026-10-19T21:07:02.433397+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "hash": "fcd31f2bffc34e8be98f66e9c2ade4f6",
+        "metadata": null,
+        "score": 0.16774193337549032,
+        "created_at": "2026-10-19T21:07:15.561735+00:00",
+        "updated_at": "2026-10-19T21:07:15.561735+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "hash": "b3b4d9bac4cfce484a6895855c7fb17b",
+        "metadata": null,
+        "score": 0.15697760866849175,
+        "created_at": "2026-10-19T21:07:13.546185+00:00",
+        "updated_at": "2026-10-19T21:07:13.546185+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "67409e7a-b328-458a-965a-64098c82d78a",
+        "memory": "User learned on October 19, 2026 that Nordvik wrote that their next delivery was postponed to mid-December 2026, instead of the end of November 2026 as previously noted",
+        "hash": "49b7d1c6c0bd99149c0f358377ee9a31",
+        "metadata": null,
+        "score": 0.14070096901879656,
+        "created_at": "2026-10-19T21:07:20.221468+00:00",
+        "updated_at": "2026-10-19T21:07:20.221468+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "42502dd3-7d33-4029-9293-1daf3c3538d4",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) will be closed this coming Saturday, October 24, 2026, an exception to its usual Saturday hours (open until 14:00)",
+        "hash": "3a610867f6f461142395871c189106b4",
+        "metadata": null,
+        "score": 0.13871714302634047,
+        "created_at": "2026-10-19T21:07:25.046316+00:00",
+        "updated_at": "2026-10-19T21:07:25.046316+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "dce573c1-3ea4-481d-a4ea-3c5f9e293f48",
+        "memory": "User noted on October 19, 2026 that the next delivery from Nordvik will arrive at the end of November 2026",
+        "hash": "5a176a08518f54e687545e69cbf7ea0c",
+        "metadata": null,
+        "score": 0.13866378922728742,
+        "created_at": "2026-10-19T21:06:59.387664+00:00",
+        "updated_at": "2026-10-19T21:06:59.387664+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 207
+  },
+  {
+   "№": 16,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "Ingrid получила машину"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "92372676-e4b4-4603-b0b6-4c01257402da",
+        "memory": "User noted on October 19, 2026 that Ingrid received her machine (машину), likely referring to Ingrid Berg's Pfaff 160s serviced at the workshop",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2365
+  },
+  {
+   "№": 17,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "что с машиной Ингрид?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "92372676-e4b4-4603-b0b6-4c01257402da",
+        "memory": "User noted on October 19, 2026 that Ingrid received her machine (машину), likely referring to Ingrid Berg's Pfaff 160s serviced at the workshop",
+        "hash": "5b30efec0d4dc06bb2f9eeb98c2d36fb",
+        "metadata": null,
+        "score": 0.41636808824074123,
+        "created_at": "2026-10-19T21:07:30.266435+00:00",
+        "updated_at": "2026-10-19T21:07:30.266435+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "54dc7ddc-9c89-4ea0-be74-2aebd92fa79b",
+        "memory": "Ingrid Berg has a Pfaff 160s sewing machine; the service costs 2300 (crowns) and she has a VIP discount of 150, as noted on October 19, 2026",
+        "hash": "18c92e0c22e066687483da343e4c6fd0",
+        "metadata": null,
+        "score": 0.26934831688696853,
+        "created_at": "2026-10-19T21:07:02.433397+00:00",
+        "updated_at": "2026-10-19T21:07:02.433397+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fca60a1d-15c5-431e-8787-2900ae647733",
+        "memory": "User noted on October 19, 2026 that starting November 1, 2026, the service price for everyone will be 2100 crowns (крон), down from the previously noted 2300 service price for Ingrid Berg's Pfaff 160s",
+        "hash": "ff367c7382075591a612931b6ea8c4b6",
+        "metadata": null,
+        "score": 0.19027714287839972,
+        "created_at": "2026-10-19T21:07:22.677070+00:00",
+        "updated_at": "2026-10-19T21:07:22.677070+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "hash": "b3b4d9bac4cfce484a6895855c7fb17b",
+        "metadata": null,
+        "score": 0.187456578008999,
+        "created_at": "2026-10-19T21:07:13.546185+00:00",
+        "updated_at": "2026-10-19T21:07:13.546185+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "hash": "fcd31f2bffc34e8be98f66e9c2ade4f6",
+        "metadata": null,
+        "score": 0.16173401110626623,
+        "created_at": "2026-10-19T21:07:15.561735+00:00",
+        "updated_at": "2026-10-19T21:07:15.561735+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "42502dd3-7d33-4029-9293-1daf3c3538d4",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) will be closed this coming Saturday, October 24, 2026, an exception to its usual Saturday hours (open until 14:00)",
+        "hash": "3a610867f6f461142395871c189106b4",
+        "metadata": null,
+        "score": 0.15985375519195624,
+        "created_at": "2026-10-19T21:07:25.046316+00:00",
+        "updated_at": "2026-10-19T21:07:25.046316+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "hash": "767a1d5d6255c5e4df1dd1ece526619b",
+        "metadata": null,
+        "score": 0.1528180495923302,
+        "created_at": "2026-10-19T21:06:56.746110+00:00",
+        "updated_at": "2026-10-19T21:06:56.746110+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "d5154d05-8f8d-4235-a3fb-5660958f5a13",
+        "memory": "User noted on October 19, 2026 that the TRONIC 5F costs 19,900 (crowns)",
+        "hash": "38f795ad1e0b4f73a994bd6bf96e7a78",
+        "metadata": null,
+        "score": 0.13152028509474445,
+        "created_at": "2026-10-19T21:07:27.698121+00:00",
+        "updated_at": "2026-10-19T21:07:27.698121+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 251
+  },
+  {
+   "№": 18,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "Лео хочет TRONIC 1F"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "17fad567-6603-48a5-8e8d-2d8b79ae8456",
+        "memory": "User noted on October 19, 2026 that Лео (Leo) wants the TRONIC 1F",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 1727
+  },
+  {
+   "№": 19,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "Лео не 1F, а 5F"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "a94df1d5-5524-4808-8f87-2ad2206e35c4",
+        "memory": "User corrected on October 19, 2026 that Лео (Leo) wants the TRONIC 5F, not the TRONIC 1F as previously noted",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 1803
+  },
+  {
+   "№": 20,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда: какую машину хочет Лео?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "17fad567-6603-48a5-8e8d-2d8b79ae8456",
+        "memory": "User noted on October 19, 2026 that Лео (Leo) wants the TRONIC 1F",
+        "hash": "aef32d7e13394088199545f92e207412",
+        "metadata": null,
+        "score": 0.5097712211594454,
+        "created_at": "2026-10-19T21:07:32.246816+00:00",
+        "updated_at": "2026-10-19T21:07:32.246816+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a94df1d5-5524-4808-8f87-2ad2206e35c4",
+        "memory": "User corrected on October 19, 2026 that Лео (Leo) wants the TRONIC 5F, not the TRONIC 1F as previously noted",
+        "hash": "bdf9a21cdf6ba0edfe1e95bc37926884",
+        "metadata": null,
+        "score": 0.48580967229264427,
+        "created_at": "2026-10-19T21:07:34.047956+00:00",
+        "updated_at": "2026-10-19T21:07:34.047956+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "d5154d05-8f8d-4235-a3fb-5660958f5a13",
+        "memory": "User noted on October 19, 2026 that the TRONIC 5F costs 19,900 (crowns)",
+        "hash": "38f795ad1e0b4f73a994bd6bf96e7a78",
+        "metadata": null,
+        "score": 0.22344630221367223,
+        "created_at": "2026-10-19T21:07:27.698121+00:00",
+        "updated_at": "2026-10-19T21:07:27.698121+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "92372676-e4b4-4603-b0b6-4c01257402da",
+        "memory": "User noted on October 19, 2026 that Ingrid received her machine (машину), likely referring to Ingrid Berg's Pfaff 160s serviced at the workshop",
+        "hash": "5b30efec0d4dc06bb2f9eeb98c2d36fb",
+        "metadata": null,
+        "score": 0.2134108474509257,
+        "created_at": "2026-10-19T21:07:30.266435+00:00",
+        "updated_at": "2026-10-19T21:07:30.266435+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "hash": "767a1d5d6255c5e4df1dd1ece526619b",
+        "metadata": null,
+        "score": 0.191160734596794,
+        "created_at": "2026-10-19T21:06:56.746110+00:00",
+        "updated_at": "2026-10-19T21:06:56.746110+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "489d9bc4-e9b8-430a-85eb-e141ae6a62fa",
+        "memory": "User now sells the Walker for 19,900 as of October 19, 2026, which differs from the previously noted Walker 6F PREMIUM EX price of 21,500 crowns including VAT",
+        "hash": "4a892932be18bc7fcf8a87c8982d0424",
+        "metadata": null,
+        "score": 0.15665041171399952,
+        "created_at": "2026-10-19T21:07:17.781068+00:00",
+        "updated_at": "2026-10-19T21:07:17.781068+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "54dc7ddc-9c89-4ea0-be74-2aebd92fa79b",
+        "memory": "Ingrid Berg has a Pfaff 160s sewing machine; the service costs 2300 (crowns) and she has a VIP discount of 150, as noted on October 19, 2026",
+        "hash": "18c92e0c22e066687483da343e4c6fd0",
+        "metadata": null,
+        "score": 0.130413466451674,
+        "created_at": "2026-10-19T21:07:02.433397+00:00",
+        "updated_at": "2026-10-19T21:07:02.433397+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fca60a1d-15c5-431e-8787-2900ae647733",
+        "memory": "User noted on October 19, 2026 that starting November 1, 2026, the service price for everyone will be 2100 crowns (крон), down from the previously noted 2300 service price for Ingrid Berg's Pfaff 160s",
+        "hash": "ff367c7382075591a612931b6ea8c4b6",
+        "metadata": null,
+        "score": 0.11572172102739232,
+        "created_at": "2026-10-19T21:07:22.677070+00:00",
+        "updated_at": "2026-10-19T21:07:22.677070+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "dce573c1-3ea4-481d-a4ea-3c5f9e293f48",
+        "memory": "User noted on October 19, 2026 that the next delivery from Nordvik will arrive at the end of November 2026",
+        "hash": "5a176a08518f54e687545e69cbf7ea0c",
+        "metadata": null,
+        "score": 0.10475341490403924,
+        "created_at": "2026-10-19T21:06:59.387664+00:00",
+        "updated_at": "2026-10-19T21:06:59.387664+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "hash": "fcd31f2bffc34e8be98f66e9c2ade4f6",
+        "metadata": null,
+        "score": 0.10436107129502525,
+        "created_at": "2026-10-19T21:07:15.561735+00:00",
+        "updated_at": "2026-10-19T21:07:15.561735+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "hash": "b3b4d9bac4cfce484a6895855c7fb17b",
+        "metadata": null,
+        "score": 0.10170159906695,
+        "created_at": "2026-10-19T21:07:13.546185+00:00",
+        "updated_at": "2026-10-19T21:07:13.546185+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 194
+  },
+  {
+   "№": 21,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда: сколько стоит доставка в Bergen?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "54dc7ddc-9c89-4ea0-be74-2aebd92fa79b",
+        "memory": "Ingrid Berg has a Pfaff 160s sewing machine; the service costs 2300 (crowns) and she has a VIP discount of 150, as noted on October 19, 2026",
+        "hash": "18c92e0c22e066687483da343e4c6fd0",
+        "metadata": null,
+        "score": 0.33561739497391524,
+        "created_at": "2026-10-19T21:07:02.433397+00:00",
+        "updated_at": "2026-10-19T21:07:02.433397+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fca60a1d-15c5-431e-8787-2900ae647733",
+        "memory": "User noted on October 19, 2026 that starting November 1, 2026, the service price for everyone will be 2100 crowns (крон), down from the previously noted 2300 service price for Ingrid Berg's Pfaff 160s",
+        "hash": "ff367c7382075591a612931b6ea8c4b6",
+        "metadata": null,
+        "score": 0.3333275310117157,
+        "created_at": "2026-10-19T21:07:22.677070+00:00",
+        "updated_at": "2026-10-19T21:07:22.677070+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "hash": "767a1d5d6255c5e4df1dd1ece526619b",
+        "metadata": null,
+        "score": 0.2283096350649603,
+        "created_at": "2026-10-19T21:06:56.746110+00:00",
+        "updated_at": "2026-10-19T21:06:56.746110+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "489d9bc4-e9b8-430a-85eb-e141ae6a62fa",
+        "memory": "User now sells the Walker for 19,900 as of October 19, 2026, which differs from the previously noted Walker 6F PREMIUM EX price of 21,500 crowns including VAT",
+        "hash": "4a892932be18bc7fcf8a87c8982d0424",
+        "metadata": null,
+        "score": 0.20216391768387462,
+        "created_at": "2026-10-19T21:07:17.781068+00:00",
+        "updated_at": "2026-10-19T21:07:17.781068+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "dce573c1-3ea4-481d-a4ea-3c5f9e293f48",
+        "memory": "User noted on October 19, 2026 that the next delivery from Nordvik will arrive at the end of November 2026",
+        "hash": "5a176a08518f54e687545e69cbf7ea0c",
+        "metadata": null,
+        "score": 0.19564526394049653,
+        "created_at": "2026-10-19T21:06:59.387664+00:00",
+        "updated_at": "2026-10-19T21:06:59.387664+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "d5154d05-8f8d-4235-a3fb-5660958f5a13",
+        "memory": "User noted on October 19, 2026 that the TRONIC 5F costs 19,900 (crowns)",
+        "hash": "38f795ad1e0b4f73a994bd6bf96e7a78",
+        "metadata": null,
+        "score": 0.19351865929270642,
+        "created_at": "2026-10-19T21:07:27.698121+00:00",
+        "updated_at": "2026-10-19T21:07:27.698121+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "92372676-e4b4-4603-b0b6-4c01257402da",
+        "memory": "User noted on October 19, 2026 that Ingrid received her machine (машину), likely referring to Ingrid Berg's Pfaff 160s serviced at the workshop",
+        "hash": "5b30efec0d4dc06bb2f9eeb98c2d36fb",
+        "metadata": null,
+        "score": 0.16512539553984235,
+        "created_at": "2026-10-19T21:07:30.266435+00:00",
+        "updated_at": "2026-10-19T21:07:30.266435+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "hash": "fcd31f2bffc34e8be98f66e9c2ade4f6",
+        "metadata": null,
+        "score": 0.1493925691063195,
+        "created_at": "2026-10-19T21:07:15.561735+00:00",
+        "updated_at": "2026-10-19T21:07:15.561735+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "67409e7a-b328-458a-965a-64098c82d78a",
+        "memory": "User learned on October 19, 2026 that Nordvik wrote that their next delivery was postponed to mid-December 2026, instead of the end of November 2026 as previously noted",
+        "hash": "49b7d1c6c0bd99149c0f358377ee9a31",
+        "metadata": null,
+        "score": 0.13612545952837632,
+        "created_at": "2026-10-19T21:07:20.221468+00:00",
+        "updated_at": "2026-10-19T21:07:20.221468+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "hash": "b3b4d9bac4cfce484a6895855c7fb17b",
+        "metadata": null,
+        "score": 0.10799275963364374,
+        "created_at": "2026-10-19T21:07:13.546185+00:00",
+        "updated_at": "2026-10-19T21:07:13.546185+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 202
+  },
+  {
+   "№": 22,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "Fjord Møbel мебельщики, работают на Dürkopp Adler"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "b0757c7a-179d-450a-a737-0110cd980e67",
+        "memory": "User noted on October 19, 2026 that Fjord Møbel are upholsterers/furniture makers (мебельщики) who work on Dürkopp Adler machines",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2555
+  },
+  {
+   "№": 23,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Recall: на чём работают мебельщики из Бергена?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "b0757c7a-179d-450a-a737-0110cd980e67",
+        "memory": "User noted on October 19, 2026 that Fjord Møbel are upholsterers/furniture makers (мебельщики) who work on Dürkopp Adler machines",
+        "hash": "dde208ed09ea6dbe6d2fc3541e5db447",
+        "metadata": null,
+        "score": 0.5305387735371032,
+        "created_at": "2026-10-19T21:07:37.002528+00:00",
+        "updated_at": "2026-10-19T21:07:37.002528+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "hash": "fcd31f2bffc34e8be98f66e9c2ade4f6",
+        "metadata": null,
+        "score": 0.2901173206742612,
+        "created_at": "2026-10-19T21:07:15.561735+00:00",
+        "updated_at": "2026-10-19T21:07:15.561735+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "92372676-e4b4-4603-b0b6-4c01257402da",
+        "memory": "User noted on October 19, 2026 that Ingrid received her machine (машину), likely referring to Ingrid Berg's Pfaff 160s serviced at the workshop",
+        "hash": "5b30efec0d4dc06bb2f9eeb98c2d36fb",
+        "metadata": null,
+        "score": 0.23593175365809055,
+        "created_at": "2026-10-19T21:07:30.266435+00:00",
+        "updated_at": "2026-10-19T21:07:30.266435+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "54dc7ddc-9c89-4ea0-be74-2aebd92fa79b",
+        "memory": "Ingrid Berg has a Pfaff 160s sewing machine; the service costs 2300 (crowns) and she has a VIP discount of 150, as noted on October 19, 2026",
+        "hash": "18c92e0c22e066687483da343e4c6fd0",
+        "metadata": null,
+        "score": 0.23564301166016993,
+        "created_at": "2026-10-19T21:07:02.433397+00:00",
+        "updated_at": "2026-10-19T21:07:02.433397+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "hash": "b3b4d9bac4cfce484a6895855c7fb17b",
+        "metadata": null,
+        "score": 0.21974095534723298,
+        "created_at": "2026-10-19T21:07:13.546185+00:00",
+        "updated_at": "2026-10-19T21:07:13.546185+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "42502dd3-7d33-4029-9293-1daf3c3538d4",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) will be closed this coming Saturday, October 24, 2026, an exception to its usual Saturday hours (open until 14:00)",
+        "hash": "3a610867f6f461142395871c189106b4",
+        "metadata": null,
+        "score": 0.20369698607756542,
+        "created_at": "2026-10-19T21:07:25.046316+00:00",
+        "updated_at": "2026-10-19T21:07:25.046316+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fca60a1d-15c5-431e-8787-2900ae647733",
+        "memory": "User noted on October 19, 2026 that starting November 1, 2026, the service price for everyone will be 2100 crowns (крон), down from the previously noted 2300 service price for Ingrid Berg's Pfaff 160s",
+        "hash": "ff367c7382075591a612931b6ea8c4b6",
+        "metadata": null,
+        "score": 0.1482375615086861,
+        "created_at": "2026-10-19T21:07:22.677070+00:00",
+        "updated_at": "2026-10-19T21:07:22.677070+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "hash": "767a1d5d6255c5e4df1dd1ece526619b",
+        "metadata": null,
+        "score": 0.12015504194672066,
+        "created_at": "2026-10-19T21:06:56.746110+00:00",
+        "updated_at": "2026-10-19T21:06:56.746110+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 187
+  },
+  {
+   "№": 24,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "с прошлого понедельника беру за выезд 700 крон"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "5e236c8b-bb3b-4545-8d20-e1498f40722b",
+        "memory": "User noted on October 19, 2026 that since last Monday (October 12, 2026) they charge 700 crowns (крон) for a call-out/on-site visit (выезд)",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 9526
+  },
+  {
+   "№": 25,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 14.10: сколько выезд?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "5e236c8b-bb3b-4545-8d20-e1498f40722b",
+        "memory": "User noted on October 19, 2026 that since last Monday (October 12, 2026) they charge 700 crowns (крон) for a call-out/on-site visit (выезд)",
+        "hash": "4c6ef5f20e9f4bb418f5b5c36c0af8f7",
+        "metadata": null,
+        "score": 0.39471024616198397,
+        "created_at": "2026-10-19T21:07:46.714687+00:00",
+        "updated_at": "2026-10-19T21:07:46.714687+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "42502dd3-7d33-4029-9293-1daf3c3538d4",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) will be closed this coming Saturday, October 24, 2026, an exception to its usual Saturday hours (open until 14:00)",
+        "hash": "3a610867f6f461142395871c189106b4",
+        "metadata": null,
+        "score": 0.3495997395282295,
+        "created_at": "2026-10-19T21:07:25.046316+00:00",
+        "updated_at": "2026-10-19T21:07:25.046316+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "hash": "b3b4d9bac4cfce484a6895855c7fb17b",
+        "metadata": null,
+        "score": 0.3337181362470897,
+        "created_at": "2026-10-19T21:07:13.546185+00:00",
+        "updated_at": "2026-10-19T21:07:13.546185+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "hash": "fcd31f2bffc34e8be98f66e9c2ade4f6",
+        "metadata": null,
+        "score": 0.28369445245858405,
+        "created_at": "2026-10-19T21:07:15.561735+00:00",
+        "updated_at": "2026-10-19T21:07:15.561735+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fca60a1d-15c5-431e-8787-2900ae647733",
+        "memory": "User noted on October 19, 2026 that starting November 1, 2026, the service price for everyone will be 2100 crowns (крон), down from the previously noted 2300 service price for Ingrid Berg's Pfaff 160s",
+        "hash": "ff367c7382075591a612931b6ea8c4b6",
+        "metadata": null,
+        "score": 0.2535507565348255,
+        "created_at": "2026-10-19T21:07:22.677070+00:00",
+        "updated_at": "2026-10-19T21:07:22.677070+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "hash": "767a1d5d6255c5e4df1dd1ece526619b",
+        "metadata": null,
+        "score": 0.23335864538839535,
+        "created_at": "2026-10-19T21:06:56.746110+00:00",
+        "updated_at": "2026-10-19T21:06:56.746110+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "67409e7a-b328-458a-965a-64098c82d78a",
+        "memory": "User learned on October 19, 2026 that Nordvik wrote that their next delivery was postponed to mid-December 2026, instead of the end of November 2026 as previously noted",
+        "hash": "49b7d1c6c0bd99149c0f358377ee9a31",
+        "metadata": null,
+        "score": 0.19964000737328996,
+        "created_at": "2026-10-19T21:07:20.221468+00:00",
+        "updated_at": "2026-10-19T21:07:20.221468+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "dce573c1-3ea4-481d-a4ea-3c5f9e293f48",
+        "memory": "User noted on October 19, 2026 that the next delivery from Nordvik will arrive at the end of November 2026",
+        "hash": "5a176a08518f54e687545e69cbf7ea0c",
+        "metadata": null,
+        "score": 0.1990148613497295,
+        "created_at": "2026-10-19T21:06:59.387664+00:00",
+        "updated_at": "2026-10-19T21:06:59.387664+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "489d9bc4-e9b8-430a-85eb-e141ae6a62fa",
+        "memory": "User now sells the Walker for 19,900 as of October 19, 2026, which differs from the previously noted Walker 6F PREMIUM EX price of 21,500 crowns including VAT",
+        "hash": "4a892932be18bc7fcf8a87c8982d0424",
+        "metadata": null,
+        "score": 0.19398832754657913,
+        "created_at": "2026-10-19T21:07:17.781068+00:00",
+        "updated_at": "2026-10-19T21:07:17.781068+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "d5154d05-8f8d-4235-a3fb-5660958f5a13",
+        "memory": "User noted on October 19, 2026 that the TRONIC 5F costs 19,900 (crowns)",
+        "hash": "38f795ad1e0b4f73a994bd6bf96e7a78",
+        "metadata": null,
+        "score": 0.18607362234838984,
+        "created_at": "2026-10-19T21:07:27.698121+00:00",
+        "updated_at": "2026-10-19T21:07:27.698121+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a94df1d5-5524-4808-8f87-2ad2206e35c4",
+        "memory": "User corrected on October 19, 2026 that Лео (Leo) wants the TRONIC 5F, not the TRONIC 1F as previously noted",
+        "hash": "bdf9a21cdf6ba0edfe1e95bc37926884",
+        "metadata": null,
+        "score": 0.15353064876570496,
+        "created_at": "2026-10-19T21:07:34.047956+00:00",
+        "updated_at": "2026-10-19T21:07:34.047956+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "b0757c7a-179d-450a-a737-0110cd980e67",
+        "memory": "User noted on October 19, 2026 that Fjord Møbel are upholsterers/furniture makers (мебельщики) who work on Dürkopp Adler machines",
+        "hash": "dde208ed09ea6dbe6d2fc3541e5db447",
+        "metadata": null,
+        "score": 0.12555329146858699,
+        "created_at": "2026-10-19T21:07:37.002528+00:00",
+        "updated_at": "2026-10-19T21:07:37.002528+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "54dc7ddc-9c89-4ea0-be74-2aebd92fa79b",
+        "memory": "Ingrid Berg has a Pfaff 160s sewing machine; the service costs 2300 (crowns) and she has a VIP discount of 150, as noted on October 19, 2026",
+        "hash": "18c92e0c22e066687483da343e4c6fd0",
+        "metadata": null,
+        "score": 0.12258336637346232,
+        "created_at": "2026-10-19T21:07:02.433397+00:00",
+        "updated_at": "2026-10-19T21:07:02.433397+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "17fad567-6603-48a5-8e8d-2d8b79ae8456",
+        "memory": "User noted on October 19, 2026 that Лео (Leo) wants the TRONIC 1F",
+        "hash": "aef32d7e13394088199545f92e207412",
+        "metadata": null,
+        "score": 0.12255794094816816,
+        "created_at": "2026-10-19T21:07:32.246816+00:00",
+        "updated_at": "2026-10-19T21:07:32.246816+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    },
+    {
+     "вызов": [
+      "search",
+      "Что правда на 05.10: сколько выезд?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "5e236c8b-bb3b-4545-8d20-e1498f40722b",
+        "memory": "User noted on October 19, 2026 that since last Monday (October 12, 2026) they charge 700 crowns (крон) for a call-out/on-site visit (выезд)",
+        "hash": "4c6ef5f20e9f4bb418f5b5c36c0af8f7",
+        "metadata": null,
+        "score": 0.4188148937909146,
+        "created_at": "2026-10-19T21:07:46.714687+00:00",
+        "updated_at": "2026-10-19T21:07:46.714687+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "42502dd3-7d33-4029-9293-1daf3c3538d4",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) will be closed this coming Saturday, October 24, 2026, an exception to its usual Saturday hours (open until 14:00)",
+        "hash": "3a610867f6f461142395871c189106b4",
+        "metadata": null,
+        "score": 0.2942686664945358,
+        "created_at": "2026-10-19T21:07:25.046316+00:00",
+        "updated_at": "2026-10-19T21:07:25.046316+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "hash": "b3b4d9bac4cfce484a6895855c7fb17b",
+        "metadata": null,
+        "score": 0.272764239230894,
+        "created_at": "2026-10-19T21:07:13.546185+00:00",
+        "updated_at": "2026-10-19T21:07:13.546185+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "hash": "fcd31f2bffc34e8be98f66e9c2ade4f6",
+        "metadata": null,
+        "score": 0.26227621228774367,
+        "created_at": "2026-10-19T21:07:15.561735+00:00",
+        "updated_at": "2026-10-19T21:07:15.561735+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fca60a1d-15c5-431e-8787-2900ae647733",
+        "memory": "User noted on October 19, 2026 that starting November 1, 2026, the service price for everyone will be 2100 crowns (крон), down from the previously noted 2300 service price for Ingrid Berg's Pfaff 160s",
+        "hash": "ff367c7382075591a612931b6ea8c4b6",
+        "metadata": null,
+        "score": 0.24578557033498963,
+        "created_at": "2026-10-19T21:07:22.677070+00:00",
+        "updated_at": "2026-10-19T21:07:22.677070+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "d5154d05-8f8d-4235-a3fb-5660958f5a13",
+        "memory": "User noted on October 19, 2026 that the TRONIC 5F costs 19,900 (crowns)",
+        "hash": "38f795ad1e0b4f73a994bd6bf96e7a78",
+        "metadata": null,
+        "score": 0.23995341061430056,
+        "created_at": "2026-10-19T21:07:27.698121+00:00",
+        "updated_at": "2026-10-19T21:07:27.698121+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "hash": "767a1d5d6255c5e4df1dd1ece526619b",
+        "metadata": null,
+        "score": 0.23901827419950195,
+        "created_at": "2026-10-19T21:06:56.746110+00:00",
+        "updated_at": "2026-10-19T21:06:56.746110+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a94df1d5-5524-4808-8f87-2ad2206e35c4",
+        "memory": "User corrected on October 19, 2026 that Лео (Leo) wants the TRONIC 5F, not the TRONIC 1F as previously noted",
+        "hash": "bdf9a21cdf6ba0edfe1e95bc37926884",
+        "metadata": null,
+        "score": 0.20978033345451363,
+        "created_at": "2026-10-19T21:07:34.047956+00:00",
+        "updated_at": "2026-10-19T21:07:34.047956+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "dce573c1-3ea4-481d-a4ea-3c5f9e293f48",
+        "memory": "User noted on October 19, 2026 that the next delivery from Nordvik will arrive at the end of November 2026",
+        "hash": "5a176a08518f54e687545e69cbf7ea0c",
+        "metadata": null,
+        "score": 0.19331192844195014,
+        "created_at": "2026-10-19T21:06:59.387664+00:00",
+        "updated_at": "2026-10-19T21:06:59.387664+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "489d9bc4-e9b8-430a-85eb-e141ae6a62fa",
+        "memory": "User now sells the Walker for 19,900 as of October 19, 2026, which differs from the previously noted Walker 6F PREMIUM EX price of 21,500 crowns including VAT",
+        "hash": "4a892932be18bc7fcf8a87c8982d0424",
+        "metadata": null,
+        "score": 0.19019409955442135,
+        "created_at": "2026-10-19T21:07:17.781068+00:00",
+        "updated_at": "2026-10-19T21:07:17.781068+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "67409e7a-b328-458a-965a-64098c82d78a",
+        "memory": "User learned on October 19, 2026 that Nordvik wrote that their next delivery was postponed to mid-December 2026, instead of the end of November 2026 as previously noted",
+        "hash": "49b7d1c6c0bd99149c0f358377ee9a31",
+        "metadata": null,
+        "score": 0.18062928663565356,
+        "created_at": "2026-10-19T21:07:20.221468+00:00",
+        "updated_at": "2026-10-19T21:07:20.221468+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "17fad567-6603-48a5-8e8d-2d8b79ae8456",
+        "memory": "User noted on October 19, 2026 that Лео (Leo) wants the TRONIC 1F",
+        "hash": "aef32d7e13394088199545f92e207412",
+        "metadata": null,
+        "score": 0.13524120228557068,
+        "created_at": "2026-10-19T21:07:32.246816+00:00",
+        "updated_at": "2026-10-19T21:07:32.246816+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "54dc7ddc-9c89-4ea0-be74-2aebd92fa79b",
+        "memory": "Ingrid Berg has a Pfaff 160s sewing machine; the service costs 2300 (crowns) and she has a VIP discount of 150, as noted on October 19, 2026",
+        "hash": "18c92e0c22e066687483da343e4c6fd0",
+        "metadata": null,
+        "score": 0.1344133792576387,
+        "created_at": "2026-10-19T21:07:02.433397+00:00",
+        "updated_at": "2026-10-19T21:07:02.433397+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "b0757c7a-179d-450a-a737-0110cd980e67",
+        "memory": "User noted on October 19, 2026 that Fjord Møbel are upholsterers/furniture makers (мебельщики) who work on Dürkopp Adler machines",
+        "hash": "dde208ed09ea6dbe6d2fc3541e5db447",
+        "metadata": null,
+        "score": 0.11929196361865518,
+        "created_at": "2026-10-19T21:07:37.002528+00:00",
+        "updated_at": "2026-10-19T21:07:37.002528+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 338
+  },
+  {
+   "№": 26,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "assistant",
+      "Выезд 850."
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "07e10544-f4c5-455b-a744-16fc30dec6a1",
+        "memory": "On October 19, 2026 the assistant stated that the call-out/on-site visit (выезд) costs 850 (crowns), which conflicts with the user's earlier note that they have charged 700 crowns for a call-out since Monday, October 12, 2026",
+        "event": "ADD"
+       }
+      ]
+     }
+    },
+    {
+     "вызов": [
+      "search",
+      "выезд"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "07e10544-f4c5-455b-a744-16fc30dec6a1",
+        "memory": "On October 19, 2026 the assistant stated that the call-out/on-site visit (выезд) costs 850 (crowns), which conflicts with the user's earlier note that they have charged 700 crowns for a call-out since Monday, October 12, 2026",
+        "hash": "ed511d579c1caea394c57d7ce990a8eb",
+        "metadata": null,
+        "score": 0.2673270670816375,
+        "created_at": "2026-10-19T21:07:53.785829+00:00",
+        "updated_at": "2026-10-19T21:07:53.785829+00:00",
+        "user_id": "oleg",
+        "attributed_to": "assistant"
+       },
+       {
+        "id": "5e236c8b-bb3b-4545-8d20-e1498f40722b",
+        "memory": "User noted on October 19, 2026 that since last Monday (October 12, 2026) they charge 700 crowns (крон) for a call-out/on-site visit (выезд)",
+        "hash": "4c6ef5f20e9f4bb418f5b5c36c0af8f7",
+        "metadata": null,
+        "score": 0.24981862036095193,
+        "created_at": "2026-10-19T21:07:46.714687+00:00",
+        "updated_at": "2026-10-19T21:07:46.714687+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "42502dd3-7d33-4029-9293-1daf3c3538d4",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) will be closed this coming Saturday, October 24, 2026, an exception to its usual Saturday hours (open until 14:00)",
+        "hash": "3a610867f6f461142395871c189106b4",
+        "metadata": null,
+        "score": 0.17075495209944902,
+        "created_at": "2026-10-19T21:07:25.046316+00:00",
+        "updated_at": "2026-10-19T21:07:25.046316+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "hash": "b3b4d9bac4cfce484a6895855c7fb17b",
+        "metadata": null,
+        "score": 0.16757573309598078,
+        "created_at": "2026-10-19T21:07:13.546185+00:00",
+        "updated_at": "2026-10-19T21:07:13.546185+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "hash": "fcd31f2bffc34e8be98f66e9c2ade4f6",
+        "metadata": null,
+        "score": 0.1659193455831485,
+        "created_at": "2026-10-19T21:07:15.561735+00:00",
+        "updated_at": "2026-10-19T21:07:15.561735+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "hash": "767a1d5d6255c5e4df1dd1ece526619b",
+        "metadata": null,
+        "score": 0.1396385920115171,
+        "created_at": "2026-10-19T21:06:56.746110+00:00",
+        "updated_at": "2026-10-19T21:06:56.746110+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "dce573c1-3ea4-481d-a4ea-3c5f9e293f48",
+        "memory": "User noted on October 19, 2026 that the next delivery from Nordvik will arrive at the end of November 2026",
+        "hash": "5a176a08518f54e687545e69cbf7ea0c",
+        "metadata": null,
+        "score": 0.10960281738752173,
+        "created_at": "2026-10-19T21:06:59.387664+00:00",
+        "updated_at": "2026-10-19T21:06:59.387664+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "489d9bc4-e9b8-430a-85eb-e141ae6a62fa",
+        "memory": "User now sells the Walker for 19,900 as of October 19, 2026, which differs from the previously noted Walker 6F PREMIUM EX price of 21,500 crowns including VAT",
+        "hash": "4a892932be18bc7fcf8a87c8982d0424",
+        "metadata": null,
+        "score": 0.10768486386728274,
+        "created_at": "2026-10-19T21:07:17.781068+00:00",
+        "updated_at": "2026-10-19T21:07:17.781068+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fca60a1d-15c5-431e-8787-2900ae647733",
+        "memory": "User noted on October 19, 2026 that starting November 1, 2026, the service price for everyone will be 2100 crowns (крон), down from the previously noted 2300 service price for Ingrid Berg's Pfaff 160s",
+        "hash": "ff367c7382075591a612931b6ea8c4b6",
+        "metadata": null,
+        "score": 0.10341783630346268,
+        "created_at": "2026-10-19T21:07:22.677070+00:00",
+        "updated_at": "2026-10-19T21:07:22.677070+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 6932
+  },
+  {
+   "№": 27,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "по выходным мастерская закрыта"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "214d32a2-54e0-4188-9e46-11c874a54dd5",
+        "memory": "User stated on October 19, 2026 that the workshop (мастерская) is closed on weekends, which conflicts with the earlier note that it is open on Saturdays until 14:00",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2858
+  },
+  {
+   "№": 28,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на сегодня: сервис 2300 или 2100?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "fca60a1d-15c5-431e-8787-2900ae647733",
+        "memory": "User noted on October 19, 2026 that starting November 1, 2026, the service price for everyone will be 2100 crowns (крон), down from the previously noted 2300 service price for Ingrid Berg's Pfaff 160s",
+        "hash": "ff367c7382075591a612931b6ea8c4b6",
+        "metadata": null,
+        "score": 0.4229697703304018,
+        "created_at": "2026-10-19T21:07:22.677070+00:00",
+        "updated_at": "2026-10-19T21:07:22.677070+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "5e236c8b-bb3b-4545-8d20-e1498f40722b",
+        "memory": "User noted on October 19, 2026 that since last Monday (October 12, 2026) they charge 700 crowns (крон) for a call-out/on-site visit (выезд)",
+        "hash": "4c6ef5f20e9f4bb418f5b5c36c0af8f7",
+        "metadata": null,
+        "score": 0.41449054844901695,
+        "created_at": "2026-10-19T21:07:46.714687+00:00",
+        "updated_at": "2026-10-19T21:07:46.714687+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "07e10544-f4c5-455b-a744-16fc30dec6a1",
+        "memory": "On October 19, 2026 the assistant stated that the call-out/on-site visit (выезд) costs 850 (crowns), which conflicts with the user's earlier note that they have charged 700 crowns for a call-out since Monday, October 12, 2026",
+        "hash": "ed511d579c1caea394c57d7ce990a8eb",
+        "metadata": null,
+        "score": 0.3692227760990611,
+        "created_at": "2026-10-19T21:07:53.785829+00:00",
+        "updated_at": "2026-10-19T21:07:53.785829+00:00",
+        "user_id": "oleg",
+        "attributed_to": "assistant"
+       },
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "hash": "767a1d5d6255c5e4df1dd1ece526619b",
+        "metadata": null,
+        "score": 0.3381585721134698,
+        "created_at": "2026-10-19T21:06:56.746110+00:00",
+        "updated_at": "2026-10-19T21:06:56.746110+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "489d9bc4-e9b8-430a-85eb-e141ae6a62fa",
+        "memory": "User now sells the Walker for 19,900 as of October 19, 2026, which differs from the previously noted Walker 6F PREMIUM EX price of 21,500 crowns including VAT",
+        "hash": "4a892932be18bc7fcf8a87c8982d0424",
+        "metadata": null,
+        "score": 0.30689518256574266,
+        "created_at": "2026-10-19T21:07:17.781068+00:00",
+        "updated_at": "2026-10-19T21:07:17.781068+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "d5154d05-8f8d-4235-a3fb-5660958f5a13",
+        "memory": "User noted on October 19, 2026 that the TRONIC 5F costs 19,900 (crowns)",
+        "hash": "38f795ad1e0b4f73a994bd6bf96e7a78",
+        "metadata": null,
+        "score": 0.30017961667334975,
+        "created_at": "2026-10-19T21:07:27.698121+00:00",
+        "updated_at": "2026-10-19T21:07:27.698121+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "54dc7ddc-9c89-4ea0-be74-2aebd92fa79b",
+        "memory": "Ingrid Berg has a Pfaff 160s sewing machine; the service costs 2300 (crowns) and she has a VIP discount of 150, as noted on October 19, 2026",
+        "hash": "18c92e0c22e066687483da343e4c6fd0",
+        "metadata": null,
+        "score": 0.2894835285526738,
+        "created_at": "2026-10-19T21:07:02.433397+00:00",
+        "updated_at": "2026-10-19T21:07:02.433397+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "hash": "b3b4d9bac4cfce484a6895855c7fb17b",
+        "metadata": null,
+        "score": 0.2586498429679541,
+        "created_at": "2026-10-19T21:07:13.546185+00:00",
+        "updated_at": "2026-10-19T21:07:13.546185+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a94df1d5-5524-4808-8f87-2ad2206e35c4",
+        "memory": "User corrected on October 19, 2026 that Лео (Leo) wants the TRONIC 5F, not the TRONIC 1F as previously noted",
+        "hash": "bdf9a21cdf6ba0edfe1e95bc37926884",
+        "metadata": null,
+        "score": 0.25811024231029983,
+        "created_at": "2026-10-19T21:07:34.047956+00:00",
+        "updated_at": "2026-10-19T21:07:34.047956+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "214d32a2-54e0-4188-9e46-11c874a54dd5",
+        "memory": "User stated on October 19, 2026 that the workshop (мастерская) is closed on weekends, which conflicts with the earlier note that it is open on Saturdays until 14:00",
+        "hash": "8ab14ac192c3dd5d31ff95e30b88ea0f",
+        "metadata": null,
+        "score": 0.24231653938251874,
+        "created_at": "2026-10-19T21:07:56.849837+00:00",
+        "updated_at": "2026-10-19T21:07:56.849837+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "92372676-e4b4-4603-b0b6-4c01257402da",
+        "memory": "User noted on October 19, 2026 that Ingrid received her machine (машину), likely referring to Ingrid Berg's Pfaff 160s serviced at the workshop",
+        "hash": "5b30efec0d4dc06bb2f9eeb98c2d36fb",
+        "metadata": null,
+        "score": 0.21584922286588365,
+        "created_at": "2026-10-19T21:07:30.266435+00:00",
+        "updated_at": "2026-10-19T21:07:30.266435+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "42502dd3-7d33-4029-9293-1daf3c3538d4",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) will be closed this coming Saturday, October 24, 2026, an exception to its usual Saturday hours (open until 14:00)",
+        "hash": "3a610867f6f461142395871c189106b4",
+        "metadata": null,
+        "score": 0.2142975188350732,
+        "created_at": "2026-10-19T21:07:25.046316+00:00",
+        "updated_at": "2026-10-19T21:07:25.046316+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "hash": "fcd31f2bffc34e8be98f66e9c2ade4f6",
+        "metadata": null,
+        "score": 0.21387934635108932,
+        "created_at": "2026-10-19T21:07:15.561735+00:00",
+        "updated_at": "2026-10-19T21:07:15.561735+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "17fad567-6603-48a5-8e8d-2d8b79ae8456",
+        "memory": "User noted on October 19, 2026 that Лео (Leo) wants the TRONIC 1F",
+        "hash": "aef32d7e13394088199545f92e207412",
+        "metadata": null,
+        "score": 0.18473633700992947,
+        "created_at": "2026-10-19T21:07:32.246816+00:00",
+        "updated_at": "2026-10-19T21:07:32.246816+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "dce573c1-3ea4-481d-a4ea-3c5f9e293f48",
+        "memory": "User noted on October 19, 2026 that the next delivery from Nordvik will arrive at the end of November 2026",
+        "hash": "5a176a08518f54e687545e69cbf7ea0c",
+        "metadata": null,
+        "score": 0.14852901422635179,
+        "created_at": "2026-10-19T21:06:59.387664+00:00",
+        "updated_at": "2026-10-19T21:06:59.387664+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "67409e7a-b328-458a-965a-64098c82d78a",
+        "memory": "User learned on October 19, 2026 that Nordvik wrote that their next delivery was postponed to mid-December 2026, instead of the end of November 2026 as previously noted",
+        "hash": "49b7d1c6c0bd99149c0f358377ee9a31",
+        "metadata": null,
+        "score": 0.13562009251334345,
+        "created_at": "2026-10-19T21:07:20.221468+00:00",
+        "updated_at": "2026-10-19T21:07:20.221468+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "b0757c7a-179d-450a-a737-0110cd980e67",
+        "memory": "User noted on October 19, 2026 that Fjord Møbel are upholsterers/furniture makers (мебельщики) who work on Dürkopp Adler machines",
+        "hash": "dde208ed09ea6dbe6d2fc3541e5db447",
+        "metadata": null,
+        "score": 0.10053600471306676,
+        "created_at": "2026-10-19T21:07:37.002528+00:00",
+        "updated_at": "2026-10-19T21:07:37.002528+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 219
+  },
+  {
+   "№": 29,
+   "выходы": [
+    {
+     "вызов": [
+      "get_all"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "07e10544-f4c5-455b-a744-16fc30dec6a1",
+        "memory": "On October 19, 2026 the assistant stated that the call-out/on-site visit (выезд) costs 850 (crowns), which conflicts with the user's earlier note that they have charged 700 crowns for a call-out since Monday, October 12, 2026",
+        "hash": "ed511d579c1caea394c57d7ce990a8eb",
+        "metadata": null,
+        "created_at": "2026-10-19T21:07:53.785829+00:00",
+        "updated_at": "2026-10-19T21:07:53.785829+00:00",
+        "user_id": "oleg",
+        "attributed_to": "assistant"
+       },
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "hash": "767a1d5d6255c5e4df1dd1ece526619b",
+        "metadata": null,
+        "created_at": "2026-10-19T21:06:56.746110+00:00",
+        "updated_at": "2026-10-19T21:06:56.746110+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "17fad567-6603-48a5-8e8d-2d8b79ae8456",
+        "memory": "User noted on October 19, 2026 that Лео (Leo) wants the TRONIC 1F",
+        "hash": "aef32d7e13394088199545f92e207412",
+        "metadata": null,
+        "created_at": "2026-10-19T21:07:32.246816+00:00",
+        "updated_at": "2026-10-19T21:07:32.246816+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "214d32a2-54e0-4188-9e46-11c874a54dd5",
+        "memory": "User stated on October 19, 2026 that the workshop (мастерская) is closed on weekends, which conflicts with the earlier note that it is open on Saturdays until 14:00",
+        "hash": "8ab14ac192c3dd5d31ff95e30b88ea0f",
+        "metadata": null,
+        "created_at": "2026-10-19T21:07:56.849837+00:00",
+        "updated_at": "2026-10-19T21:07:56.849837+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "42502dd3-7d33-4029-9293-1daf3c3538d4",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) will be closed this coming Saturday, October 24, 2026, an exception to its usual Saturday hours (open until 14:00)",
+        "hash": "3a610867f6f461142395871c189106b4",
+        "metadata": null,
+        "created_at": "2026-10-19T21:07:25.046316+00:00",
+        "updated_at": "2026-10-19T21:07:25.046316+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "489d9bc4-e9b8-430a-85eb-e141ae6a62fa",
+        "memory": "User now sells the Walker for 19,900 as of October 19, 2026, which differs from the previously noted Walker 6F PREMIUM EX price of 21,500 crowns including VAT",
+        "hash": "4a892932be18bc7fcf8a87c8982d0424",
+        "metadata": null,
+        "created_at": "2026-10-19T21:07:17.781068+00:00",
+        "updated_at": "2026-10-19T21:07:17.781068+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "54dc7ddc-9c89-4ea0-be74-2aebd92fa79b",
+        "memory": "Ingrid Berg has a Pfaff 160s sewing machine; the service costs 2300 (crowns) and she has a VIP discount of 150, as noted on October 19, 2026",
+        "hash": "18c92e0c22e066687483da343e4c6fd0",
+        "metadata": null,
+        "created_at": "2026-10-19T21:07:02.433397+00:00",
+        "updated_at": "2026-10-19T21:07:02.433397+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "5e236c8b-bb3b-4545-8d20-e1498f40722b",
+        "memory": "User noted on October 19, 2026 that since last Monday (October 12, 2026) they charge 700 crowns (крон) for a call-out/on-site visit (выезд)",
+        "hash": "4c6ef5f20e9f4bb418f5b5c36c0af8f7",
+        "metadata": null,
+        "created_at": "2026-10-19T21:07:46.714687+00:00",
+        "updated_at": "2026-10-19T21:07:46.714687+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "67409e7a-b328-458a-965a-64098c82d78a",
+        "memory": "User learned on October 19, 2026 that Nordvik wrote that their next delivery was postponed to mid-December 2026, instead of the end of November 2026 as previously noted",
+        "hash": "49b7d1c6c0bd99149c0f358377ee9a31",
+        "metadata": null,
+        "created_at": "2026-10-19T21:07:20.221468+00:00",
+        "updated_at": "2026-10-19T21:07:20.221468+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "92372676-e4b4-4603-b0b6-4c01257402da",
+        "memory": "User noted on October 19, 2026 that Ingrid received her machine (машину), likely referring to Ingrid Berg's Pfaff 160s serviced at the workshop",
+        "hash": "5b30efec0d4dc06bb2f9eeb98c2d36fb",
+        "metadata": null,
+        "created_at": "2026-10-19T21:07:30.266435+00:00",
+        "updated_at": "2026-10-19T21:07:30.266435+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a94df1d5-5524-4808-8f87-2ad2206e35c4",
+        "memory": "User corrected on October 19, 2026 that Лео (Leo) wants the TRONIC 5F, not the TRONIC 1F as previously noted",
+        "hash": "bdf9a21cdf6ba0edfe1e95bc37926884",
+        "metadata": null,
+        "created_at": "2026-10-19T21:07:34.047956+00:00",
+        "updated_at": "2026-10-19T21:07:34.047956+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "hash": "b3b4d9bac4cfce484a6895855c7fb17b",
+        "metadata": null,
+        "created_at": "2026-10-19T21:07:13.546185+00:00",
+        "updated_at": "2026-10-19T21:07:13.546185+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "b0757c7a-179d-450a-a737-0110cd980e67",
+        "memory": "User noted on October 19, 2026 that Fjord Møbel are upholsterers/furniture makers (мебельщики) who work on Dürkopp Adler machines",
+        "hash": "dde208ed09ea6dbe6d2fc3541e5db447",
+        "metadata": null,
+        "created_at": "2026-10-19T21:07:37.002528+00:00",
+        "updated_at": "2026-10-19T21:07:37.002528+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "d5154d05-8f8d-4235-a3fb-5660958f5a13",
+        "memory": "User noted on October 19, 2026 that the TRONIC 5F costs 19,900 (crowns)",
+        "hash": "38f795ad1e0b4f73a994bd6bf96e7a78",
+        "metadata": null,
+        "created_at": "2026-10-19T21:07:27.698121+00:00",
+        "updated_at": "2026-10-19T21:07:27.698121+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "dce573c1-3ea4-481d-a4ea-3c5f9e293f48",
+        "memory": "User noted on October 19, 2026 that the next delivery from Nordvik will arrive at the end of November 2026",
+        "hash": "5a176a08518f54e687545e69cbf7ea0c",
+        "metadata": null,
+        "created_at": "2026-10-19T21:06:59.387664+00:00",
+        "updated_at": "2026-10-19T21:06:59.387664+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "hash": "fcd31f2bffc34e8be98f66e9c2ade4f6",
+        "metadata": null,
+        "created_at": "2026-10-19T21:07:15.561735+00:00",
+        "updated_at": "2026-10-19T21:07:15.561735+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fca60a1d-15c5-431e-8787-2900ae647733",
+        "memory": "User noted on October 19, 2026 that starting November 1, 2026, the service price for everyone will be 2100 crowns (крон), down from the previously noted 2300 service price for Ingrid Berg's Pfaff 160s",
+        "hash": "ff367c7382075591a612931b6ea8c4b6",
+        "metadata": null,
+        "created_at": "2026-10-19T21:07:22.677070+00:00",
+        "updated_at": "2026-10-19T21:07:22.677070+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 0
+  },
+  {
+   "№": 30,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "Забудь про Лео."
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "c742683b-c4c6-4ac9-ae7a-82171b844d54",
+        "memory": "User asked on October 19, 2026 to forget everything about Лео (Leo), including the earlier notes that he wanted the TRONIC 1F and then the TRONIC 5F",
+        "event": "ADD"
+       }
+      ]
+     }
+    },
+    {
+     "вызов": [
+      "search",
+      "какую машину хочет Лео"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "17fad567-6603-48a5-8e8d-2d8b79ae8456",
+        "memory": "User noted on October 19, 2026 that Лео (Leo) wants the TRONIC 1F",
+        "hash": "aef32d7e13394088199545f92e207412",
+        "metadata": null,
+        "score": 0.5228741243078044,
+        "created_at": "2026-10-19T21:07:32.246816+00:00",
+        "updated_at": "2026-10-19T21:07:32.246816+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a94df1d5-5524-4808-8f87-2ad2206e35c4",
+        "memory": "User corrected on October 19, 2026 that Лео (Leo) wants the TRONIC 5F, not the TRONIC 1F as previously noted",
+        "hash": "bdf9a21cdf6ba0edfe1e95bc37926884",
+        "metadata": null,
+        "score": 0.4758981063006247,
+        "created_at": "2026-10-19T21:07:34.047956+00:00",
+        "updated_at": "2026-10-19T21:07:34.047956+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "c742683b-c4c6-4ac9-ae7a-82171b844d54",
+        "memory": "User asked on October 19, 2026 to forget everything about Лео (Leo), including the earlier notes that he wanted the TRONIC 1F and then the TRONIC 5F",
+        "hash": "f48553f2215f386452aac24c09181360",
+        "metadata": null,
+        "score": 0.4506148670749792,
+        "created_at": "2026-10-19T21:08:01.062927+00:00",
+        "updated_at": "2026-10-19T21:08:01.062927+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "92372676-e4b4-4603-b0b6-4c01257402da",
+        "memory": "User noted on October 19, 2026 that Ingrid received her machine (машину), likely referring to Ingrid Berg's Pfaff 160s serviced at the workshop",
+        "hash": "5b30efec0d4dc06bb2f9eeb98c2d36fb",
+        "metadata": null,
+        "score": 0.24241433293066733,
+        "created_at": "2026-10-19T21:07:30.266435+00:00",
+        "updated_at": "2026-10-19T21:07:30.266435+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "d5154d05-8f8d-4235-a3fb-5660958f5a13",
+        "memory": "User noted on October 19, 2026 that the TRONIC 5F costs 19,900 (crowns)",
+        "hash": "38f795ad1e0b4f73a994bd6bf96e7a78",
+        "metadata": null,
+        "score": 0.2254573268683844,
+        "created_at": "2026-10-19T21:07:27.698121+00:00",
+        "updated_at": "2026-10-19T21:07:27.698121+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "163ddb0f-6a69-4cd7-8158-500b3a5043f2",
+        "memory": "User noted that the Walker 6F PREMIUM EX costs 21,500 crowns (крон) including VAT (с МВА) as of October 19, 2026",
+        "hash": "767a1d5d6255c5e4df1dd1ece526619b",
+        "metadata": null,
+        "score": 0.19268253987955397,
+        "created_at": "2026-10-19T21:06:56.746110+00:00",
+        "updated_at": "2026-10-19T21:06:56.746110+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "af7af86f-eba0-4951-947d-acd35d3833e3",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) is open on Saturdays until 14:00",
+        "hash": "b3b4d9bac4cfce484a6895855c7fb17b",
+        "metadata": null,
+        "score": 0.16021404328109018,
+        "created_at": "2026-10-19T21:07:13.546185+00:00",
+        "updated_at": "2026-10-19T21:07:13.546185+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "489d9bc4-e9b8-430a-85eb-e141ae6a62fa",
+        "memory": "User now sells the Walker for 19,900 as of October 19, 2026, which differs from the previously noted Walker 6F PREMIUM EX price of 21,500 crowns including VAT",
+        "hash": "4a892932be18bc7fcf8a87c8982d0424",
+        "metadata": null,
+        "score": 0.1572322727335455,
+        "created_at": "2026-10-19T21:07:17.781068+00:00",
+        "updated_at": "2026-10-19T21:07:17.781068+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "54dc7ddc-9c89-4ea0-be74-2aebd92fa79b",
+        "memory": "Ingrid Berg has a Pfaff 160s sewing machine; the service costs 2300 (crowns) and she has a VIP discount of 150, as noted on October 19, 2026",
+        "hash": "18c92e0c22e066687483da343e4c6fd0",
+        "metadata": null,
+        "score": 0.14446925851045528,
+        "created_at": "2026-10-19T21:07:02.433397+00:00",
+        "updated_at": "2026-10-19T21:07:02.433397+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "214d32a2-54e0-4188-9e46-11c874a54dd5",
+        "memory": "User stated on October 19, 2026 that the workshop (мастерская) is closed on weekends, which conflicts with the earlier note that it is open on Saturdays until 14:00",
+        "hash": "8ab14ac192c3dd5d31ff95e30b88ea0f",
+        "metadata": null,
+        "score": 0.1364390396225485,
+        "created_at": "2026-10-19T21:07:56.849837+00:00",
+        "updated_at": "2026-10-19T21:07:56.849837+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fca60a1d-15c5-431e-8787-2900ae647733",
+        "memory": "User noted on October 19, 2026 that starting November 1, 2026, the service price for everyone will be 2100 crowns (крон), down from the previously noted 2300 service price for Ingrid Berg's Pfaff 160s",
+        "hash": "ff367c7382075591a612931b6ea8c4b6",
+        "metadata": null,
+        "score": 0.13312757341763948,
+        "created_at": "2026-10-19T21:07:22.677070+00:00",
+        "updated_at": "2026-10-19T21:07:22.677070+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "fb6fb19e-d547-460e-b689-dfa57c1fc0f4",
+        "memory": "User noted on October 19, 2026 that Нина (Nina) works at the atelier (ателье) on Saturdays until 16:00",
+        "hash": "fcd31f2bffc34e8be98f66e9c2ade4f6",
+        "metadata": null,
+        "score": 0.13138747097291253,
+        "created_at": "2026-10-19T21:07:15.561735+00:00",
+        "updated_at": "2026-10-19T21:07:15.561735+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "42502dd3-7d33-4029-9293-1daf3c3538d4",
+        "memory": "User noted on October 19, 2026 that the workshop (мастерская) will be closed this coming Saturday, October 24, 2026, an exception to its usual Saturday hours (open until 14:00)",
+        "hash": "3a610867f6f461142395871c189106b4",
+        "metadata": null,
+        "score": 0.12719594347847607,
+        "created_at": "2026-10-19T21:07:25.046316+00:00",
+        "updated_at": "2026-10-19T21:07:25.046316+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "b0757c7a-179d-450a-a737-0110cd980e67",
+        "memory": "User noted on October 19, 2026 that Fjord Møbel are upholsterers/furniture makers (мебельщики) who work on Dürkopp Adler machines",
+        "hash": "dde208ed09ea6dbe6d2fc3541e5db447",
+        "metadata": null,
+        "score": 0.1079565454689991,
+        "created_at": "2026-10-19T21:07:37.002528+00:00",
+        "updated_at": "2026-10-19T21:07:37.002528+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "dce573c1-3ea4-481d-a4ea-3c5f9e293f48",
+        "memory": "User noted on October 19, 2026 that the next delivery from Nordvik will arrive at the end of November 2026",
+        "hash": "5a176a08518f54e687545e69cbf7ea0c",
+        "metadata": null,
+        "score": 0.10722640610539244,
+        "created_at": "2026-10-19T21:06:59.387664+00:00",
+        "updated_at": "2026-10-19T21:06:59.387664+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 4253
+  }
+ ],
+ "когда": "2026-10-19 23:08:01"
+}

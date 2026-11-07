@@ -1,0 +1,1078 @@
+{
+ "система": "mem0",
+ "набор": "Б",
+ "сек": 45.6,
+ "расход": {
+  "sonnet_вызовов": 10,
+  "sonnet_in": 126008,
+  "sonnet_out": 1893,
+  "emb_токенов": 659,
+  "usd": 0.271,
+  "deepseek_вызовов": 0,
+  "версия_mem0": "2.2.1"
+ },
+ "шаги": [
+  {
+   "№": 1,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "корм Барону покупаю в Europris"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "1aa9908e-8771-4e83-82bf-3c7946dcac99",
+        "memory": "User buys food for Барон (Baron) at Europris",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 8963
+  },
+  {
+   "№": 2,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "Нина берёт за подшив брюк 320 крон"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "e4028aa0-4826-44fc-98d6-00b58df3e260",
+        "memory": "Нина charges 320 kroner for hemming trousers (подшив брюк), as mentioned by User on October 19, 2026",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2272
+  },
+  {
+   "№": 3,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "Erik из Tromsø купил Walker 6F"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "5e9f0d55-874a-4b84-aff1-809ac40a8eeb",
+        "memory": "Erik from Tromsø bought a Walker 6F, as mentioned by User on October 19, 2026",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 1715
+  },
+  {
+   "№": 4,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "с декабря Нина берёт за подшив 390"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "a7c9bd19-dbb4-4062-9a36-5ad64a1994b4",
+        "memory": "Starting from December 2026, Нина will charge 390 kroner for hemming (подшив), up from the previous 320 kroner for hemming trousers",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 1923
+  },
+  {
+   "№": 5,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 20.11: подшив у Нины?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "e4028aa0-4826-44fc-98d6-00b58df3e260",
+        "memory": "Нина charges 320 kroner for hemming trousers (подшив брюк), as mentioned by User on October 19, 2026",
+        "hash": "1b7908d65a7764455a8858af58c56607",
+        "metadata": null,
+        "score": 0.4847038315343132,
+        "created_at": "2026-10-19T21:08:48.473206+00:00",
+        "updated_at": "2026-10-19T21:08:48.473206+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a7c9bd19-dbb4-4062-9a36-5ad64a1994b4",
+        "memory": "Starting from December 2026, Нина will charge 390 kroner for hemming (подшив), up from the previous 320 kroner for hemming trousers",
+        "hash": "b67a6256bebade0a7e4357bb70ea4898",
+        "metadata": null,
+        "score": 0.4030528337206766,
+        "created_at": "2026-10-19T21:08:52.113991+00:00",
+        "updated_at": "2026-10-19T21:08:52.113991+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "1aa9908e-8771-4e83-82bf-3c7946dcac99",
+        "memory": "User buys food for Барон (Baron) at Europris",
+        "hash": "4ee54c46eb8a18d1767ddbe4a114ef25",
+        "metadata": null,
+        "score": 0.17668808264122565,
+        "created_at": "2026-10-19T21:08:46.199445+00:00",
+        "updated_at": "2026-10-19T21:08:46.199445+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 219
+  },
+  {
+   "№": 6,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 05.12: подшив у Нины?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "e4028aa0-4826-44fc-98d6-00b58df3e260",
+        "memory": "Нина charges 320 kroner for hemming trousers (подшив брюк), as mentioned by User on October 19, 2026",
+        "hash": "1b7908d65a7764455a8858af58c56607",
+        "metadata": null,
+        "score": 0.4760737969076256,
+        "created_at": "2026-10-19T21:08:48.473206+00:00",
+        "updated_at": "2026-10-19T21:08:48.473206+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a7c9bd19-dbb4-4062-9a36-5ad64a1994b4",
+        "memory": "Starting from December 2026, Нина will charge 390 kroner for hemming (подшив), up from the previous 320 kroner for hemming trousers",
+        "hash": "b67a6256bebade0a7e4357bb70ea4898",
+        "metadata": null,
+        "score": 0.40693121291420875,
+        "created_at": "2026-10-19T21:08:52.113991+00:00",
+        "updated_at": "2026-10-19T21:08:52.113991+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "1aa9908e-8771-4e83-82bf-3c7946dcac99",
+        "memory": "User buys food for Барон (Baron) at Europris",
+        "hash": "4ee54c46eb8a18d1767ddbe4a114ef25",
+        "metadata": null,
+        "score": 0.16963528661328128,
+        "created_at": "2026-10-19T21:08:46.199445+00:00",
+        "updated_at": "2026-10-19T21:08:46.199445+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 348
+  },
+  {
+   "№": 7,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "корм теперь беру в Felleskjøpet"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "98a70930-26ba-409a-a37b-73ffd47322ed",
+        "memory": "User now buys food for Барон (Baron) at Felleskjøpet, switching from Europris where they previously bought it, as of October 19, 2026",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 1871
+  },
+  {
+   "№": 8,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "где я покупаю корм собаке?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "1aa9908e-8771-4e83-82bf-3c7946dcac99",
+        "memory": "User buys food for Барон (Baron) at Europris",
+        "hash": "4ee54c46eb8a18d1767ddbe4a114ef25",
+        "metadata": null,
+        "score": 0.395883434162926,
+        "created_at": "2026-10-19T21:08:46.199445+00:00",
+        "updated_at": "2026-10-19T21:08:46.199445+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "98a70930-26ba-409a-a37b-73ffd47322ed",
+        "memory": "User now buys food for Барон (Baron) at Felleskjøpet, switching from Europris where they previously bought it, as of October 19, 2026",
+        "hash": "b248e1ca7b812bb09b00861d6589d1c0",
+        "metadata": null,
+        "score": 0.31777123268149754,
+        "created_at": "2026-10-19T21:08:54.550357+00:00",
+        "updated_at": "2026-10-19T21:08:54.550357+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "5e9f0d55-874a-4b84-aff1-809ac40a8eeb",
+        "memory": "Erik from Tromsø bought a Walker 6F, as mentioned by User on October 19, 2026",
+        "hash": "9db5095fc8f549724aea5f27caf3f136",
+        "metadata": null,
+        "score": 0.10284307751250885,
+        "created_at": "2026-10-19T21:08:50.187484+00:00",
+        "updated_at": "2026-10-19T21:08:50.187484+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 185
+  },
+  {
+   "№": 9,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "assistant",
+      "Erik купил TRONIC."
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "89f9add5-747d-45b4-afac-850b03bd4e97",
+        "memory": "Assistant stated on October 19, 2026 that Erik bought TRONIC, which differs from the User's earlier statement that Erik from Tromsø bought a Walker 6F",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 5153
+  },
+  {
+   "№": 10,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда: что купил Erik?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "89f9add5-747d-45b4-afac-850b03bd4e97",
+        "memory": "Assistant stated on October 19, 2026 that Erik bought TRONIC, which differs from the User's earlier statement that Erik from Tromsø bought a Walker 6F",
+        "hash": "79b1b4f640c06d7714192c2e1ca1ea43",
+        "metadata": null,
+        "score": 0.4103648891773376,
+        "created_at": "2026-10-19T21:08:59.889551+00:00",
+        "updated_at": "2026-10-19T21:08:59.889551+00:00",
+        "user_id": "oleg",
+        "attributed_to": "assistant"
+       },
+       {
+        "id": "5e9f0d55-874a-4b84-aff1-809ac40a8eeb",
+        "memory": "Erik from Tromsø bought a Walker 6F, as mentioned by User on October 19, 2026",
+        "hash": "9db5095fc8f549724aea5f27caf3f136",
+        "metadata": null,
+        "score": 0.39604984196300874,
+        "created_at": "2026-10-19T21:08:50.187484+00:00",
+        "updated_at": "2026-10-19T21:08:50.187484+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "1aa9908e-8771-4e83-82bf-3c7946dcac99",
+        "memory": "User buys food for Барон (Baron) at Europris",
+        "hash": "4ee54c46eb8a18d1767ddbe4a114ef25",
+        "metadata": null,
+        "score": 0.3207516036942395,
+        "created_at": "2026-10-19T21:08:46.199445+00:00",
+        "updated_at": "2026-10-19T21:08:46.199445+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "98a70930-26ba-409a-a37b-73ffd47322ed",
+        "memory": "User now buys food for Барон (Baron) at Felleskjøpet, switching from Europris where they previously bought it, as of October 19, 2026",
+        "hash": "b248e1ca7b812bb09b00861d6589d1c0",
+        "metadata": null,
+        "score": 0.2954435066627933,
+        "created_at": "2026-10-19T21:08:54.550357+00:00",
+        "updated_at": "2026-10-19T21:08:54.550357+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a7c9bd19-dbb4-4062-9a36-5ad64a1994b4",
+        "memory": "Starting from December 2026, Нина will charge 390 kroner for hemming (подшив), up from the previous 320 kroner for hemming trousers",
+        "hash": "b67a6256bebade0a7e4357bb70ea4898",
+        "metadata": null,
+        "score": 0.21116452390496682,
+        "created_at": "2026-10-19T21:08:52.113991+00:00",
+        "updated_at": "2026-10-19T21:08:52.113991+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "e4028aa0-4826-44fc-98d6-00b58df3e260",
+        "memory": "Нина charges 320 kroner for hemming trousers (подшив брюк), as mentioned by User on October 19, 2026",
+        "hash": "1b7908d65a7764455a8858af58c56607",
+        "metadata": null,
+        "score": 0.1954978214430067,
+        "created_at": "2026-10-19T21:08:48.473206+00:00",
+        "updated_at": "2026-10-19T21:08:48.473206+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 225
+  },
+  {
+   "№": 11,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "завтра мастерская закрыта"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "33d9c11a-ba49-487e-9d07-5f852baa3fdf",
+        "memory": "User said the workshop (мастерская) will be closed tomorrow, October 20, 2026",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2661
+  },
+  {
+   "№": 12,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 20.10: мастерская открыта?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "33d9c11a-ba49-487e-9d07-5f852baa3fdf",
+        "memory": "User said the workshop (мастерская) will be closed tomorrow, October 20, 2026",
+        "hash": "aefb634ee3c3bee7372abc28c0e23d64",
+        "metadata": null,
+        "score": 0.6177302425438924,
+        "created_at": "2026-10-19T21:09:02.778804+00:00",
+        "updated_at": "2026-10-19T21:09:02.778804+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a7c9bd19-dbb4-4062-9a36-5ad64a1994b4",
+        "memory": "Starting from December 2026, Нина will charge 390 kroner for hemming (подшив), up from the previous 320 kroner for hemming trousers",
+        "hash": "b67a6256bebade0a7e4357bb70ea4898",
+        "metadata": null,
+        "score": 0.18561597718151818,
+        "created_at": "2026-10-19T21:08:52.113991+00:00",
+        "updated_at": "2026-10-19T21:08:52.113991+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "1aa9908e-8771-4e83-82bf-3c7946dcac99",
+        "memory": "User buys food for Барон (Baron) at Europris",
+        "hash": "4ee54c46eb8a18d1767ddbe4a114ef25",
+        "metadata": null,
+        "score": 0.18477250905349346,
+        "created_at": "2026-10-19T21:08:46.199445+00:00",
+        "updated_at": "2026-10-19T21:08:46.199445+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "89f9add5-747d-45b4-afac-850b03bd4e97",
+        "memory": "Assistant stated on October 19, 2026 that Erik bought TRONIC, which differs from the User's earlier statement that Erik from Tromsø bought a Walker 6F",
+        "hash": "79b1b4f640c06d7714192c2e1ca1ea43",
+        "metadata": null,
+        "score": 0.18219265460147613,
+        "created_at": "2026-10-19T21:08:59.889551+00:00",
+        "updated_at": "2026-10-19T21:08:59.889551+00:00",
+        "user_id": "oleg",
+        "attributed_to": "assistant"
+       },
+       {
+        "id": "e4028aa0-4826-44fc-98d6-00b58df3e260",
+        "memory": "Нина charges 320 kroner for hemming trousers (подшив брюк), as mentioned by User on October 19, 2026",
+        "hash": "1b7908d65a7764455a8858af58c56607",
+        "metadata": null,
+        "score": 0.16681334108988272,
+        "created_at": "2026-10-19T21:08:48.473206+00:00",
+        "updated_at": "2026-10-19T21:08:48.473206+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "98a70930-26ba-409a-a37b-73ffd47322ed",
+        "memory": "User now buys food for Барон (Baron) at Felleskjøpet, switching from Europris where they previously bought it, as of October 19, 2026",
+        "hash": "b248e1ca7b812bb09b00861d6589d1c0",
+        "metadata": null,
+        "score": 0.16258025624168548,
+        "created_at": "2026-10-19T21:08:54.550357+00:00",
+        "updated_at": "2026-10-19T21:08:54.550357+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "5e9f0d55-874a-4b84-aff1-809ac40a8eeb",
+        "memory": "Erik from Tromsø bought a Walker 6F, as mentioned by User on October 19, 2026",
+        "hash": "9db5095fc8f549724aea5f27caf3f136",
+        "metadata": null,
+        "score": 0.14192962845146173,
+        "created_at": "2026-10-19T21:08:50.187484+00:00",
+        "updated_at": "2026-10-19T21:08:50.187484+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    },
+    {
+     "вызов": [
+      "search",
+      "Что правда на 21.10: мастерская открыта?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "33d9c11a-ba49-487e-9d07-5f852baa3fdf",
+        "memory": "User said the workshop (мастерская) will be closed tomorrow, October 20, 2026",
+        "hash": "aefb634ee3c3bee7372abc28c0e23d64",
+        "metadata": null,
+        "score": 0.6062652795544415,
+        "created_at": "2026-10-19T21:09:02.778804+00:00",
+        "updated_at": "2026-10-19T21:09:02.778804+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "1aa9908e-8771-4e83-82bf-3c7946dcac99",
+        "memory": "User buys food for Барон (Baron) at Europris",
+        "hash": "4ee54c46eb8a18d1767ddbe4a114ef25",
+        "metadata": null,
+        "score": 0.19070958232751023,
+        "created_at": "2026-10-19T21:08:46.199445+00:00",
+        "updated_at": "2026-10-19T21:08:46.199445+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a7c9bd19-dbb4-4062-9a36-5ad64a1994b4",
+        "memory": "Starting from December 2026, Нина will charge 390 kroner for hemming (подшив), up from the previous 320 kroner for hemming trousers",
+        "hash": "b67a6256bebade0a7e4357bb70ea4898",
+        "metadata": null,
+        "score": 0.18913097903198997,
+        "created_at": "2026-10-19T21:08:52.113991+00:00",
+        "updated_at": "2026-10-19T21:08:52.113991+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "89f9add5-747d-45b4-afac-850b03bd4e97",
+        "memory": "Assistant stated on October 19, 2026 that Erik bought TRONIC, which differs from the User's earlier statement that Erik from Tromsø bought a Walker 6F",
+        "hash": "79b1b4f640c06d7714192c2e1ca1ea43",
+        "metadata": null,
+        "score": 0.18539424213967975,
+        "created_at": "2026-10-19T21:08:59.889551+00:00",
+        "updated_at": "2026-10-19T21:08:59.889551+00:00",
+        "user_id": "oleg",
+        "attributed_to": "assistant"
+       },
+       {
+        "id": "98a70930-26ba-409a-a37b-73ffd47322ed",
+        "memory": "User now buys food for Барон (Baron) at Felleskjøpet, switching from Europris where they previously bought it, as of October 19, 2026",
+        "hash": "b248e1ca7b812bb09b00861d6589d1c0",
+        "metadata": null,
+        "score": 0.16940896724278948,
+        "created_at": "2026-10-19T21:08:54.550357+00:00",
+        "updated_at": "2026-10-19T21:08:54.550357+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "e4028aa0-4826-44fc-98d6-00b58df3e260",
+        "memory": "Нина charges 320 kroner for hemming trousers (подшив брюк), as mentioned by User on October 19, 2026",
+        "hash": "1b7908d65a7764455a8858af58c56607",
+        "metadata": null,
+        "score": 0.15973827979202565,
+        "created_at": "2026-10-19T21:08:48.473206+00:00",
+        "updated_at": "2026-10-19T21:08:48.473206+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "5e9f0d55-874a-4b84-aff1-809ac40a8eeb",
+        "memory": "Erik from Tromsø bought a Walker 6F, as mentioned by User on October 19, 2026",
+        "hash": "9db5095fc8f549724aea5f27caf3f136",
+        "metadata": null,
+        "score": 0.14324140543111769,
+        "created_at": "2026-10-19T21:08:50.187484+00:00",
+        "updated_at": "2026-10-19T21:08:50.187484+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 392
+  },
+  {
+   "№": 13,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда сейчас: подшив у Нины?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "e4028aa0-4826-44fc-98d6-00b58df3e260",
+        "memory": "Нина charges 320 kroner for hemming trousers (подшив брюк), as mentioned by User on October 19, 2026",
+        "hash": "1b7908d65a7764455a8858af58c56607",
+        "metadata": null,
+        "score": 0.5057920927226538,
+        "created_at": "2026-10-19T21:08:48.473206+00:00",
+        "updated_at": "2026-10-19T21:08:48.473206+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a7c9bd19-dbb4-4062-9a36-5ad64a1994b4",
+        "memory": "Starting from December 2026, Нина will charge 390 kroner for hemming (подшив), up from the previous 320 kroner for hemming trousers",
+        "hash": "b67a6256bebade0a7e4357bb70ea4898",
+        "metadata": null,
+        "score": 0.3984461626969081,
+        "created_at": "2026-10-19T21:08:52.113991+00:00",
+        "updated_at": "2026-10-19T21:08:52.113991+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "1aa9908e-8771-4e83-82bf-3c7946dcac99",
+        "memory": "User buys food for Барон (Baron) at Europris",
+        "hash": "4ee54c46eb8a18d1767ddbe4a114ef25",
+        "metadata": null,
+        "score": 0.15573451324858165,
+        "created_at": "2026-10-19T21:08:46.199445+00:00",
+        "updated_at": "2026-10-19T21:08:46.199445+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "33d9c11a-ba49-487e-9d07-5f852baa3fdf",
+        "memory": "User said the workshop (мастерская) will be closed tomorrow, October 20, 2026",
+        "hash": "aefb634ee3c3bee7372abc28c0e23d64",
+        "metadata": null,
+        "score": 0.13760604720078157,
+        "created_at": "2026-10-19T21:09:02.778804+00:00",
+        "updated_at": "2026-10-19T21:09:02.778804+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "98a70930-26ba-409a-a37b-73ffd47322ed",
+        "memory": "User now buys food for Барон (Baron) at Felleskjøpet, switching from Europris where they previously bought it, as of October 19, 2026",
+        "hash": "b248e1ca7b812bb09b00861d6589d1c0",
+        "metadata": null,
+        "score": 0.10603314009793995,
+        "created_at": "2026-10-19T21:08:54.550357+00:00",
+        "updated_at": "2026-10-19T21:08:54.550357+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 208
+  },
+  {
+   "№": 14,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "Эрик доволен машиной"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "409866fd-c1a9-4008-a525-aca1852deed4",
+        "memory": "User said on October 19, 2026 that Erik is satisfied with the машина (car/machine)",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 3178
+  },
+  {
+   "№": 15,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда: кто такой Эрик?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "5e9f0d55-874a-4b84-aff1-809ac40a8eeb",
+        "memory": "Erik from Tromsø bought a Walker 6F, as mentioned by User on October 19, 2026",
+        "hash": "9db5095fc8f549724aea5f27caf3f136",
+        "metadata": null,
+        "score": 0.27039680978225583,
+        "created_at": "2026-10-19T21:08:50.187484+00:00",
+        "updated_at": "2026-10-19T21:08:50.187484+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "89f9add5-747d-45b4-afac-850b03bd4e97",
+        "memory": "Assistant stated on October 19, 2026 that Erik bought TRONIC, which differs from the User's earlier statement that Erik from Tromsø bought a Walker 6F",
+        "hash": "79b1b4f640c06d7714192c2e1ca1ea43",
+        "metadata": null,
+        "score": 0.2451934346226219,
+        "created_at": "2026-10-19T21:08:59.889551+00:00",
+        "updated_at": "2026-10-19T21:08:59.889551+00:00",
+        "user_id": "oleg",
+        "attributed_to": "assistant"
+       },
+       {
+        "id": "409866fd-c1a9-4008-a525-aca1852deed4",
+        "memory": "User said on October 19, 2026 that Erik is satisfied with the машина (car/machine)",
+        "hash": "fcdc350cabb43f9f489c4bdc1c6a0527",
+        "metadata": null,
+        "score": 0.2076026873006003,
+        "created_at": "2026-10-19T21:09:06.559167+00:00",
+        "updated_at": "2026-10-19T21:09:06.559167+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "1aa9908e-8771-4e83-82bf-3c7946dcac99",
+        "memory": "User buys food for Барон (Baron) at Europris",
+        "hash": "4ee54c46eb8a18d1767ddbe4a114ef25",
+        "metadata": null,
+        "score": 0.14599526406222763,
+        "created_at": "2026-10-19T21:08:46.199445+00:00",
+        "updated_at": "2026-10-19T21:08:46.199445+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "98a70930-26ba-409a-a37b-73ffd47322ed",
+        "memory": "User now buys food for Барон (Baron) at Felleskjøpet, switching from Europris where they previously bought it, as of October 19, 2026",
+        "hash": "b248e1ca7b812bb09b00861d6589d1c0",
+        "metadata": null,
+        "score": 0.1365116963792994,
+        "created_at": "2026-10-19T21:08:54.550357+00:00",
+        "updated_at": "2026-10-19T21:08:54.550357+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 199
+  },
+  {
+   "№": 16,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда: сколько стоит подшив у Лены?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "e4028aa0-4826-44fc-98d6-00b58df3e260",
+        "memory": "Нина charges 320 kroner for hemming trousers (подшив брюк), as mentioned by User on October 19, 2026",
+        "hash": "1b7908d65a7764455a8858af58c56607",
+        "metadata": null,
+        "score": 0.42778714365250364,
+        "created_at": "2026-10-19T21:08:48.473206+00:00",
+        "updated_at": "2026-10-19T21:08:48.473206+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a7c9bd19-dbb4-4062-9a36-5ad64a1994b4",
+        "memory": "Starting from December 2026, Нина will charge 390 kroner for hemming (подшив), up from the previous 320 kroner for hemming trousers",
+        "hash": "b67a6256bebade0a7e4357bb70ea4898",
+        "metadata": null,
+        "score": 0.4130685681174555,
+        "created_at": "2026-10-19T21:08:52.113991+00:00",
+        "updated_at": "2026-10-19T21:08:52.113991+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "1aa9908e-8771-4e83-82bf-3c7946dcac99",
+        "memory": "User buys food for Барон (Baron) at Europris",
+        "hash": "4ee54c46eb8a18d1767ddbe4a114ef25",
+        "metadata": null,
+        "score": 0.21060231705542398,
+        "created_at": "2026-10-19T21:08:46.199445+00:00",
+        "updated_at": "2026-10-19T21:08:46.199445+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "98a70930-26ba-409a-a37b-73ffd47322ed",
+        "memory": "User now buys food for Барон (Baron) at Felleskjøpet, switching from Europris where they previously bought it, as of October 19, 2026",
+        "hash": "b248e1ca7b812bb09b00861d6589d1c0",
+        "metadata": null,
+        "score": 0.13313603627614276,
+        "created_at": "2026-10-19T21:08:54.550357+00:00",
+        "updated_at": "2026-10-19T21:08:54.550357+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 196
+  },
+  {
+   "№": 17,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "с прошлой среды корм снова беру в Europris"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "f5b654f9-1238-499c-be25-117a209f9992",
+        "memory": "User switched back to buying food for Барон (Baron) at Europris since last Wednesday (around October 14, 2026), after having briefly bought it at Felleskjøpet instead",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 10910
+  },
+  {
+   "№": 18,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 16.10: где беру корм?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "f5b654f9-1238-499c-be25-117a209f9992",
+        "memory": "User switched back to buying food for Барон (Baron) at Europris since last Wednesday (around October 14, 2026), after having briefly bought it at Felleskjøpet instead",
+        "hash": "e760e437c19336f8c93750f082d14012",
+        "metadata": null,
+        "score": 0.3164415829640415,
+        "created_at": "2026-10-19T21:09:17.862637+00:00",
+        "updated_at": "2026-10-19T21:09:17.862637+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "1aa9908e-8771-4e83-82bf-3c7946dcac99",
+        "memory": "User buys food for Барон (Baron) at Europris",
+        "hash": "4ee54c46eb8a18d1767ddbe4a114ef25",
+        "metadata": null,
+        "score": 0.3126403853831342,
+        "created_at": "2026-10-19T21:08:46.199445+00:00",
+        "updated_at": "2026-10-19T21:08:46.199445+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "98a70930-26ba-409a-a37b-73ffd47322ed",
+        "memory": "User now buys food for Барон (Baron) at Felleskjøpet, switching from Europris where they previously bought it, as of October 19, 2026",
+        "hash": "b248e1ca7b812bb09b00861d6589d1c0",
+        "metadata": null,
+        "score": 0.3101767169105124,
+        "created_at": "2026-10-19T21:08:54.550357+00:00",
+        "updated_at": "2026-10-19T21:08:54.550357+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "33d9c11a-ba49-487e-9d07-5f852baa3fdf",
+        "memory": "User said the workshop (мастерская) will be closed tomorrow, October 20, 2026",
+        "hash": "aefb634ee3c3bee7372abc28c0e23d64",
+        "metadata": null,
+        "score": 0.20749175571873665,
+        "created_at": "2026-10-19T21:09:02.778804+00:00",
+        "updated_at": "2026-10-19T21:09:02.778804+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "409866fd-c1a9-4008-a525-aca1852deed4",
+        "memory": "User said on October 19, 2026 that Erik is satisfied with the машина (car/machine)",
+        "hash": "fcdc350cabb43f9f489c4bdc1c6a0527",
+        "metadata": null,
+        "score": 0.183308603669151,
+        "created_at": "2026-10-19T21:09:06.559167+00:00",
+        "updated_at": "2026-10-19T21:09:06.559167+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "5e9f0d55-874a-4b84-aff1-809ac40a8eeb",
+        "memory": "Erik from Tromsø bought a Walker 6F, as mentioned by User on October 19, 2026",
+        "hash": "9db5095fc8f549724aea5f27caf3f136",
+        "metadata": null,
+        "score": 0.16461884461086151,
+        "created_at": "2026-10-19T21:08:50.187484+00:00",
+        "updated_at": "2026-10-19T21:08:50.187484+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "e4028aa0-4826-44fc-98d6-00b58df3e260",
+        "memory": "Нина charges 320 kroner for hemming trousers (подшив брюк), as mentioned by User on October 19, 2026",
+        "hash": "1b7908d65a7764455a8858af58c56607",
+        "metadata": null,
+        "score": 0.15201534682982776,
+        "created_at": "2026-10-19T21:08:48.473206+00:00",
+        "updated_at": "2026-10-19T21:08:48.473206+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a7c9bd19-dbb4-4062-9a36-5ad64a1994b4",
+        "memory": "Starting from December 2026, Нина will charge 390 kroner for hemming (подшив), up from the previous 320 kroner for hemming trousers",
+        "hash": "b67a6256bebade0a7e4357bb70ea4898",
+        "metadata": null,
+        "score": 0.15199848029401758,
+        "created_at": "2026-10-19T21:08:52.113991+00:00",
+        "updated_at": "2026-10-19T21:08:52.113991+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "89f9add5-747d-45b4-afac-850b03bd4e97",
+        "memory": "Assistant stated on October 19, 2026 that Erik bought TRONIC, which differs from the User's earlier statement that Erik from Tromsø bought a Walker 6F",
+        "hash": "79b1b4f640c06d7714192c2e1ca1ea43",
+        "metadata": null,
+        "score": 0.13677848209642313,
+        "created_at": "2026-10-19T21:08:59.889551+00:00",
+        "updated_at": "2026-10-19T21:08:59.889551+00:00",
+        "user_id": "oleg",
+        "attributed_to": "assistant"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 299
+  },
+  {
+   "№": 19,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "по будням мастерская работает до 18"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "54495a81-e029-4ef7-bc93-09931119b214",
+        "memory": "User said on October 19, 2026 that the workshop (мастерская) is open on weekdays until 18:00",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 1800
+  },
+  {
+   "№": 20,
+   "выходы": [
+    {
+     "вызов": [
+      "get_all"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "1aa9908e-8771-4e83-82bf-3c7946dcac99",
+        "memory": "User buys food for Барон (Baron) at Europris",
+        "hash": "4ee54c46eb8a18d1767ddbe4a114ef25",
+        "metadata": null,
+        "created_at": "2026-10-19T21:08:46.199445+00:00",
+        "updated_at": "2026-10-19T21:08:46.199445+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "33d9c11a-ba49-487e-9d07-5f852baa3fdf",
+        "memory": "User said the workshop (мастерская) will be closed tomorrow, October 20, 2026",
+        "hash": "aefb634ee3c3bee7372abc28c0e23d64",
+        "metadata": null,
+        "created_at": "2026-10-19T21:09:02.778804+00:00",
+        "updated_at": "2026-10-19T21:09:02.778804+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "409866fd-c1a9-4008-a525-aca1852deed4",
+        "memory": "User said on October 19, 2026 that Erik is satisfied with the машина (car/machine)",
+        "hash": "fcdc350cabb43f9f489c4bdc1c6a0527",
+        "metadata": null,
+        "created_at": "2026-10-19T21:09:06.559167+00:00",
+        "updated_at": "2026-10-19T21:09:06.559167+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "54495a81-e029-4ef7-bc93-09931119b214",
+        "memory": "User said on October 19, 2026 that the workshop (мастерская) is open on weekdays until 18:00",
+        "hash": "c9c4c14b988573f9c9db5931401a5f18",
+        "metadata": null,
+        "created_at": "2026-10-19T21:09:19.967466+00:00",
+        "updated_at": "2026-10-19T21:09:19.967466+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "5e9f0d55-874a-4b84-aff1-809ac40a8eeb",
+        "memory": "Erik from Tromsø bought a Walker 6F, as mentioned by User on October 19, 2026",
+        "hash": "9db5095fc8f549724aea5f27caf3f136",
+        "metadata": null,
+        "created_at": "2026-10-19T21:08:50.187484+00:00",
+        "updated_at": "2026-10-19T21:08:50.187484+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "89f9add5-747d-45b4-afac-850b03bd4e97",
+        "memory": "Assistant stated on October 19, 2026 that Erik bought TRONIC, which differs from the User's earlier statement that Erik from Tromsø bought a Walker 6F",
+        "hash": "79b1b4f640c06d7714192c2e1ca1ea43",
+        "metadata": null,
+        "created_at": "2026-10-19T21:08:59.889551+00:00",
+        "updated_at": "2026-10-19T21:08:59.889551+00:00",
+        "user_id": "oleg",
+        "attributed_to": "assistant"
+       },
+       {
+        "id": "98a70930-26ba-409a-a37b-73ffd47322ed",
+        "memory": "User now buys food for Барон (Baron) at Felleskjøpet, switching from Europris where they previously bought it, as of October 19, 2026",
+        "hash": "b248e1ca7b812bb09b00861d6589d1c0",
+        "metadata": null,
+        "created_at": "2026-10-19T21:08:54.550357+00:00",
+        "updated_at": "2026-10-19T21:08:54.550357+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a7c9bd19-dbb4-4062-9a36-5ad64a1994b4",
+        "memory": "Starting from December 2026, Нина will charge 390 kroner for hemming (подшив), up from the previous 320 kroner for hemming trousers",
+        "hash": "b67a6256bebade0a7e4357bb70ea4898",
+        "metadata": null,
+        "created_at": "2026-10-19T21:08:52.113991+00:00",
+        "updated_at": "2026-10-19T21:08:52.113991+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "e4028aa0-4826-44fc-98d6-00b58df3e260",
+        "memory": "Нина charges 320 kroner for hemming trousers (подшив брюк), as mentioned by User on October 19, 2026",
+        "hash": "1b7908d65a7764455a8858af58c56607",
+        "metadata": null,
+        "created_at": "2026-10-19T21:08:48.473206+00:00",
+        "updated_at": "2026-10-19T21:08:48.473206+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "f5b654f9-1238-499c-be25-117a209f9992",
+        "memory": "User switched back to buying food for Барон (Baron) at Europris since last Wednesday (around October 14, 2026), after having briefly bought it at Felleskjøpet instead",
+        "hash": "e760e437c19336f8c93750f082d14012",
+        "metadata": null,
+        "created_at": "2026-10-19T21:09:17.862637+00:00",
+        "updated_at": "2026-10-19T21:09:17.862637+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 0
+  }
+ ],
+ "когда": "2026-10-19 23:09:19"
+}
