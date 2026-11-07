@@ -1,0 +1,2795 @@
+{
+ "система": "graphiti",
+ "набор": "А",
+ "сек": 162.0,
+ "расход": {
+  "sonnet_вызовов": 59,
+  "sonnet_in": 201966,
+  "sonnet_out": 7493,
+  "sonnet_сбоев": 0,
+  "emb_вызовов": 71,
+  "emb_токенов": 1294,
+  "openai_chat_вызовов": 0,
+  "usd": 0.4789
+ },
+ "шаги": [
+  {
+   "№": 1,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: Walker 6F PREMIUM EX стоит 21 500 крон с МВА",
+      "2026-10-19T09:01:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "3191516d-af4a-4991-89ea-45f785aff9c8",
+       "content": "Олег: Walker 6F PREMIUM EX стоит 21 500 крон с МВА",
+       "valid_at": "2026-10-19T09:01:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "attributes": {}
+       },
+       {
+        "uuid": "4160e096-fe15-4fe1-8be7-b95c6fc12959",
+        "name": "Walker 6F PREMIUM EX",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "72a4f665-753d-4fd9-844a-3df04c334312",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:17.919432+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "3191516d-af4a-4991-89ea-45f785aff9c8"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 5146,
+   "обвязка": {
+    "вызовов": 2,
+    "с_инструментом": 2,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 2,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: следующая поставка от Nordvik придёт в конце ноября",
+      "2026-10-19T09:02:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "eca2a2f9-0b69-49ef-bdf4-85e08a452c31",
+       "content": "Олег: следующая поставка от Nordvik придёт в конце ноября",
+       "valid_at": "2026-10-19T09:02:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).",
+        "attributes": {}
+       },
+       {
+        "uuid": "d8987151-0438-42e9-90a5-9ca49bc8cbe4",
+        "name": "Nordvik",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег says the next delivery from Nordvik will arrive at the end of November (2026).",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "1a915ac4-4f8e-42b7-b7b7-a5cc045a40c8",
+        "name": "WILL_DELIVER_SHIPMENT_TO",
+        "fact": "Олег says the next delivery from Nordvik will arrive at the end of November (2026).",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:28.720847+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "eca2a2f9-0b69-49ef-bdf4-85e08a452c31"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 16126,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 3,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: у Ингрид Берг Pfaff 160s, сервис 2300, скидка VIP 150",
+      "2026-10-19T09:03:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "faa0481e-19d1-4405-b170-52882741ea05",
+       "content": "Олег: у Ингрид Берг Pfaff 160s, сервис 2300, скидка VIP 150",
+       "valid_at": "2026-10-19T09:03:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).",
+        "attributes": {}
+       },
+       {
+        "uuid": "50e8f924-e7cb-46ad-90de-cbf2ae84cdb2",
+        "name": "Ингрид Берг",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "attributes": {}
+       },
+       {
+        "uuid": "16334761-0616-4f19-aebe-ba3239520a6c",
+        "name": "Pfaff 160s",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "4d10362a-e908-40af-9026-d49902b4917a",
+        "name": "OWNS",
+        "fact": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:42.419384+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Ингрид Берг",
+        "к": "Pfaff 160s",
+        "episodes": [
+         "faa0481e-19d1-4405-b170-52882741ea05"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 9697,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 4,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: мастерская по субботам работает до 14",
+      "2026-10-19T09:04:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "89ab13dd-235f-4420-9aeb-2a268377b20f",
+       "content": "Олег: мастерская по субботам работает до 14",
+       "valid_at": "2026-10-19T09:04:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).",
+        "attributes": {}
+       }
+      ],
+      "edges": []
+     }
+    }
+   ],
+   "мс": 6204,
+   "обвязка": {
+    "вызовов": 2,
+    "с_инструментом": 2,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 5,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: Нина по субботам в ателье до 16",
+      "2026-10-19T09:05:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "7bd7c228-2ebf-4dac-a9cb-1b4650eba35e",
+       "content": "Олег: Нина по субботам в ателье до 16",
+       "valid_at": "2026-10-19T09:05:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).",
+        "attributes": {}
+       },
+       {
+        "uuid": "06686db1-0da9-4a4f-8027-3de18dc86369",
+        "name": "Нина",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Нина по субботам работает в ателье до 16:00.",
+        "attributes": {}
+       }
+      ],
+      "edges": []
+     }
+    }
+   ],
+   "мс": 9559,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 6,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда: во сколько мастерская в субботу?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "4d10362a-e908-40af-9026-d49902b4917a",
+        "name": "OWNS",
+        "fact": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:42.419384+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Ингрид Берг",
+        "к": "Pfaff 160s",
+        "episodes": [
+         "faa0481e-19d1-4405-b170-52882741ea05"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "72a4f665-753d-4fd9-844a-3df04c334312",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:17.919432+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "3191516d-af4a-4991-89ea-45f785aff9c8"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 243,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 7,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: Walker теперь продаю за 19 900",
+      "2026-10-19T09:07:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "9b376c33-1e8c-4673-bd27-fb83363b47b2",
+       "content": "Олег: Walker теперь продаю за 19 900",
+       "valid_at": "2026-10-19T09:07:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).\nОлег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.",
+        "attributes": {}
+       },
+       {
+        "uuid": "4160e096-fe15-4fe1-8be7-b95c6fc12959",
+        "name": "Walker 6F PREMIUM EX",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "27eb8b79-ff72-4251-803f-d5a530ee8670",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:08.653853+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "9b376c33-1e8c-4673-bd27-fb83363b47b2"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "72a4f665-753d-4fd9-844a-3df04c334312",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:03:10.199749+00:00",
+        "created_at": "2026-11-07T17:02:17.919432+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "3191516d-af4a-4991-89ea-45f785aff9c8"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 10203,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 8,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда: сколько стоит Walker?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "27eb8b79-ff72-4251-803f-d5a530ee8670",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:08.653853+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "9b376c33-1e8c-4673-bd27-fb83363b47b2"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "4d10362a-e908-40af-9026-d49902b4917a",
+        "name": "OWNS",
+        "fact": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:42.419384+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Ингрид Берг",
+        "к": "Pfaff 160s",
+        "episodes": [
+         "faa0481e-19d1-4405-b170-52882741ea05"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "72a4f665-753d-4fd9-844a-3df04c334312",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:03:10.199749+00:00",
+        "created_at": "2026-11-07T17:02:17.919432+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "3191516d-af4a-4991-89ea-45f785aff9c8"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 246,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 9,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: Nordvik написала, поставка сдвинулась на середину декабря",
+      "2026-10-19T09:09:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "f904b9c1-4374-461c-93d5-d8148399db2d",
+       "content": "Олег: Nordvik написала, поставка сдвинулась на середину декабря",
+       "valid_at": "2026-10-19T09:09:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).\nОлег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.\nNordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "attributes": {}
+       },
+       {
+        "uuid": "d8987151-0438-42e9-90a5-9ca49bc8cbe4",
+        "name": "Nordvik",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег says the next delivery from Nordvik will arrive at the end of November (2026).\nNordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "d119491a-1107-4893-baa8-69d8d1292193",
+        "name": "DELIVERY_SCHEDULED_FOR",
+        "fact": "Nordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:15.211592+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "f904b9c1-4374-461c-93d5-d8148399db2d"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "1a915ac4-4f8e-42b7-b7b7-a5cc045a40c8",
+        "name": "WILL_DELIVER_SHIPMENT_TO",
+        "fact": "Олег says the next delivery from Nordvik will arrive at the end of November (2026).",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-10-19T09:09:00+00:00",
+        "expired_at": "2026-11-07T17:03:16.990710+00:00",
+        "created_at": "2026-11-07T17:02:28.720847+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "eca2a2f9-0b69-49ef-bdf4-85e08a452c31"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 6345,
+   "обвязка": {
+    "вызовов": 3,
+    "с_инструментом": 3,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 10,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: с 1 ноября сервис для всех 2100 крон",
+      "2026-10-19T09:10:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "fb919a57-3f9c-4373-8ff2-c29099907f64",
+       "content": "Олег: с 1 ноября сервис для всех 2100 крон",
+       "valid_at": "2026-10-19T09:10:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).\nОлег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.\nNordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "attributes": {}
+       }
+      ],
+      "edges": []
+     }
+    }
+   ],
+   "мс": 6210,
+   "обвязка": {
+    "вызовов": 3,
+    "с_инструментом": 2,
+    "без_инструмента": 1,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 1,
+    "журнал": [
+     {
+      "инструмент": "ExtractedEdges",
+      "stop_reason": "end_turn",
+      "блоки": [
+       "thinking",
+       "text"
+      ],
+      "текст": "{\"edges\": []}",
+      "разобран": false
+     }
+    ],
+    "сбой_обвязки": true
+   }
+  },
+  {
+   "№": 11,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: в эту субботу 24 октября мастерская закрыта",
+      "2026-10-19T09:11:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "6adfd7fd-349a-4af3-94b6-058e687f9da6",
+       "content": "Олег: в эту субботу 24 октября мастерская закрыта",
+       "valid_at": "2026-10-19T09:11:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).\nОлег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.\nNordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "attributes": {}
+       }
+      ],
+      "edges": []
+     }
+    }
+   ],
+   "мс": 8154,
+   "обвязка": {
+    "вызовов": 3,
+    "с_инструментом": 2,
+    "без_инструмента": 1,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 1,
+    "журнал": [
+     {
+      "инструмент": "ExtractedEdges",
+      "stop_reason": "end_turn",
+      "блоки": [
+       "thinking",
+       "text"
+      ],
+      "текст": "{\"edges\": []}",
+      "разобран": false
+     }
+    ],
+    "сбой_обвязки": true
+   }
+  },
+  {
+   "№": 12,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 24.10: мастерская в субботу?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "d119491a-1107-4893-baa8-69d8d1292193",
+        "name": "DELIVERY_SCHEDULED_FOR",
+        "fact": "Nordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:15.211592+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "f904b9c1-4374-461c-93d5-d8148399db2d"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "4d10362a-e908-40af-9026-d49902b4917a",
+        "name": "OWNS",
+        "fact": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:42.419384+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Ингрид Берг",
+        "к": "Pfaff 160s",
+        "episodes": [
+         "faa0481e-19d1-4405-b170-52882741ea05"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "1a915ac4-4f8e-42b7-b7b7-a5cc045a40c8",
+        "name": "WILL_DELIVER_SHIPMENT_TO",
+        "fact": "Олег says the next delivery from Nordvik will arrive at the end of November (2026).",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-10-19T09:09:00+00:00",
+        "expired_at": "2026-11-07T17:03:16.990710+00:00",
+        "created_at": "2026-11-07T17:02:28.720847+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "eca2a2f9-0b69-49ef-bdf4-85e08a452c31"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "72a4f665-753d-4fd9-844a-3df04c334312",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:03:10.199749+00:00",
+        "created_at": "2026-11-07T17:02:17.919432+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "3191516d-af4a-4991-89ea-45f785aff9c8"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 206,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 13,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 31.10: мастерская в субботу?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "d119491a-1107-4893-baa8-69d8d1292193",
+        "name": "DELIVERY_SCHEDULED_FOR",
+        "fact": "Nordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:15.211592+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "f904b9c1-4374-461c-93d5-d8148399db2d"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "4d10362a-e908-40af-9026-d49902b4917a",
+        "name": "OWNS",
+        "fact": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:42.419384+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Ингрид Берг",
+        "к": "Pfaff 160s",
+        "episodes": [
+         "faa0481e-19d1-4405-b170-52882741ea05"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "1a915ac4-4f8e-42b7-b7b7-a5cc045a40c8",
+        "name": "WILL_DELIVER_SHIPMENT_TO",
+        "fact": "Олег says the next delivery from Nordvik will arrive at the end of November (2026).",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-10-19T09:09:00+00:00",
+        "expired_at": "2026-11-07T17:03:16.990710+00:00",
+        "created_at": "2026-11-07T17:02:28.720847+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "eca2a2f9-0b69-49ef-bdf4-85e08a452c31"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "72a4f665-753d-4fd9-844a-3df04c334312",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:03:10.199749+00:00",
+        "created_at": "2026-11-07T17:02:17.919432+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "3191516d-af4a-4991-89ea-45f785aff9c8"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 203,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 14,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: TRONIC 5F стоит 19 900",
+      "2026-10-19T09:14:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "850ea226-5dff-42b8-aadb-0086a8ad2253",
+       "content": "Олег: TRONIC 5F стоит 19 900",
+       "valid_at": "2026-10-19T09:14:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).\nОлег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.\nNordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).\nОлег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "attributes": {}
+       },
+       {
+        "uuid": "788a5188-d90d-4f73-9533-03bb75bdb3a5",
+        "name": "TRONIC 5F",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "777433e2-2636-4c3b-ab24-83280c198d73",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "valid_at": "2026-10-19T09:14:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:39.358758+00:00",
+        "reference_time": "2026-10-19T09:14:00+00:00",
+        "от": "Олег",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "850ea226-5dff-42b8-aadb-0086a8ad2253"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 9478,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 15,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "что стоит 19 900?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "777433e2-2636-4c3b-ab24-83280c198d73",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "valid_at": "2026-10-19T09:14:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:39.358758+00:00",
+        "reference_time": "2026-10-19T09:14:00+00:00",
+        "от": "Олег",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "850ea226-5dff-42b8-aadb-0086a8ad2253"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "27eb8b79-ff72-4251-803f-d5a530ee8670",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:08.653853+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "9b376c33-1e8c-4673-bd27-fb83363b47b2"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "4d10362a-e908-40af-9026-d49902b4917a",
+        "name": "OWNS",
+        "fact": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:42.419384+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Ингрид Берг",
+        "к": "Pfaff 160s",
+        "episodes": [
+         "faa0481e-19d1-4405-b170-52882741ea05"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "d119491a-1107-4893-baa8-69d8d1292193",
+        "name": "DELIVERY_SCHEDULED_FOR",
+        "fact": "Nordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:15.211592+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "f904b9c1-4374-461c-93d5-d8148399db2d"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "72a4f665-753d-4fd9-844a-3df04c334312",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:03:10.199749+00:00",
+        "created_at": "2026-11-07T17:02:17.919432+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "3191516d-af4a-4991-89ea-45f785aff9c8"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 170,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 16,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: Ingrid получила машину",
+      "2026-10-19T09:16:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "e7e04b46-a3bb-4d15-8dcc-591ebacd5d0a",
+       "content": "Олег: Ingrid получила машину",
+       "valid_at": "2026-10-19T09:16:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).\nОлег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.\nNordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).\nОлег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "attributes": {}
+       },
+       {
+        "uuid": "50e8f924-e7cb-46ad-90de-cbf2ae84cdb2",
+        "name": "Ингрид Берг",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "attributes": {}
+       }
+      ],
+      "edges": []
+     }
+    }
+   ],
+   "мс": 10585,
+   "обвязка": {
+    "вызовов": 3,
+    "с_инструментом": 3,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 17,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "что с машиной Ингрид?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "4d10362a-e908-40af-9026-d49902b4917a",
+        "name": "OWNS",
+        "fact": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:42.419384+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Ингрид Берг",
+        "к": "Pfaff 160s",
+        "episodes": [
+         "faa0481e-19d1-4405-b170-52882741ea05"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "777433e2-2636-4c3b-ab24-83280c198d73",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "valid_at": "2026-10-19T09:14:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:39.358758+00:00",
+        "reference_time": "2026-10-19T09:14:00+00:00",
+        "от": "Олег",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "850ea226-5dff-42b8-aadb-0086a8ad2253"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "d119491a-1107-4893-baa8-69d8d1292193",
+        "name": "DELIVERY_SCHEDULED_FOR",
+        "fact": "Nordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:15.211592+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "f904b9c1-4374-461c-93d5-d8148399db2d"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 170,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 18,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: Лео хочет TRONIC 1F",
+      "2026-10-19T09:18:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "5bc92717-b3db-4993-ac7d-8c7083cd733a",
+       "content": "Олег: Лео хочет TRONIC 1F",
+       "valid_at": "2026-10-19T09:18:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).\nОлег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.\nNordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).\nОлег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "attributes": {}
+       },
+       {
+        "uuid": "3fbbfb0c-7068-4496-b981-61983787ec63",
+        "name": "Лео",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Лео хочет TRONIC 1F (сообщил Олег)",
+        "attributes": {}
+       },
+       {
+        "uuid": "e91cc5f2-b203-4d0d-9c35-3767e2f82d5c",
+        "name": "TRONIC 1F",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Лео хочет TRONIC 1F (сообщил Олег)",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "42bcbd1b-3977-4f77-98f8-c1be48fe8167",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 1F (сообщил Олег)",
+        "valid_at": "2026-10-19T09:18:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:04:01.429730+00:00",
+        "reference_time": "2026-10-19T09:18:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 1F",
+        "episodes": [
+         "5bc92717-b3db-4993-ac7d-8c7083cd733a"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 10815,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 19,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: Лео не 1F, а 5F",
+      "2026-10-19T09:19:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "d8295041-3300-4fde-a610-cb475bdd5f04",
+       "content": "Олег: Лео не 1F, а 5F",
+       "valid_at": "2026-10-19T09:19:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).\nОлег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.\nNordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).\nОлег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "attributes": {}
+       },
+       {
+        "uuid": "3fbbfb0c-7068-4496-b981-61983787ec63",
+        "name": "Лео",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Лео хочет TRONIC 1F (сообщил Олег)\nЛео хочет TRONIC 5F (а не TRONIC 1F), по уточнению Олега\nЛео хочет TRONIC 1F — это было ошибкой, Олег исправил: Лео хочет не 1F",
+        "attributes": {}
+       },
+       {
+        "uuid": "e91cc5f2-b203-4d0d-9c35-3767e2f82d5c",
+        "name": "TRONIC 1F",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Лео хочет TRONIC 1F (сообщил Олег)\nЛео хочет TRONIC 1F — это было ошибкой, Олег исправил: Лео хочет не 1F",
+        "attributes": {}
+       },
+       {
+        "uuid": "788a5188-d90d-4f73-9533-03bb75bdb3a5",
+        "name": "TRONIC 5F",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег указывает, что TRONIC 5F стоит 19 900 (цена продажи).\nЛео хочет TRONIC 5F (а не TRONIC 1F), по уточнению Олега",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "29491e04-a200-4a26-94a7-5e648b636dfe",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 5F (а не TRONIC 1F), по уточнению Олега",
+        "valid_at": "2026-10-19T09:19:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:04:09.845078+00:00",
+        "reference_time": "2026-10-19T09:19:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "d8295041-3300-4fde-a610-cb475bdd5f04"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "e9f38fb9-ca3c-417c-bc10-480559e73eb7",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 1F — это было ошибкой, Олег исправил: Лео хочет не 1F",
+        "valid_at": "2026-10-19T09:18:00+00:00",
+        "invalid_at": "2026-10-19T09:19:00+00:00",
+        "expired_at": "2026-11-07T17:04:11.981138+00:00",
+        "created_at": "2026-11-07T17:04:09.845078+00:00",
+        "reference_time": "2026-10-19T09:19:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 1F",
+        "episodes": [
+         "d8295041-3300-4fde-a610-cb475bdd5f04"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "42bcbd1b-3977-4f77-98f8-c1be48fe8167",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 1F (сообщил Олег)",
+        "valid_at": "2026-10-19T09:18:00+00:00",
+        "invalid_at": "2026-10-19T09:19:00+00:00",
+        "expired_at": "2026-11-07T17:04:11.981138+00:00",
+        "created_at": "2026-11-07T17:04:01.429730+00:00",
+        "reference_time": "2026-10-19T09:18:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 1F",
+        "episodes": [
+         "5bc92717-b3db-4993-ac7d-8c7083cd733a"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 9127,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 20,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда: какую машину хочет Лео?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "42bcbd1b-3977-4f77-98f8-c1be48fe8167",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 1F (сообщил Олег)",
+        "valid_at": "2026-10-19T09:18:00+00:00",
+        "invalid_at": "2026-10-19T09:19:00+00:00",
+        "expired_at": "2026-11-07T17:04:11.981138+00:00",
+        "created_at": "2026-11-07T17:04:01.429730+00:00",
+        "reference_time": "2026-10-19T09:18:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 1F",
+        "episodes": [
+         "5bc92717-b3db-4993-ac7d-8c7083cd733a"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "e9f38fb9-ca3c-417c-bc10-480559e73eb7",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 1F — это было ошибкой, Олег исправил: Лео хочет не 1F",
+        "valid_at": "2026-10-19T09:18:00+00:00",
+        "invalid_at": "2026-10-19T09:19:00+00:00",
+        "expired_at": "2026-11-07T17:04:11.981138+00:00",
+        "created_at": "2026-11-07T17:04:09.845078+00:00",
+        "reference_time": "2026-10-19T09:19:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 1F",
+        "episodes": [
+         "d8295041-3300-4fde-a610-cb475bdd5f04"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "29491e04-a200-4a26-94a7-5e648b636dfe",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 5F (а не TRONIC 1F), по уточнению Олега",
+        "valid_at": "2026-10-19T09:19:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:04:09.845078+00:00",
+        "reference_time": "2026-10-19T09:19:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "d8295041-3300-4fde-a610-cb475bdd5f04"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "777433e2-2636-4c3b-ab24-83280c198d73",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "valid_at": "2026-10-19T09:14:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:39.358758+00:00",
+        "reference_time": "2026-10-19T09:14:00+00:00",
+        "от": "Олег",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "850ea226-5dff-42b8-aadb-0086a8ad2253"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "d119491a-1107-4893-baa8-69d8d1292193",
+        "name": "DELIVERY_SCHEDULED_FOR",
+        "fact": "Nordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:15.211592+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "f904b9c1-4374-461c-93d5-d8148399db2d"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "4d10362a-e908-40af-9026-d49902b4917a",
+        "name": "OWNS",
+        "fact": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:42.419384+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Ингрид Берг",
+        "к": "Pfaff 160s",
+        "episodes": [
+         "faa0481e-19d1-4405-b170-52882741ea05"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "72a4f665-753d-4fd9-844a-3df04c334312",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:03:10.199749+00:00",
+        "created_at": "2026-11-07T17:02:17.919432+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "3191516d-af4a-4991-89ea-45f785aff9c8"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "27eb8b79-ff72-4251-803f-d5a530ee8670",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:08.653853+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "9b376c33-1e8c-4673-bd27-fb83363b47b2"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 222,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 21,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда: сколько стоит доставка в Bergen?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "777433e2-2636-4c3b-ab24-83280c198d73",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "valid_at": "2026-10-19T09:14:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:39.358758+00:00",
+        "reference_time": "2026-10-19T09:14:00+00:00",
+        "от": "Олег",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "850ea226-5dff-42b8-aadb-0086a8ad2253"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "4d10362a-e908-40af-9026-d49902b4917a",
+        "name": "OWNS",
+        "fact": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:42.419384+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Ингрид Берг",
+        "к": "Pfaff 160s",
+        "episodes": [
+         "faa0481e-19d1-4405-b170-52882741ea05"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "d119491a-1107-4893-baa8-69d8d1292193",
+        "name": "DELIVERY_SCHEDULED_FOR",
+        "fact": "Nordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:15.211592+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "f904b9c1-4374-461c-93d5-d8148399db2d"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "72a4f665-753d-4fd9-844a-3df04c334312",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:03:10.199749+00:00",
+        "created_at": "2026-11-07T17:02:17.919432+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "3191516d-af4a-4991-89ea-45f785aff9c8"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "1a915ac4-4f8e-42b7-b7b7-a5cc045a40c8",
+        "name": "WILL_DELIVER_SHIPMENT_TO",
+        "fact": "Олег says the next delivery from Nordvik will arrive at the end of November (2026).",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-10-19T09:09:00+00:00",
+        "expired_at": "2026-11-07T17:03:16.990710+00:00",
+        "created_at": "2026-11-07T17:02:28.720847+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "eca2a2f9-0b69-49ef-bdf4-85e08a452c31"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "27eb8b79-ff72-4251-803f-d5a530ee8670",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:08.653853+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "9b376c33-1e8c-4673-bd27-fb83363b47b2"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 159,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 22,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: Fjord Møbel мебельщики, работают на Dürkopp Adler",
+      "2026-10-19T09:22:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "eac3f2e0-652e-47b1-9db5-98c4a0b2ed82",
+       "content": "Олег: Fjord Møbel мебельщики, работают на Dürkopp Adler",
+       "valid_at": "2026-10-19T09:22:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).\nОлег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.\nNordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).\nОлег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "attributes": {}
+       },
+       {
+        "uuid": "64347ad9-f281-4f1b-8ab4-1c65c7bdbc54",
+        "name": "Fjord Møbel",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Fjord Møbel, a group of furniture upholsterers (мебельщики), works on Dürkopp Adler machines.",
+        "attributes": {}
+       },
+       {
+        "uuid": "1460e29e-5f0e-40e0-9299-8cec74f245d4",
+        "name": "Dürkopp Adler",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Fjord Møbel, a group of furniture upholsterers (мебельщики), works on Dürkopp Adler machines.",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "aaeeead2-2d61-4710-ad8f-0395e6624589",
+        "name": "WORKS_ON",
+        "fact": "Fjord Møbel, a group of furniture upholsterers (мебельщики), works on Dürkopp Adler machines.",
+        "valid_at": "2026-10-19T09:22:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:04:22.080431+00:00",
+        "reference_time": "2026-10-19T09:22:00+00:00",
+        "от": "Fjord Møbel",
+        "к": "Dürkopp Adler",
+        "episodes": [
+         "eac3f2e0-652e-47b1-9db5-98c4a0b2ed82"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 11211,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 23,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Recall: на чём работают мебельщики из Бергена?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "aaeeead2-2d61-4710-ad8f-0395e6624589",
+        "name": "WORKS_ON",
+        "fact": "Fjord Møbel, a group of furniture upholsterers (мебельщики), works on Dürkopp Adler machines.",
+        "valid_at": "2026-10-19T09:22:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:04:22.080431+00:00",
+        "reference_time": "2026-10-19T09:22:00+00:00",
+        "от": "Fjord Møbel",
+        "к": "Dürkopp Adler",
+        "episodes": [
+         "eac3f2e0-652e-47b1-9db5-98c4a0b2ed82"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "d119491a-1107-4893-baa8-69d8d1292193",
+        "name": "DELIVERY_SCHEDULED_FOR",
+        "fact": "Nordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:15.211592+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "f904b9c1-4374-461c-93d5-d8148399db2d"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "4d10362a-e908-40af-9026-d49902b4917a",
+        "name": "OWNS",
+        "fact": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:42.419384+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Ингрид Берг",
+        "к": "Pfaff 160s",
+        "episodes": [
+         "faa0481e-19d1-4405-b170-52882741ea05"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 274,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 24,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: с прошлого понедельника беру за выезд 700 крон",
+      "2026-10-19T09:24:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "b02ba8dd-cb92-4b75-965e-efac11baccb0",
+       "content": "Олег: с прошлого понедельника беру за выезд 700 крон",
+       "valid_at": "2026-10-19T09:24:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).\nОлег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.\nNordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).\nОлег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "attributes": {}
+       }
+      ],
+      "edges": []
+     }
+    }
+   ],
+   "мс": 3826,
+   "обвязка": {
+    "вызовов": 2,
+    "с_инструментом": 2,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 25,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 14.10: сколько выезд?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "d119491a-1107-4893-baa8-69d8d1292193",
+        "name": "DELIVERY_SCHEDULED_FOR",
+        "fact": "Nordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:15.211592+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "f904b9c1-4374-461c-93d5-d8148399db2d"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "777433e2-2636-4c3b-ab24-83280c198d73",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "valid_at": "2026-10-19T09:14:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:39.358758+00:00",
+        "reference_time": "2026-10-19T09:14:00+00:00",
+        "от": "Олег",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "850ea226-5dff-42b8-aadb-0086a8ad2253"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "72a4f665-753d-4fd9-844a-3df04c334312",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:03:10.199749+00:00",
+        "created_at": "2026-11-07T17:02:17.919432+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "3191516d-af4a-4991-89ea-45f785aff9c8"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "27eb8b79-ff72-4251-803f-d5a530ee8670",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:08.653853+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "9b376c33-1e8c-4673-bd27-fb83363b47b2"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "29491e04-a200-4a26-94a7-5e648b636dfe",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 5F (а не TRONIC 1F), по уточнению Олега",
+        "valid_at": "2026-10-19T09:19:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:04:09.845078+00:00",
+        "reference_time": "2026-10-19T09:19:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "d8295041-3300-4fde-a610-cb475bdd5f04"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "1a915ac4-4f8e-42b7-b7b7-a5cc045a40c8",
+        "name": "WILL_DELIVER_SHIPMENT_TO",
+        "fact": "Олег says the next delivery from Nordvik will arrive at the end of November (2026).",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-10-19T09:09:00+00:00",
+        "expired_at": "2026-11-07T17:03:16.990710+00:00",
+        "created_at": "2026-11-07T17:02:28.720847+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "eca2a2f9-0b69-49ef-bdf4-85e08a452c31"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "42bcbd1b-3977-4f77-98f8-c1be48fe8167",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 1F (сообщил Олег)",
+        "valid_at": "2026-10-19T09:18:00+00:00",
+        "invalid_at": "2026-10-19T09:19:00+00:00",
+        "expired_at": "2026-11-07T17:04:11.981138+00:00",
+        "created_at": "2026-11-07T17:04:01.429730+00:00",
+        "reference_time": "2026-10-19T09:18:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 1F",
+        "episodes": [
+         "5bc92717-b3db-4993-ac7d-8c7083cd733a"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    },
+    {
+     "вызов": [
+      "search",
+      "Что правда на 05.10: сколько выезд?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "777433e2-2636-4c3b-ab24-83280c198d73",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "valid_at": "2026-10-19T09:14:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:39.358758+00:00",
+        "reference_time": "2026-10-19T09:14:00+00:00",
+        "от": "Олег",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "850ea226-5dff-42b8-aadb-0086a8ad2253"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "d119491a-1107-4893-baa8-69d8d1292193",
+        "name": "DELIVERY_SCHEDULED_FOR",
+        "fact": "Nordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:15.211592+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "f904b9c1-4374-461c-93d5-d8148399db2d"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "29491e04-a200-4a26-94a7-5e648b636dfe",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 5F (а не TRONIC 1F), по уточнению Олега",
+        "valid_at": "2026-10-19T09:19:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:04:09.845078+00:00",
+        "reference_time": "2026-10-19T09:19:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "d8295041-3300-4fde-a610-cb475bdd5f04"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "72a4f665-753d-4fd9-844a-3df04c334312",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:03:10.199749+00:00",
+        "created_at": "2026-11-07T17:02:17.919432+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "3191516d-af4a-4991-89ea-45f785aff9c8"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "42bcbd1b-3977-4f77-98f8-c1be48fe8167",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 1F (сообщил Олег)",
+        "valid_at": "2026-10-19T09:18:00+00:00",
+        "invalid_at": "2026-10-19T09:19:00+00:00",
+        "expired_at": "2026-11-07T17:04:11.981138+00:00",
+        "created_at": "2026-11-07T17:04:01.429730+00:00",
+        "reference_time": "2026-10-19T09:18:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 1F",
+        "episodes": [
+         "5bc92717-b3db-4993-ac7d-8c7083cd733a"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "27eb8b79-ff72-4251-803f-d5a530ee8670",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:08.653853+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "9b376c33-1e8c-4673-bd27-fb83363b47b2"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "1a915ac4-4f8e-42b7-b7b7-a5cc045a40c8",
+        "name": "WILL_DELIVER_SHIPMENT_TO",
+        "fact": "Олег says the next delivery from Nordvik will arrive at the end of November (2026).",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-10-19T09:09:00+00:00",
+        "expired_at": "2026-11-07T17:03:16.990710+00:00",
+        "created_at": "2026-11-07T17:02:28.720847+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "eca2a2f9-0b69-49ef-bdf4-85e08a452c31"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "4d10362a-e908-40af-9026-d49902b4917a",
+        "name": "OWNS",
+        "fact": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:42.419384+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Ингрид Берг",
+        "к": "Pfaff 160s",
+        "episodes": [
+         "faa0481e-19d1-4405-b170-52882741ea05"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "e9f38fb9-ca3c-417c-bc10-480559e73eb7",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 1F — это было ошибкой, Олег исправил: Лео хочет не 1F",
+        "valid_at": "2026-10-19T09:18:00+00:00",
+        "invalid_at": "2026-10-19T09:19:00+00:00",
+        "expired_at": "2026-11-07T17:04:11.981138+00:00",
+        "created_at": "2026-11-07T17:04:09.845078+00:00",
+        "reference_time": "2026-10-19T09:19:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 1F",
+        "episodes": [
+         "d8295041-3300-4fde-a610-cb475bdd5f04"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 355,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 26,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Эва: Выезд 850.",
+      "2026-10-19T09:26:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "6634fc97-200c-4c5f-a662-6e09dc3c4c6b",
+       "content": "Эва: Выезд 850.",
+       "valid_at": "2026-10-19T09:26:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "f48da906-9af8-4a6e-aa3d-8182891f7fca",
+        "name": "Эва",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Эва называет стоимость выезда 850 (крон). Для сравнения, Олег с прошлого понедельника (до 2026-10-19) берёт за выезд 700 крон.",
+        "attributes": {}
+       }
+      ],
+      "edges": []
+     }
+    },
+    {
+     "вызов": [
+      "search",
+      "выезд"
+     ],
+     "ответ": {
+      "edges": []
+     }
+    }
+   ],
+   "мс": 12963,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 27,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: по выходным мастерская закрыта",
+      "2026-10-19T09:27:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "678b5de3-a66a-4faf-8d7d-3395132ac64b",
+       "content": "Олег: по выходным мастерская закрыта",
+       "valid_at": "2026-10-19T09:27:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).\nОлег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.\nNordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).\nОлег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "attributes": {}
+       }
+      ],
+      "edges": []
+     }
+    }
+   ],
+   "мс": 9177,
+   "обвязка": {
+    "вызовов": 3,
+    "с_инструментом": 2,
+    "без_инструмента": 1,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 1,
+    "журнал": [
+     {
+      "инструмент": "ExtractedEdges",
+      "stop_reason": "end_turn",
+      "блоки": [
+       "thinking",
+       "text"
+      ],
+      "текст": "{\"edges\": []}",
+      "разобран": false
+     }
+    ],
+    "сбой_обвязки": true
+   }
+  },
+  {
+   "№": 28,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на сегодня: сервис 2300 или 2100?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "4d10362a-e908-40af-9026-d49902b4917a",
+        "name": "OWNS",
+        "fact": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:42.419384+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Ингрид Берг",
+        "к": "Pfaff 160s",
+        "episodes": [
+         "faa0481e-19d1-4405-b170-52882741ea05"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "777433e2-2636-4c3b-ab24-83280c198d73",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "valid_at": "2026-10-19T09:14:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:39.358758+00:00",
+        "reference_time": "2026-10-19T09:14:00+00:00",
+        "от": "Олег",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "850ea226-5dff-42b8-aadb-0086a8ad2253"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "d119491a-1107-4893-baa8-69d8d1292193",
+        "name": "DELIVERY_SCHEDULED_FOR",
+        "fact": "Nordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:15.211592+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "f904b9c1-4374-461c-93d5-d8148399db2d"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "72a4f665-753d-4fd9-844a-3df04c334312",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:03:10.199749+00:00",
+        "created_at": "2026-11-07T17:02:17.919432+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "3191516d-af4a-4991-89ea-45f785aff9c8"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "29491e04-a200-4a26-94a7-5e648b636dfe",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 5F (а не TRONIC 1F), по уточнению Олега",
+        "valid_at": "2026-10-19T09:19:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:04:09.845078+00:00",
+        "reference_time": "2026-10-19T09:19:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "d8295041-3300-4fde-a610-cb475bdd5f04"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "27eb8b79-ff72-4251-803f-d5a530ee8670",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:08.653853+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "9b376c33-1e8c-4673-bd27-fb83363b47b2"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "42bcbd1b-3977-4f77-98f8-c1be48fe8167",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 1F (сообщил Олег)",
+        "valid_at": "2026-10-19T09:18:00+00:00",
+        "invalid_at": "2026-10-19T09:19:00+00:00",
+        "expired_at": "2026-11-07T17:04:11.981138+00:00",
+        "created_at": "2026-11-07T17:04:01.429730+00:00",
+        "reference_time": "2026-10-19T09:18:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 1F",
+        "episodes": [
+         "5bc92717-b3db-4993-ac7d-8c7083cd733a"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "e9f38fb9-ca3c-417c-bc10-480559e73eb7",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 1F — это было ошибкой, Олег исправил: Лео хочет не 1F",
+        "valid_at": "2026-10-19T09:18:00+00:00",
+        "invalid_at": "2026-10-19T09:19:00+00:00",
+        "expired_at": "2026-11-07T17:04:11.981138+00:00",
+        "created_at": "2026-11-07T17:04:09.845078+00:00",
+        "reference_time": "2026-10-19T09:19:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 1F",
+        "episodes": [
+         "d8295041-3300-4fde-a610-cb475bdd5f04"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 267,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 29,
+   "выходы": [
+    {
+     "вызов": [
+      "get_by_group_ids",
+      [
+       "oleg"
+      ]
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "e9f38fb9-ca3c-417c-bc10-480559e73eb7",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 1F — это было ошибкой, Олег исправил: Лео хочет не 1F",
+        "valid_at": "2026-10-19T09:18:00+00:00",
+        "invalid_at": "2026-10-19T09:19:00+00:00",
+        "expired_at": "2026-11-07T17:04:11.981138+00:00",
+        "created_at": "2026-11-07T17:04:09.845078+00:00",
+        "reference_time": "2026-10-19T09:19:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 1F",
+        "episodes": [
+         "d8295041-3300-4fde-a610-cb475bdd5f04"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "d119491a-1107-4893-baa8-69d8d1292193",
+        "name": "DELIVERY_SCHEDULED_FOR",
+        "fact": "Nordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:15.211592+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "f904b9c1-4374-461c-93d5-d8148399db2d"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "aaeeead2-2d61-4710-ad8f-0395e6624589",
+        "name": "WORKS_ON",
+        "fact": "Fjord Møbel, a group of furniture upholsterers (мебельщики), works on Dürkopp Adler machines.",
+        "valid_at": "2026-10-19T09:22:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:04:22.080431+00:00",
+        "reference_time": "2026-10-19T09:22:00+00:00",
+        "от": "Fjord Møbel",
+        "к": "Dürkopp Adler",
+        "episodes": [
+         "eac3f2e0-652e-47b1-9db5-98c4a0b2ed82"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "777433e2-2636-4c3b-ab24-83280c198d73",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "valid_at": "2026-10-19T09:14:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:39.358758+00:00",
+        "reference_time": "2026-10-19T09:14:00+00:00",
+        "от": "Олег",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "850ea226-5dff-42b8-aadb-0086a8ad2253"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "72a4f665-753d-4fd9-844a-3df04c334312",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:03:10.199749+00:00",
+        "created_at": "2026-11-07T17:02:17.919432+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "3191516d-af4a-4991-89ea-45f785aff9c8"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "4d10362a-e908-40af-9026-d49902b4917a",
+        "name": "OWNS",
+        "fact": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:42.419384+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Ингрид Берг",
+        "к": "Pfaff 160s",
+        "episodes": [
+         "faa0481e-19d1-4405-b170-52882741ea05"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "42bcbd1b-3977-4f77-98f8-c1be48fe8167",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 1F (сообщил Олег)",
+        "valid_at": "2026-10-19T09:18:00+00:00",
+        "invalid_at": "2026-10-19T09:19:00+00:00",
+        "expired_at": "2026-11-07T17:04:11.981138+00:00",
+        "created_at": "2026-11-07T17:04:01.429730+00:00",
+        "reference_time": "2026-10-19T09:18:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 1F",
+        "episodes": [
+         "5bc92717-b3db-4993-ac7d-8c7083cd733a"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "29491e04-a200-4a26-94a7-5e648b636dfe",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 5F (а не TRONIC 1F), по уточнению Олега",
+        "valid_at": "2026-10-19T09:19:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:04:09.845078+00:00",
+        "reference_time": "2026-10-19T09:19:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "d8295041-3300-4fde-a610-cb475bdd5f04"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "27eb8b79-ff72-4251-803f-d5a530ee8670",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:08.653853+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "9b376c33-1e8c-4673-bd27-fb83363b47b2"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "1a915ac4-4f8e-42b7-b7b7-a5cc045a40c8",
+        "name": "WILL_DELIVER_SHIPMENT_TO",
+        "fact": "Олег says the next delivery from Nordvik will arrive at the end of November (2026).",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-10-19T09:09:00+00:00",
+        "expired_at": "2026-11-07T17:03:16.990710+00:00",
+        "created_at": "2026-11-07T17:02:28.720847+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Nordvik",
+        "к": "Олег",
+        "episodes": [
+         "eca2a2f9-0b69-49ef-bdf4-85e08a452c31"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 21,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 30,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: Забудь про Лео.",
+      "2026-10-19T09:30:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "4d78fb96-bb0b-485c-a78a-2cc18f1effbc",
+       "content": "Олег: Забудь про Лео.",
+       "valid_at": "2026-10-19T09:30:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "19df69c9-6bf0-4284-a3de-d1c9e7049e14",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).\nОлег says the next delivery from Nordvik will arrive at the end of November (2026).\nОлег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.\nNordvik сообщила Олегу, что её следующая поставка сдвинулась на середину декабря (ранее ожидалась в конце ноября).\nОлег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "attributes": {}
+       },
+       {
+        "uuid": "3fbbfb0c-7068-4496-b981-61983787ec63",
+        "name": "Лео",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Лео хочет TRONIC 1F (сообщил Олег)\nЛео хочет TRONIC 5F (а не TRONIC 1F), по уточнению Олега\nЛео хочет TRONIC 1F — это было ошибкой, Олег исправил: Лео хочет не 1F",
+        "attributes": {}
+       }
+      ],
+      "edges": []
+     }
+    },
+    {
+     "вызов": [
+      "search",
+      "какую машину хочет Лео"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "42bcbd1b-3977-4f77-98f8-c1be48fe8167",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 1F (сообщил Олег)",
+        "valid_at": "2026-10-19T09:18:00+00:00",
+        "invalid_at": "2026-10-19T09:19:00+00:00",
+        "expired_at": "2026-11-07T17:04:11.981138+00:00",
+        "created_at": "2026-11-07T17:04:01.429730+00:00",
+        "reference_time": "2026-10-19T09:18:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 1F",
+        "episodes": [
+         "5bc92717-b3db-4993-ac7d-8c7083cd733a"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "e9f38fb9-ca3c-417c-bc10-480559e73eb7",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 1F — это было ошибкой, Олег исправил: Лео хочет не 1F",
+        "valid_at": "2026-10-19T09:18:00+00:00",
+        "invalid_at": "2026-10-19T09:19:00+00:00",
+        "expired_at": "2026-11-07T17:04:11.981138+00:00",
+        "created_at": "2026-11-07T17:04:09.845078+00:00",
+        "reference_time": "2026-10-19T09:19:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 1F",
+        "episodes": [
+         "d8295041-3300-4fde-a610-cb475bdd5f04"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "29491e04-a200-4a26-94a7-5e648b636dfe",
+        "name": "WANTS",
+        "fact": "Лео хочет TRONIC 5F (а не TRONIC 1F), по уточнению Олега",
+        "valid_at": "2026-10-19T09:19:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:04:09.845078+00:00",
+        "reference_time": "2026-10-19T09:19:00+00:00",
+        "от": "Лео",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "d8295041-3300-4fde-a610-cb475bdd5f04"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "777433e2-2636-4c3b-ab24-83280c198d73",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег указывает, что TRONIC 5F стоит 19 900 (цена продажи).",
+        "valid_at": "2026-10-19T09:14:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:39.358758+00:00",
+        "reference_time": "2026-10-19T09:14:00+00:00",
+        "от": "Олег",
+        "к": "TRONIC 5F",
+        "episodes": [
+         "850ea226-5dff-42b8-aadb-0086a8ad2253"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "4d10362a-e908-40af-9026-d49902b4917a",
+        "name": "OWNS",
+        "fact": "У Ингрид Берг есть швейная машина Pfaff 160s; сервис стоит 2300, скидка VIP 150 (по словам Олега).",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:02:42.419384+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Ингрид Берг",
+        "к": "Pfaff 160s",
+        "episodes": [
+         "faa0481e-19d1-4405-b170-52882741ea05"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "72a4f665-753d-4fd9-844a-3df04c334312",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег states that Walker 6F PREMIUM EX costs 21 500 crowns with VAT (МВА).",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:03:10.199749+00:00",
+        "created_at": "2026-11-07T17:02:17.919432+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "3191516d-af4a-4991-89ea-45f785aff9c8"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "27eb8b79-ff72-4251-803f-d5a530ee8670",
+        "name": "SELLS_FOR_PRICE",
+        "fact": "Олег now sells Walker for 19 900 (крон), a reduced price from the earlier 21 500 крон with МВА for Walker 6F PREMIUM EX.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:03:08.653853+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Walker 6F PREMIUM EX",
+        "episodes": [
+         "9b376c33-1e8c-4673-bd27-fb83363b47b2"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 4591,
+   "обвязка": {
+    "вызовов": 2,
+    "с_инструментом": 2,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  }
+ ],
+ "стоп": "",
+ "обвязка": {
+  "вызовов": 59,
+  "с_инструментом": 56,
+  "без_инструмента": 3,
+  "без_инструмента_разобран_из_текста": 0,
+  "без_инструмента_не_разобран": 3,
+  "доля_не_разобрано": 0.0508,
+  "доля_без_инструмента": 0.0508,
+  "шагов_со_сбоем_обвязки": [
+   10,
+   11,
+   27
+  ]
+ },
+ "стоп_обвязки": "",
+ "версии": {
+  "graphiti-core": "0.31.2",
+  "anthropic": "2.6.0",
+  "openai": "3.46.0",
+  "neo4j": "6.4.1"
+ },
+ "хранилище": "Neo4j Desktop (локально, Bolt)",
+ "версия_neo4j": [
+  {
+   "name": "Neo4j Kernel",
+   "versions": [
+    "2026.10.1"
+   ],
+   "edition": "enterprise"
+  },
+  {
+   "name": "Cypher",
+   "versions": [
+    "5",
+    "25"
+   ],
+   "edition": ""
+  }
+ ],
+ "модель": "claude-sonnet-5-5",
+ "когда": "2026-11-07 18:04:55"
+}

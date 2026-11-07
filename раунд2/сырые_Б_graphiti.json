@@ -1,0 +1,1818 @@
+{
+ "система": "graphiti",
+ "набор": "Б",
+ "сек": 79.7,
+ "расход": {
+  "sonnet_вызовов": 32,
+  "sonnet_in": 101568,
+  "sonnet_out": 5819,
+  "sonnet_сбоев": 0,
+  "emb_вызовов": 46,
+  "emb_токенов": 764,
+  "openai_chat_вызовов": 0,
+  "usd": 0.2613
+ },
+ "шаги": [
+  {
+   "№": 1,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: корм Барону покупаю в Europris",
+      "2026-10-19T09:01:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "07e7fff4-c00e-4783-b8fc-efb63aab90ea",
+       "content": "Олег: корм Барону покупаю в Europris",
+       "valid_at": "2026-10-19T09:01:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "11b00b3a-a563-4ef1-a575-8d7de40ed961",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег покупает корм для Барона в магазине Europris.\nОлег покупает корм для Барона.",
+        "attributes": {}
+       },
+       {
+        "uuid": "d3950d7c-311b-42b7-9b30-da35a093b2f6",
+        "name": "Барон",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег покупает корм для Барона.",
+        "attributes": {}
+       },
+       {
+        "uuid": "3dd11c11-ccc5-4486-bc73-a03bea3f637e",
+        "name": "Europris",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег покупает корм для Барона в магазине Europris.",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "b43f2c84-98db-4fb7-a161-be4ae49094d7",
+        "name": "BUYS_FOOD_FROM",
+        "fact": "Олег покупает корм для Барона в магазине Europris.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:41.637378+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Europris",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "7be926e6-4087-49f5-acc7-b26379c0279a",
+        "name": "BUYS_FOOD_FOR",
+        "fact": "Олег покупает корм для Барона.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:41.637941+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Барон",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 5434,
+   "обвязка": {
+    "вызовов": 2,
+    "с_инструментом": 2,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 2,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: Нина берёт за подшив брюк 320 крон",
+      "2026-10-19T09:02:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "6eb4ec61-885a-4f52-a27f-649411b43249",
+       "content": "Олег: Нина берёт за подшив брюк 320 крон",
+       "valid_at": "2026-10-19T09:02:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "11b00b3a-a563-4ef1-a575-8d7de40ed961",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег покупает корм для Барона в магазине Europris.\nОлег покупает корм для Барона.\nНина берёт 320 крон за подшив брюк (сообщил Олег)",
+        "attributes": {}
+       },
+       {
+        "uuid": "b338a07a-4f6c-440d-96e4-20534435fa05",
+        "name": "Нина",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Нина берёт 320 крон за подшив брюк (сообщил Олег)",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "60ba5b5f-0d43-4d3e-aaee-226c82462cbc",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Нина берёт 320 крон за подшив брюк (сообщил Олег)",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:48.085575+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "6eb4ec61-885a-4f52-a27f-649411b43249"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 7381,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 3,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: Erik из Tromsø купил Walker 6F",
+      "2026-10-19T09:03:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "45ffea32-5030-44e0-a0c1-c6e685d8d4ea",
+       "content": "Олег: Erik из Tromsø купил Walker 6F",
+       "valid_at": "2026-10-19T09:03:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "11b00b3a-a563-4ef1-a575-8d7de40ed961",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег покупает корм для Барона в магазине Europris.\nОлег покупает корм для Барона.\nНина берёт 320 крон за подшив брюк (сообщил Олег)",
+        "attributes": {}
+       },
+       {
+        "uuid": "c1bc7feb-791a-4fb5-92e4-beb16811cfe2",
+        "name": "Erik",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Erik from Tromsø bought a Walker 6F, according to Олег.\nErik is from Tromsø.",
+        "attributes": {}
+       },
+       {
+        "uuid": "87267399-00bf-4551-a2f3-68014949bd1a",
+        "name": "Tromsø",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Erik is from Tromsø.",
+        "attributes": {}
+       },
+       {
+        "uuid": "80068024-97fb-4473-845e-7c73e29e96ad",
+        "name": "Walker 6F",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Erik from Tromsø bought a Walker 6F, according to Олег.",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "c85789f9-b57f-4fe1-b96e-384a6b73d61e",
+        "name": "PURCHASED",
+        "fact": "Erik from Tromsø bought a Walker 6F, according to Олег.",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:56.388322+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Erik",
+        "к": "Walker 6F",
+        "episodes": [
+         "45ffea32-5030-44e0-a0c1-c6e685d8d4ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "33596655-b871-4f24-8dd4-3700712a6d9b",
+        "name": "LIVES_IN",
+        "fact": "Erik is from Tromsø.",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:56.388322+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Erik",
+        "к": "Tromsø",
+        "episodes": [
+         "45ffea32-5030-44e0-a0c1-c6e685d8d4ea"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 9053,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 4,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: с декабря Нина берёт за подшив 390",
+      "2026-10-19T09:04:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "f13c6cbf-472a-44c9-9b3f-518ed81a7b85",
+       "content": "Олег: с декабря Нина берёт за подшив 390",
+       "valid_at": "2026-10-19T09:04:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "11b00b3a-a563-4ef1-a575-8d7de40ed961",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег покупает корм для Барона в магазине Europris.\nОлег покупает корм для Барона.\nНина берёт 320 крон за подшив брюк (сообщил Олег)\nStarting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.",
+        "attributes": {}
+       },
+       {
+        "uuid": "b338a07a-4f6c-440d-96e4-20534435fa05",
+        "name": "Нина",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Нина берёт 320 крон за подшив брюк (сообщил Олег)\nStarting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "db5004d8-7e15-4802-98d2-90511a756b62",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Starting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.",
+        "valid_at": "2026-12-01T00:00:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:07.005634+00:00",
+        "reference_time": "2026-10-19T09:04:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "f13c6cbf-472a-44c9-9b3f-518ed81a7b85"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "60ba5b5f-0d43-4d3e-aaee-226c82462cbc",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Нина берёт 320 крон за подшив брюк (сообщил Олег)",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-12-01T00:00:00+00:00",
+        "expired_at": "2026-11-07T17:01:10.258413+00:00",
+        "created_at": "2026-11-07T17:00:48.085575+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "6eb4ec61-885a-4f52-a27f-649411b43249"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 11849,
+   "обвязка": {
+    "вызовов": 3,
+    "с_инструментом": 3,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 5,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 20.11: подшив у Нины?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "60ba5b5f-0d43-4d3e-aaee-226c82462cbc",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Нина берёт 320 крон за подшив брюк (сообщил Олег)",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-12-01T00:00:00+00:00",
+        "expired_at": "2026-11-07T17:01:10.258413+00:00",
+        "created_at": "2026-11-07T17:00:48.085575+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "6eb4ec61-885a-4f52-a27f-649411b43249"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "db5004d8-7e15-4802-98d2-90511a756b62",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Starting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.",
+        "valid_at": "2026-12-01T00:00:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:07.005634+00:00",
+        "reference_time": "2026-10-19T09:04:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "f13c6cbf-472a-44c9-9b3f-518ed81a7b85"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "7be926e6-4087-49f5-acc7-b26379c0279a",
+        "name": "BUYS_FOOD_FOR",
+        "fact": "Олег покупает корм для Барона.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:41.637941+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Барон",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "b43f2c84-98db-4fb7-a161-be4ae49094d7",
+        "name": "BUYS_FOOD_FROM",
+        "fact": "Олег покупает корм для Барона в магазине Europris.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:41.637378+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Europris",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 485,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 6,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 05.12: подшив у Нины?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "60ba5b5f-0d43-4d3e-aaee-226c82462cbc",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Нина берёт 320 крон за подшив брюк (сообщил Олег)",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-12-01T00:00:00+00:00",
+        "expired_at": "2026-11-07T17:01:10.258413+00:00",
+        "created_at": "2026-11-07T17:00:48.085575+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "6eb4ec61-885a-4f52-a27f-649411b43249"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "db5004d8-7e15-4802-98d2-90511a756b62",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Starting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.",
+        "valid_at": "2026-12-01T00:00:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:07.005634+00:00",
+        "reference_time": "2026-10-19T09:04:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "f13c6cbf-472a-44c9-9b3f-518ed81a7b85"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "b43f2c84-98db-4fb7-a161-be4ae49094d7",
+        "name": "BUYS_FOOD_FROM",
+        "fact": "Олег покупает корм для Барона в магазине Europris.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:41.637378+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Europris",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "7be926e6-4087-49f5-acc7-b26379c0279a",
+        "name": "BUYS_FOOD_FOR",
+        "fact": "Олег покупает корм для Барона.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:41.637941+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Барон",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 190,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 7,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: корм теперь беру в Felleskjøpet",
+      "2026-10-19T09:07:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "32d3c5c8-ddb2-4ad4-8b38-dcc4e313dd0f",
+       "content": "Олег: корм теперь беру в Felleskjøpet",
+       "valid_at": "2026-10-19T09:07:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "11b00b3a-a563-4ef1-a575-8d7de40ed961",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег покупает корм для Барона в магазине Europris.\nОлег покупает корм для Барона.\nНина берёт 320 крон за подшив брюк (сообщил Олег)\nStarting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.\nОлег now buys food for Барон (his pet) at Felleskjøpet instead of Europris.",
+        "attributes": {}
+       },
+       {
+        "uuid": "8ad6f98b-6e99-4a6f-a262-03500403da7e",
+        "name": "Felleskjøpet",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег now buys food for Барон (his pet) at Felleskjøpet instead of Europris.",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "5695881c-fede-4f6f-954c-029dcf54b256",
+        "name": "BUYS_PET_FOOD_AT",
+        "fact": "Олег now buys food for Барон (his pet) at Felleskjøpet instead of Europris.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:17.083381+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Felleskjøpet",
+        "episodes": [
+         "32d3c5c8-ddb2-4ad4-8b38-dcc4e313dd0f"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "b43f2c84-98db-4fb7-a161-be4ae49094d7",
+        "name": "BUYS_FOOD_FROM",
+        "fact": "Олег покупает корм для Барона в магазине Europris.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:01:18.898231+00:00",
+        "created_at": "2026-11-07T17:00:41.637378+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Europris",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 7950,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 8,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "где я покупаю корм собаке?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "7be926e6-4087-49f5-acc7-b26379c0279a",
+        "name": "BUYS_FOOD_FOR",
+        "fact": "Олег покупает корм для Барона.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:41.637941+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Барон",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "b43f2c84-98db-4fb7-a161-be4ae49094d7",
+        "name": "BUYS_FOOD_FROM",
+        "fact": "Олег покупает корм для Барона в магазине Europris.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:01:18.898231+00:00",
+        "created_at": "2026-11-07T17:00:41.637378+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Europris",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "5695881c-fede-4f6f-954c-029dcf54b256",
+        "name": "BUYS_PET_FOOD_AT",
+        "fact": "Олег now buys food for Барон (his pet) at Felleskjøpet instead of Europris.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:17.083381+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Felleskjøpet",
+        "episodes": [
+         "32d3c5c8-ddb2-4ad4-8b38-dcc4e313dd0f"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 188,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 9,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Эва: Erik купил TRONIC.",
+      "2026-10-19T09:09:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "ea2a5c5d-9a75-4459-b139-38961429e1b5",
+       "content": "Эва: Erik купил TRONIC.",
+       "valid_at": "2026-10-19T09:09:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "38d8d7d2-4b5a-42fd-84db-d7fc54f2dcb8",
+        "name": "Эва",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Эва сообщила, что Erik купил TRONIC.",
+        "attributes": {}
+       },
+       {
+        "uuid": "c1bc7feb-791a-4fb5-92e4-beb16811cfe2",
+        "name": "Erik",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Erik from Tromsø bought a Walker 6F, according to Олег.\nErik is from Tromsø.\nErik купил TRONIC (по словам Эвы).",
+        "attributes": {}
+       },
+       {
+        "uuid": "5583889d-ab06-4ea8-974a-a2ad9ca4c87a",
+        "name": "TRONIC",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Erik купил TRONIC (по словам Эвы).",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "e96f6b18-f0fc-4aa5-b698-244206a3dd91",
+        "name": "PURCHASED",
+        "fact": "Erik купил TRONIC (по словам Эвы).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:26.650477+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Erik",
+        "к": "TRONIC",
+        "episodes": [
+         "ea2a5c5d-9a75-4459-b139-38961429e1b5"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 11427,
+   "обвязка": {
+    "вызовов": 5,
+    "с_инструментом": 5,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 10,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда: что купил Erik?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "e96f6b18-f0fc-4aa5-b698-244206a3dd91",
+        "name": "PURCHASED",
+        "fact": "Erik купил TRONIC (по словам Эвы).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:26.650477+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Erik",
+        "к": "TRONIC",
+        "episodes": [
+         "ea2a5c5d-9a75-4459-b139-38961429e1b5"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "33596655-b871-4f24-8dd4-3700712a6d9b",
+        "name": "LIVES_IN",
+        "fact": "Erik is from Tromsø.",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:56.388322+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Erik",
+        "к": "Tromsø",
+        "episodes": [
+         "45ffea32-5030-44e0-a0c1-c6e685d8d4ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "c85789f9-b57f-4fe1-b96e-384a6b73d61e",
+        "name": "PURCHASED",
+        "fact": "Erik from Tromsø bought a Walker 6F, according to Олег.",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:56.388322+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Erik",
+        "к": "Walker 6F",
+        "episodes": [
+         "45ffea32-5030-44e0-a0c1-c6e685d8d4ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "7be926e6-4087-49f5-acc7-b26379c0279a",
+        "name": "BUYS_FOOD_FOR",
+        "fact": "Олег покупает корм для Барона.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:41.637941+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Барон",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "5695881c-fede-4f6f-954c-029dcf54b256",
+        "name": "BUYS_PET_FOOD_AT",
+        "fact": "Олег now buys food for Барон (his pet) at Felleskjøpet instead of Europris.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:17.083381+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Felleskjøpet",
+        "episodes": [
+         "32d3c5c8-ddb2-4ad4-8b38-dcc4e313dd0f"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "b43f2c84-98db-4fb7-a161-be4ae49094d7",
+        "name": "BUYS_FOOD_FROM",
+        "fact": "Олег покупает корм для Барона в магазине Europris.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:01:18.898231+00:00",
+        "created_at": "2026-11-07T17:00:41.637378+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Europris",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "60ba5b5f-0d43-4d3e-aaee-226c82462cbc",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Нина берёт 320 крон за подшив брюк (сообщил Олег)",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-12-01T00:00:00+00:00",
+        "expired_at": "2026-11-07T17:01:10.258413+00:00",
+        "created_at": "2026-11-07T17:00:48.085575+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "6eb4ec61-885a-4f52-a27f-649411b43249"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "db5004d8-7e15-4802-98d2-90511a756b62",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Starting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.",
+        "valid_at": "2026-12-01T00:00:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:07.005634+00:00",
+        "reference_time": "2026-10-19T09:04:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "f13c6cbf-472a-44c9-9b3f-518ed81a7b85"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 178,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 11,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: завтра мастерская закрыта",
+      "2026-10-19T09:11:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "ccc1db82-b705-486d-9deb-1f3bab736f70",
+       "content": "Олег: завтра мастерская закрыта",
+       "valid_at": "2026-10-19T09:11:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "11b00b3a-a563-4ef1-a575-8d7de40ed961",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег покупает корм для Барона в магазине Europris.\nОлег покупает корм для Барона.\nНина берёт 320 крон за подшив брюк (сообщил Олег)\nStarting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.\nОлег now buys food for Барон (his pet) at Felleskjøpet instead of Europris.",
+        "attributes": {}
+       }
+      ],
+      "edges": []
+     }
+    }
+   ],
+   "мс": 3914,
+   "обвязка": {
+    "вызовов": 2,
+    "с_инструментом": 2,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 12,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 20.10: мастерская открыта?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "db5004d8-7e15-4802-98d2-90511a756b62",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Starting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.",
+        "valid_at": "2026-12-01T00:00:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:07.005634+00:00",
+        "reference_time": "2026-10-19T09:04:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "f13c6cbf-472a-44c9-9b3f-518ed81a7b85"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "60ba5b5f-0d43-4d3e-aaee-226c82462cbc",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Нина берёт 320 крон за подшив брюк (сообщил Олег)",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-12-01T00:00:00+00:00",
+        "expired_at": "2026-11-07T17:01:10.258413+00:00",
+        "created_at": "2026-11-07T17:00:48.085575+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "6eb4ec61-885a-4f52-a27f-649411b43249"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    },
+    {
+     "вызов": [
+      "search",
+      "Что правда на 21.10: мастерская открыта?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "db5004d8-7e15-4802-98d2-90511a756b62",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Starting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.",
+        "valid_at": "2026-12-01T00:00:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:07.005634+00:00",
+        "reference_time": "2026-10-19T09:04:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "f13c6cbf-472a-44c9-9b3f-518ed81a7b85"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "60ba5b5f-0d43-4d3e-aaee-226c82462cbc",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Нина берёт 320 крон за подшив брюк (сообщил Олег)",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-12-01T00:00:00+00:00",
+        "expired_at": "2026-11-07T17:01:10.258413+00:00",
+        "created_at": "2026-11-07T17:00:48.085575+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "6eb4ec61-885a-4f52-a27f-649411b43249"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 434,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 13,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда сейчас: подшив у Нины?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "60ba5b5f-0d43-4d3e-aaee-226c82462cbc",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Нина берёт 320 крон за подшив брюк (сообщил Олег)",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-12-01T00:00:00+00:00",
+        "expired_at": "2026-11-07T17:01:10.258413+00:00",
+        "created_at": "2026-11-07T17:00:48.085575+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "6eb4ec61-885a-4f52-a27f-649411b43249"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "db5004d8-7e15-4802-98d2-90511a756b62",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Starting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.",
+        "valid_at": "2026-12-01T00:00:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:07.005634+00:00",
+        "reference_time": "2026-10-19T09:04:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "f13c6cbf-472a-44c9-9b3f-518ed81a7b85"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "7be926e6-4087-49f5-acc7-b26379c0279a",
+        "name": "BUYS_FOOD_FOR",
+        "fact": "Олег покупает корм для Барона.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:41.637941+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Барон",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "b43f2c84-98db-4fb7-a161-be4ae49094d7",
+        "name": "BUYS_FOOD_FROM",
+        "fact": "Олег покупает корм для Барона в магазине Europris.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:01:18.898231+00:00",
+        "created_at": "2026-11-07T17:00:41.637378+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Europris",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 208,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 14,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: Эрик доволен машиной",
+      "2026-10-19T09:14:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "6057f7d2-f100-495f-aa24-4cb083ba4755",
+       "content": "Олег: Эрик доволен машиной",
+       "valid_at": "2026-10-19T09:14:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "11b00b3a-a563-4ef1-a575-8d7de40ed961",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег покупает корм для Барона в магазине Europris.\nОлег покупает корм для Барона.\nНина берёт 320 крон за подшив брюк (сообщил Олег)\nStarting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.\nОлег now buys food for Барон (his pet) at Felleskjøpet instead of Europris.",
+        "attributes": {}
+       },
+       {
+        "uuid": "c1bc7feb-791a-4fb5-92e4-beb16811cfe2",
+        "name": "Erik",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Erik from Tromsø bought a Walker 6F, according to Олег.\nErik is from Tromsø.\nErik купил TRONIC (по словам Эвы).",
+        "attributes": {}
+       }
+      ],
+      "edges": []
+     }
+    }
+   ],
+   "мс": 6778,
+   "обвязка": {
+    "вызовов": 3,
+    "с_инструментом": 3,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 15,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда: кто такой Эрик?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "33596655-b871-4f24-8dd4-3700712a6d9b",
+        "name": "LIVES_IN",
+        "fact": "Erik is from Tromsø.",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:56.388322+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Erik",
+        "к": "Tromsø",
+        "episodes": [
+         "45ffea32-5030-44e0-a0c1-c6e685d8d4ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "c85789f9-b57f-4fe1-b96e-384a6b73d61e",
+        "name": "PURCHASED",
+        "fact": "Erik from Tromsø bought a Walker 6F, according to Олег.",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:56.388322+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Erik",
+        "к": "Walker 6F",
+        "episodes": [
+         "45ffea32-5030-44e0-a0c1-c6e685d8d4ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "e96f6b18-f0fc-4aa5-b698-244206a3dd91",
+        "name": "PURCHASED",
+        "fact": "Erik купил TRONIC (по словам Эвы).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:26.650477+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Erik",
+        "к": "TRONIC",
+        "episodes": [
+         "ea2a5c5d-9a75-4459-b139-38961429e1b5"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 243,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 16,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда: сколько стоит подшив у Лены?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "60ba5b5f-0d43-4d3e-aaee-226c82462cbc",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Нина берёт 320 крон за подшив брюк (сообщил Олег)",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-12-01T00:00:00+00:00",
+        "expired_at": "2026-11-07T17:01:10.258413+00:00",
+        "created_at": "2026-11-07T17:00:48.085575+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "6eb4ec61-885a-4f52-a27f-649411b43249"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "db5004d8-7e15-4802-98d2-90511a756b62",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Starting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.",
+        "valid_at": "2026-12-01T00:00:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:07.005634+00:00",
+        "reference_time": "2026-10-19T09:04:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "f13c6cbf-472a-44c9-9b3f-518ed81a7b85"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "b43f2c84-98db-4fb7-a161-be4ae49094d7",
+        "name": "BUYS_FOOD_FROM",
+        "fact": "Олег покупает корм для Барона в магазине Europris.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:01:18.898231+00:00",
+        "created_at": "2026-11-07T17:00:41.637378+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Europris",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "7be926e6-4087-49f5-acc7-b26379c0279a",
+        "name": "BUYS_FOOD_FOR",
+        "fact": "Олег покупает корм для Барона.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:41.637941+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Барон",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "e96f6b18-f0fc-4aa5-b698-244206a3dd91",
+        "name": "PURCHASED",
+        "fact": "Erik купил TRONIC (по словам Эвы).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:26.650477+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Erik",
+        "к": "TRONIC",
+        "episodes": [
+         "ea2a5c5d-9a75-4459-b139-38961429e1b5"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "5695881c-fede-4f6f-954c-029dcf54b256",
+        "name": "BUYS_PET_FOOD_AT",
+        "fact": "Олег now buys food for Барон (his pet) at Felleskjøpet instead of Europris.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:17.083381+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Felleskjøpet",
+        "episodes": [
+         "32d3c5c8-ddb2-4ad4-8b38-dcc4e313dd0f"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 175,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 17,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: с прошлой среды корм снова беру в Europris",
+      "2026-10-19T09:17:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "fa9d7fc6-7b10-4e97-9c85-af09da202efb",
+       "content": "Олег: с прошлой среды корм снова беру в Europris",
+       "valid_at": "2026-10-19T09:17:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "11b00b3a-a563-4ef1-a575-8d7de40ed961",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег покупает корм для Барона в магазине Europris.\nОлег покупает корм для Барона.\nНина берёт 320 крон за подшив брюк (сообщил Олег)\nStarting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.\nОлег now buys food for Барон (his pet) at Felleskjøpet instead of Europris.\nОлег again buys food for Барон at Europris, since last Wednesday (2026-10-14), after having switched to Felleskjøpet.",
+        "attributes": {}
+       },
+       {
+        "uuid": "3dd11c11-ccc5-4486-bc73-a03bea3f637e",
+        "name": "Europris",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег покупает корм для Барона в магазине Europris.\nОлег again buys food for Барон at Europris, since last Wednesday (2026-10-14), after having switched to Felleskjøpet.",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "c9329202-c6a4-4563-82d2-b32f831379f7",
+        "name": "BUYS_PET_FOOD_AT",
+        "fact": "Олег again buys food for Барон at Europris, since last Wednesday (2026-10-14), after having switched to Felleskjøpet.",
+        "valid_at": "2026-10-14T00:00:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:01:52.501614+00:00",
+        "created_at": "2026-11-07T17:01:49.075283+00:00",
+        "reference_time": "2026-10-19T09:17:00+00:00",
+        "от": "Олег",
+        "к": "Europris",
+        "episodes": [
+         "fa9d7fc6-7b10-4e97-9c85-af09da202efb"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 9891,
+   "обвязка": {
+    "вызовов": 3,
+    "с_инструментом": 3,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 18,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 16.10: где беру корм?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "7be926e6-4087-49f5-acc7-b26379c0279a",
+        "name": "BUYS_FOOD_FOR",
+        "fact": "Олег покупает корм для Барона.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:41.637941+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Барон",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "b43f2c84-98db-4fb7-a161-be4ae49094d7",
+        "name": "BUYS_FOOD_FROM",
+        "fact": "Олег покупает корм для Барона в магазине Europris.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:01:18.898231+00:00",
+        "created_at": "2026-11-07T17:00:41.637378+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Europris",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "c9329202-c6a4-4563-82d2-b32f831379f7",
+        "name": "BUYS_PET_FOOD_AT",
+        "fact": "Олег again buys food for Барон at Europris, since last Wednesday (2026-10-14), after having switched to Felleskjøpet.",
+        "valid_at": "2026-10-14T00:00:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:01:52.501614+00:00",
+        "created_at": "2026-11-07T17:01:49.075283+00:00",
+        "reference_time": "2026-10-19T09:17:00+00:00",
+        "от": "Олег",
+        "к": "Europris",
+        "episodes": [
+         "fa9d7fc6-7b10-4e97-9c85-af09da202efb"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "5695881c-fede-4f6f-954c-029dcf54b256",
+        "name": "BUYS_PET_FOOD_AT",
+        "fact": "Олег now buys food for Барон (his pet) at Felleskjøpet instead of Europris.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:17.083381+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Felleskjøpet",
+        "episodes": [
+         "32d3c5c8-ddb2-4ad4-8b38-dcc4e313dd0f"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "60ba5b5f-0d43-4d3e-aaee-226c82462cbc",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Нина берёт 320 крон за подшив брюк (сообщил Олег)",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-12-01T00:00:00+00:00",
+        "expired_at": "2026-11-07T17:01:10.258413+00:00",
+        "created_at": "2026-11-07T17:00:48.085575+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "6eb4ec61-885a-4f52-a27f-649411b43249"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 173,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 19,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: по будням мастерская работает до 18",
+      "2026-10-19T09:19:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "ee18fdd7-f89d-4d76-b3c3-ea27fd162ef9",
+       "content": "Олег: по будням мастерская работает до 18",
+       "valid_at": "2026-10-19T09:19:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "11b00b3a-a563-4ef1-a575-8d7de40ed961",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег покупает корм для Барона в магазине Europris.\nОлег покупает корм для Барона.\nНина берёт 320 крон за подшив брюк (сообщил Олег)\nStarting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.\nОлег now buys food for Барон (his pet) at Felleskjøpet instead of Europris.\nОлег again buys food for Барон at Europris, since last Wednesday (2026-10-14), after having switched to Felleskjøpet.",
+        "attributes": {}
+       }
+      ],
+      "edges": []
+     }
+    }
+   ],
+   "мс": 3629,
+   "обвязка": {
+    "вызовов": 2,
+    "с_инструментом": 2,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 20,
+   "выходы": [
+    {
+     "вызов": [
+      "get_by_group_ids",
+      [
+       "oleg"
+      ]
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "e96f6b18-f0fc-4aa5-b698-244206a3dd91",
+        "name": "PURCHASED",
+        "fact": "Erik купил TRONIC (по словам Эвы).",
+        "valid_at": "2026-10-19T09:09:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:26.650477+00:00",
+        "reference_time": "2026-10-19T09:09:00+00:00",
+        "от": "Erik",
+        "к": "TRONIC",
+        "episodes": [
+         "ea2a5c5d-9a75-4459-b139-38961429e1b5"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "db5004d8-7e15-4802-98d2-90511a756b62",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Starting in December, Нина charges 390 (crowns) for hemming (подшив), as reported by Олег.",
+        "valid_at": "2026-12-01T00:00:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:07.005634+00:00",
+        "reference_time": "2026-10-19T09:04:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "f13c6cbf-472a-44c9-9b3f-518ed81a7b85"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "c9329202-c6a4-4563-82d2-b32f831379f7",
+        "name": "BUYS_PET_FOOD_AT",
+        "fact": "Олег again buys food for Барон at Europris, since last Wednesday (2026-10-14), after having switched to Felleskjøpet.",
+        "valid_at": "2026-10-14T00:00:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:01:52.501614+00:00",
+        "created_at": "2026-11-07T17:01:49.075283+00:00",
+        "reference_time": "2026-10-19T09:17:00+00:00",
+        "от": "Олег",
+        "к": "Europris",
+        "episodes": [
+         "fa9d7fc6-7b10-4e97-9c85-af09da202efb"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "c85789f9-b57f-4fe1-b96e-384a6b73d61e",
+        "name": "PURCHASED",
+        "fact": "Erik from Tromsø bought a Walker 6F, according to Олег.",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:56.388322+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Erik",
+        "к": "Walker 6F",
+        "episodes": [
+         "45ffea32-5030-44e0-a0c1-c6e685d8d4ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "b43f2c84-98db-4fb7-a161-be4ae49094d7",
+        "name": "BUYS_FOOD_FROM",
+        "fact": "Олег покупает корм для Барона в магазине Europris.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": "2026-10-19T09:07:00+00:00",
+        "expired_at": "2026-11-07T17:01:18.898231+00:00",
+        "created_at": "2026-11-07T17:00:41.637378+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Europris",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "7be926e6-4087-49f5-acc7-b26379c0279a",
+        "name": "BUYS_FOOD_FOR",
+        "fact": "Олег покупает корм для Барона.",
+        "valid_at": "2026-10-19T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:41.637941+00:00",
+        "reference_time": "2026-10-19T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Барон",
+        "episodes": [
+         "07e7fff4-c00e-4783-b8fc-efb63aab90ea"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "60ba5b5f-0d43-4d3e-aaee-226c82462cbc",
+        "name": "CHARGES_PRICE_FOR_SERVICE",
+        "fact": "Нина берёт 320 крон за подшив брюк (сообщил Олег)",
+        "valid_at": "2026-10-19T09:02:00+00:00",
+        "invalid_at": "2026-12-01T00:00:00+00:00",
+        "expired_at": "2026-11-07T17:01:10.258413+00:00",
+        "created_at": "2026-11-07T17:00:48.085575+00:00",
+        "reference_time": "2026-10-19T09:02:00+00:00",
+        "от": "Нина",
+        "к": "Олег",
+        "episodes": [
+         "6eb4ec61-885a-4f52-a27f-649411b43249"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "5695881c-fede-4f6f-954c-029dcf54b256",
+        "name": "BUYS_PET_FOOD_AT",
+        "fact": "Олег now buys food for Барон (his pet) at Felleskjøpet instead of Europris.",
+        "valid_at": "2026-10-19T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:01:17.083381+00:00",
+        "reference_time": "2026-10-19T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Felleskjøpet",
+        "episodes": [
+         "32d3c5c8-ddb2-4ad4-8b38-dcc4e313dd0f"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "33596655-b871-4f24-8dd4-3700712a6d9b",
+        "name": "LIVES_IN",
+        "fact": "Erik is from Tromsø.",
+        "valid_at": "2026-10-19T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:00:56.388322+00:00",
+        "reference_time": "2026-10-19T09:03:00+00:00",
+        "от": "Erik",
+        "к": "Tromsø",
+        "episodes": [
+         "45ffea32-5030-44e0-a0c1-c6e685d8d4ea"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 83,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  }
+ ],
+ "стоп": "",
+ "обвязка": {
+  "вызовов": 32,
+  "с_инструментом": 32,
+  "без_инструмента": 0,
+  "без_инструмента_разобран_из_текста": 0,
+  "без_инструмента_не_разобран": 0,
+  "доля_не_разобрано": 0.0,
+  "доля_без_инструмента": 0.0,
+  "шагов_со_сбоем_обвязки": []
+ },
+ "стоп_обвязки": "",
+ "версии": {
+  "graphiti-core": "0.31.2",
+  "anthropic": "2.6.0",
+  "openai": "3.46.0",
+  "neo4j": "6.4.1"
+ },
+ "хранилище": "Neo4j Desktop (локально, Bolt)",
+ "версия_neo4j": [
+  {
+   "name": "Neo4j Kernel",
+   "versions": [
+    "2026.10.1"
+   ],
+   "edition": "enterprise"
+  },
+  {
+   "name": "Cypher",
+   "versions": [
+    "5",
+    "25"
+   ],
+   "edition": ""
+  }
+ ],
+ "модель": "claude-sonnet-5-5",
+ "когда": "2026-11-07 18:01:56"
+}

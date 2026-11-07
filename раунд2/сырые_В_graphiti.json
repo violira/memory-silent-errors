@@ -1,0 +1,2134 @@
+{
+ "система": "graphiti",
+ "набор": "В",
+ "сек": 101.6,
+ "расход": {
+  "sonnet_вызовов": 37,
+  "sonnet_in": 113989,
+  "sonnet_out": 6428,
+  "sonnet_сбоев": 0,
+  "emb_вызовов": 52,
+  "emb_токенов": 1185,
+  "openai_chat_вызовов": 0,
+  "usd": 0.2923
+ },
+ "шаги": [
+  {
+   "№": 1,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: масло для машин беру у Lindqvist в Moss",
+      "2026-10-26T09:01:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "d3baf0ed-6b61-4455-92c4-6a5a574d0a57",
+       "content": "Олег: масло для машин беру у Lindqvist в Moss",
+       "valid_at": "2026-10-26T09:01:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "8ddf7e2d-ba82-4994-80e3-b392cade23f7",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег buys oil for machines (масло для машин) from Lindqvist.\nОлег buys oil for machines (масло для машин) from Lindqvist in Moss.",
+        "attributes": {}
+       },
+       {
+        "uuid": "41567941-644c-4100-93b2-3ea75d17d694",
+        "name": "Lindqvist",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег buys oil for machines (масло для машин) from Lindqvist.\nLindqvist, the supplier from whom Олег buys oil for machines, is located in Moss.",
+        "attributes": {}
+       },
+       {
+        "uuid": "5421a97e-a313-4935-bd20-33870e8189c0",
+        "name": "Moss",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Lindqvist, the supplier from whom Олег buys oil for machines, is located in Moss.",
+        "attributes": {}
+       },
+       {
+        "uuid": "cb8d0c14-1baa-49c7-857d-dfd58abaa37f",
+        "name": "масло для машин",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег buys oil for machines (масло для машин) from Lindqvist in Moss.",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "74ef9baf-e3e8-4942-99c8-9f3f62741506",
+        "name": "BUYS_FROM",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Lindqvist",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "41a84d85-85c4-42ed-a73a-98f8978a34a7",
+        "name": "LOCATED_IN",
+        "fact": "Lindqvist, the supplier from whom Олег buys oil for machines, is located in Moss.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Lindqvist",
+        "к": "Moss",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "ee2bdf46-f025-45b2-8967-e1c2b56ac3b9",
+        "name": "BUYS",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist in Moss.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "масло для машин",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 10285,
+   "обвязка": {
+    "вызовов": 2,
+    "с_инструментом": 2,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 2,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: Нина открывает ателье в 10",
+      "2026-10-26T09:02:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "d9efcb34-3bea-4273-9865-82847d584166",
+       "content": "Олег: Нина открывает ателье в 10",
+       "valid_at": "2026-10-26T09:02:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "8ddf7e2d-ba82-4994-80e3-b392cade23f7",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег buys oil for machines (масло для машин) from Lindqvist.\nОлег buys oil for machines (масло для машин) from Lindqvist in Moss.",
+        "attributes": {}
+       },
+       {
+        "uuid": "e97b8bb9-bb59-48a4-9649-75131444d5dd",
+        "name": "Нина",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Нина открывает ателье в 10 (по словам Олега).",
+        "attributes": {}
+       }
+      ],
+      "edges": []
+     }
+    }
+   ],
+   "мс": 12145,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 3,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: сервис бытовой машины стоит 1190 крон",
+      "2026-10-26T09:03:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "a6e616bc-a174-406d-b388-5668a8546c47",
+       "content": "Олег: сервис бытовой машины стоит 1190 крон",
+       "valid_at": "2026-10-26T09:03:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "8ddf7e2d-ba82-4994-80e3-b392cade23f7",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег buys oil for machines (масло для машин) from Lindqvist.\nОлег buys oil for machines (масло для машин) from Lindqvist in Moss.\nОлег сообщил, что сервис бытовой машины стоит 1190 крон.",
+        "attributes": {}
+       },
+       {
+        "uuid": "beaf572d-e18a-406e-9a84-15ee3abbc04c",
+        "name": "сервис бытовой машины",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег сообщил, что сервис бытовой машины стоит 1190 крон.",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "0ce13d47-5d36-4dab-b13e-4fe93c7b22b2",
+        "name": "STATED_PRICE_OF",
+        "fact": "Олег сообщил, что сервис бытовой машины стоит 1190 крон.",
+        "valid_at": "2026-10-26T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:01.737457+00:00",
+        "reference_time": "2026-10-26T09:03:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "a6e616bc-a174-406d-b388-5668a8546c47"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 10573,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 4,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: с 1 января сервис бытовой будет 1290",
+      "2026-10-26T09:04:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "84babd4b-5ec7-471e-8455-8874a9980a15",
+       "content": "Олег: с 1 января сервис бытовой будет 1290",
+       "valid_at": "2026-10-26T09:04:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "8ddf7e2d-ba82-4994-80e3-b392cade23f7",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег buys oil for machines (масло для машин) from Lindqvist.\nОлег buys oil for machines (масло для машин) from Lindqvist in Moss.\nОлег сообщил, что сервис бытовой машины стоит 1190 крон.\nОлег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.",
+        "attributes": {}
+       },
+       {
+        "uuid": "beaf572d-e18a-406e-9a84-15ee3abbc04c",
+        "name": "сервис бытовой машины",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег сообщил, что сервис бытовой машины стоит 1190 крон.\nОлег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "76e8f287-1775-41d2-b5d6-49fc5ee429dc",
+        "name": "ANNOUNCED_PRICE_CHANGE",
+        "fact": "Олег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.",
+        "valid_at": "2026-10-26T09:04:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:12.301384+00:00",
+        "reference_time": "2026-10-26T09:04:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "84babd4b-5ec7-471e-8455-8874a9980a15"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 10948,
+   "обвязка": {
+    "вызовов": 3,
+    "с_инструментом": 3,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 5,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 15.12.2026: цена сервиса бытовой?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "76e8f287-1775-41d2-b5d6-49fc5ee429dc",
+        "name": "ANNOUNCED_PRICE_CHANGE",
+        "fact": "Олег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.",
+        "valid_at": "2026-10-26T09:04:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:12.301384+00:00",
+        "reference_time": "2026-10-26T09:04:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "84babd4b-5ec7-471e-8455-8874a9980a15"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "0ce13d47-5d36-4dab-b13e-4fe93c7b22b2",
+        "name": "STATED_PRICE_OF",
+        "fact": "Олег сообщил, что сервис бытовой машины стоит 1190 крон.",
+        "valid_at": "2026-10-26T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:01.737457+00:00",
+        "reference_time": "2026-10-26T09:03:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "a6e616bc-a174-406d-b388-5668a8546c47"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 210,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 6,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 10.01.2027: цена сервиса бытовой?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "76e8f287-1775-41d2-b5d6-49fc5ee429dc",
+        "name": "ANNOUNCED_PRICE_CHANGE",
+        "fact": "Олег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.",
+        "valid_at": "2026-10-26T09:04:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:12.301384+00:00",
+        "reference_time": "2026-10-26T09:04:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "84babd4b-5ec7-471e-8455-8874a9980a15"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "0ce13d47-5d36-4dab-b13e-4fe93c7b22b2",
+        "name": "STATED_PRICE_OF",
+        "fact": "Олег сообщил, что сервис бытовой машины стоит 1190 крон.",
+        "valid_at": "2026-10-26T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:01.737457+00:00",
+        "reference_time": "2026-10-26T09:03:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "a6e616bc-a174-406d-b388-5668a8546c47"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 174,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 7,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: по субботам Нина открывает в 11",
+      "2026-10-26T09:07:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "64facfe6-47a3-457e-98e1-0d59da076620",
+       "content": "Олег: по субботам Нина открывает в 11",
+       "valid_at": "2026-10-26T09:07:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "8ddf7e2d-ba82-4994-80e3-b392cade23f7",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег buys oil for machines (масло для машин) from Lindqvist.\nОлег buys oil for machines (масло для машин) from Lindqvist in Moss.\nОлег сообщил, что сервис бытовой машины стоит 1190 крон.\nОлег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.\nОлег сообщает, что по субботам Нина открывает ателье в 11 (в отличие от обычного открытия в 10)",
+        "attributes": {}
+       },
+       {
+        "uuid": "e97b8bb9-bb59-48a4-9649-75131444d5dd",
+        "name": "Нина",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Нина открывает ателье в 10 (по словам Олега).\nОлег сообщает, что по субботам Нина открывает ателье в 11 (в отличие от обычного открытия в 10)",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "29e6c4ef-f452-42e1-8054-518375d0d59e",
+        "name": "REPORTS_OPENING_TIME_OF",
+        "fact": "Олег сообщает, что по субботам Нина открывает ателье в 11 (в отличие от обычного открытия в 10)",
+        "valid_at": "2026-10-26T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:20.351433+00:00",
+        "reference_time": "2026-10-26T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Нина",
+        "episodes": [
+         "64facfe6-47a3-457e-98e1-0d59da076620"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 8165,
+   "обвязка": {
+    "вызовов": 3,
+    "с_инструментом": 3,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 8,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Во сколько Нина открывает в среду?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "29e6c4ef-f452-42e1-8054-518375d0d59e",
+        "name": "REPORTS_OPENING_TIME_OF",
+        "fact": "Олег сообщает, что по субботам Нина открывает ателье в 11 (в отличие от обычного открытия в 10)",
+        "valid_at": "2026-10-26T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:20.351433+00:00",
+        "reference_time": "2026-10-26T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Нина",
+        "episodes": [
+         "64facfe6-47a3-457e-98e1-0d59da076620"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "76e8f287-1775-41d2-b5d6-49fc5ee429dc",
+        "name": "ANNOUNCED_PRICE_CHANGE",
+        "fact": "Олег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.",
+        "valid_at": "2026-10-26T09:04:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:12.301384+00:00",
+        "reference_time": "2026-10-26T09:04:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "84babd4b-5ec7-471e-8455-8874a9980a15"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "0ce13d47-5d36-4dab-b13e-4fe93c7b22b2",
+        "name": "STATED_PRICE_OF",
+        "fact": "Олег сообщил, что сервис бытовой машины стоит 1190 крон.",
+        "valid_at": "2026-10-26T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:01.737457+00:00",
+        "reference_time": "2026-10-26T09:03:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "a6e616bc-a174-406d-b388-5668a8546c47"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 202,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 9,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Во сколько Нина открывает в субботу?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "29e6c4ef-f452-42e1-8054-518375d0d59e",
+        "name": "REPORTS_OPENING_TIME_OF",
+        "fact": "Олег сообщает, что по субботам Нина открывает ателье в 11 (в отличие от обычного открытия в 10)",
+        "valid_at": "2026-10-26T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:20.351433+00:00",
+        "reference_time": "2026-10-26T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Нина",
+        "episodes": [
+         "64facfe6-47a3-457e-98e1-0d59da076620"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "76e8f287-1775-41d2-b5d6-49fc5ee429dc",
+        "name": "ANNOUNCED_PRICE_CHANGE",
+        "fact": "Олег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.",
+        "valid_at": "2026-10-26T09:04:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:12.301384+00:00",
+        "reference_time": "2026-10-26T09:04:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "84babd4b-5ec7-471e-8455-8874a9980a15"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "0ce13d47-5d36-4dab-b13e-4fe93c7b22b2",
+        "name": "STATED_PRICE_OF",
+        "fact": "Олег сообщил, что сервис бытовой машины стоит 1190 крон.",
+        "valid_at": "2026-10-26T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:01.737457+00:00",
+        "reference_time": "2026-10-26T09:03:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "a6e616bc-a174-406d-b388-5668a8546c47"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 156,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 10,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Эва: Наверное, масло лучше брать в Германии.",
+      "2026-10-26T09:10:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "7e8f0cf8-e559-43a5-bb4a-6d8b963d4b92",
+       "content": "Эва: Наверное, масло лучше брать в Германии.",
+       "valid_at": "2026-10-26T09:10:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "0c51ca53-cca5-4f55-ba30-6215da12a2e0",
+        "name": "Эва",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Эва tentatively suggests that it is better to buy oil in Германия (she says \"probably\").",
+        "attributes": {}
+       },
+       {
+        "uuid": "ebe12cec-4f99-47bb-9fa5-c4f67d0de443",
+        "name": "Германия",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Эва tentatively suggests that it is better to buy oil in Германия (she says \"probably\").",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "36f1db29-bb31-4dfa-88a3-5cc2bb8a4fdd",
+        "name": "SUGGESTS_BUYING_OIL_IN",
+        "fact": "Эва tentatively suggests that it is better to buy oil in Германия (she says \"probably\").",
+        "valid_at": "2026-10-26T09:10:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:30.185546+00:00",
+        "reference_time": "2026-10-26T09:10:00+00:00",
+        "от": "Эва",
+        "к": "Германия",
+        "episodes": [
+         "7e8f0cf8-e559-43a5-bb4a-6d8b963d4b92"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 8646,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 11,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Где Олег берёт масло?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "74ef9baf-e3e8-4942-99c8-9f3f62741506",
+        "name": "BUYS_FROM",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Lindqvist",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "ee2bdf46-f025-45b2-8967-e1c2b56ac3b9",
+        "name": "BUYS",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist in Moss.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "масло для машин",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "41a84d85-85c4-42ed-a73a-98f8978a34a7",
+        "name": "LOCATED_IN",
+        "fact": "Lindqvist, the supplier from whom Олег buys oil for machines, is located in Moss.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Lindqvist",
+        "к": "Moss",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "0ce13d47-5d36-4dab-b13e-4fe93c7b22b2",
+        "name": "STATED_PRICE_OF",
+        "fact": "Олег сообщил, что сервис бытовой машины стоит 1190 крон.",
+        "valid_at": "2026-10-26T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:01.737457+00:00",
+        "reference_time": "2026-10-26T09:03:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "a6e616bc-a174-406d-b388-5668a8546c47"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "29e6c4ef-f452-42e1-8054-518375d0d59e",
+        "name": "REPORTS_OPENING_TIME_OF",
+        "fact": "Олег сообщает, что по субботам Нина открывает ателье в 11 (в отличие от обычного открытия в 10)",
+        "valid_at": "2026-10-26T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:20.351433+00:00",
+        "reference_time": "2026-10-26T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Нина",
+        "episodes": [
+         "64facfe6-47a3-457e-98e1-0d59da076620"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "76e8f287-1775-41d2-b5d6-49fc5ee429dc",
+        "name": "ANNOUNCED_PRICE_CHANGE",
+        "fact": "Олег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.",
+        "valid_at": "2026-10-26T09:04:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:12.301384+00:00",
+        "reference_time": "2026-10-26T09:04:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "84babd4b-5ec7-471e-8455-8874a9980a15"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "36f1db29-bb31-4dfa-88a3-5cc2bb8a4fdd",
+        "name": "SUGGESTS_BUYING_OIL_IN",
+        "fact": "Эва tentatively suggests that it is better to buy oil in Германия (she says \"probably\").",
+        "valid_at": "2026-10-26T09:10:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:30.185546+00:00",
+        "reference_time": "2026-10-26T09:10:00+00:00",
+        "от": "Эва",
+        "к": "Германия",
+        "episodes": [
+         "7e8f0cf8-e559-43a5-bb4a-6d8b963d4b92"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 178,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 12,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: масло теперь беру у Bergtun",
+      "2026-10-26T09:12:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "7be6680b-0e34-4be0-bb9a-0e94685d2035",
+       "content": "Олег: масло теперь беру у Bergtun",
+       "valid_at": "2026-10-26T09:12:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "8ddf7e2d-ba82-4994-80e3-b392cade23f7",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег buys oil for machines (масло для машин) from Lindqvist.\nОлег buys oil for machines (масло для машин) from Lindqvist in Moss.\nОлег сообщил, что сервис бытовой машины стоит 1190 крон.\nОлег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.\nОлег сообщает, что по субботам Нина открывает ателье в 11 (в отличие от обычного открытия в 10)\nОлег now buys oil for machines from Bergtun (instead of Lindqvist in Moss).",
+        "attributes": {}
+       },
+       {
+        "uuid": "6b47dd4b-b29f-447a-8b3c-ae15bc18fd70",
+        "name": "Bergtun",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег now buys oil for machines from Bergtun (instead of Lindqvist in Moss).",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "882b6e0e-4e20-418d-bfb5-38c5c45808f0",
+        "name": "BUYS_OIL_FROM",
+        "fact": "Олег now buys oil for machines from Bergtun (instead of Lindqvist in Moss).",
+        "valid_at": "2026-10-26T09:12:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:37.244876+00:00",
+        "reference_time": "2026-10-26T09:12:00+00:00",
+        "от": "Олег",
+        "к": "Bergtun",
+        "episodes": [
+         "7be6680b-0e34-4be0-bb9a-0e94685d2035"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "ee2bdf46-f025-45b2-8967-e1c2b56ac3b9",
+        "name": "BUYS",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist in Moss.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "масло для машин",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "41a84d85-85c4-42ed-a73a-98f8978a34a7",
+        "name": "LOCATED_IN",
+        "fact": "Lindqvist, the supplier from whom Олег buys oil for machines, is located in Moss.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Lindqvist",
+        "к": "Moss",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "74ef9baf-e3e8-4942-99c8-9f3f62741506",
+        "name": "BUYS_FROM",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Lindqvist",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 7208,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 13,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Где Олег берёт масло?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "74ef9baf-e3e8-4942-99c8-9f3f62741506",
+        "name": "BUYS_FROM",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Lindqvist",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "ee2bdf46-f025-45b2-8967-e1c2b56ac3b9",
+        "name": "BUYS",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist in Moss.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "масло для машин",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "882b6e0e-4e20-418d-bfb5-38c5c45808f0",
+        "name": "BUYS_OIL_FROM",
+        "fact": "Олег now buys oil for machines from Bergtun (instead of Lindqvist in Moss).",
+        "valid_at": "2026-10-26T09:12:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:37.244876+00:00",
+        "reference_time": "2026-10-26T09:12:00+00:00",
+        "от": "Олег",
+        "к": "Bergtun",
+        "episodes": [
+         "7be6680b-0e34-4be0-bb9a-0e94685d2035"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "0ce13d47-5d36-4dab-b13e-4fe93c7b22b2",
+        "name": "STATED_PRICE_OF",
+        "fact": "Олег сообщил, что сервис бытовой машины стоит 1190 крон.",
+        "valid_at": "2026-10-26T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:01.737457+00:00",
+        "reference_time": "2026-10-26T09:03:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "a6e616bc-a174-406d-b388-5668a8546c47"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "41a84d85-85c4-42ed-a73a-98f8978a34a7",
+        "name": "LOCATED_IN",
+        "fact": "Lindqvist, the supplier from whom Олег buys oil for machines, is located in Moss.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Lindqvist",
+        "к": "Moss",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "29e6c4ef-f452-42e1-8054-518375d0d59e",
+        "name": "REPORTS_OPENING_TIME_OF",
+        "fact": "Олег сообщает, что по субботам Нина открывает ателье в 11 (в отличие от обычного открытия в 10)",
+        "valid_at": "2026-10-26T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:20.351433+00:00",
+        "reference_time": "2026-10-26T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Нина",
+        "episodes": [
+         "64facfe6-47a3-457e-98e1-0d59da076620"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "76e8f287-1775-41d2-b5d6-49fc5ee429dc",
+        "name": "ANNOUNCED_PRICE_CHANGE",
+        "fact": "Олег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.",
+        "valid_at": "2026-10-26T09:04:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:12.301384+00:00",
+        "reference_time": "2026-10-26T09:04:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "84babd4b-5ec7-471e-8455-8874a9980a15"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "36f1db29-bb31-4dfa-88a3-5cc2bb8a4fdd",
+        "name": "SUGGESTS_BUYING_OIL_IN",
+        "fact": "Эва tentatively suggests that it is better to buy oil in Германия (she says \"probably\").",
+        "valid_at": "2026-10-26T09:10:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:30.185546+00:00",
+        "reference_time": "2026-10-26T09:10:00+00:00",
+        "от": "Эва",
+        "к": "Германия",
+        "episodes": [
+         "7e8f0cf8-e559-43a5-bb4a-6d8b963d4b92"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 198,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 14,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Где Олег брал масло раньше?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "74ef9baf-e3e8-4942-99c8-9f3f62741506",
+        "name": "BUYS_FROM",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Lindqvist",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "ee2bdf46-f025-45b2-8967-e1c2b56ac3b9",
+        "name": "BUYS",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist in Moss.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "масло для машин",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "882b6e0e-4e20-418d-bfb5-38c5c45808f0",
+        "name": "BUYS_OIL_FROM",
+        "fact": "Олег now buys oil for machines from Bergtun (instead of Lindqvist in Moss).",
+        "valid_at": "2026-10-26T09:12:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:37.244876+00:00",
+        "reference_time": "2026-10-26T09:12:00+00:00",
+        "от": "Олег",
+        "к": "Bergtun",
+        "episodes": [
+         "7be6680b-0e34-4be0-bb9a-0e94685d2035"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "0ce13d47-5d36-4dab-b13e-4fe93c7b22b2",
+        "name": "STATED_PRICE_OF",
+        "fact": "Олег сообщил, что сервис бытовой машины стоит 1190 крон.",
+        "valid_at": "2026-10-26T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:01.737457+00:00",
+        "reference_time": "2026-10-26T09:03:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "a6e616bc-a174-406d-b388-5668a8546c47"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "41a84d85-85c4-42ed-a73a-98f8978a34a7",
+        "name": "LOCATED_IN",
+        "fact": "Lindqvist, the supplier from whom Олег buys oil for machines, is located in Moss.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Lindqvist",
+        "к": "Moss",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "29e6c4ef-f452-42e1-8054-518375d0d59e",
+        "name": "REPORTS_OPENING_TIME_OF",
+        "fact": "Олег сообщает, что по субботам Нина открывает ателье в 11 (в отличие от обычного открытия в 10)",
+        "valid_at": "2026-10-26T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:20.351433+00:00",
+        "reference_time": "2026-10-26T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Нина",
+        "episodes": [
+         "64facfe6-47a3-457e-98e1-0d59da076620"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "76e8f287-1775-41d2-b5d6-49fc5ee429dc",
+        "name": "ANNOUNCED_PRICE_CHANGE",
+        "fact": "Олег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.",
+        "valid_at": "2026-10-26T09:04:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:12.301384+00:00",
+        "reference_time": "2026-10-26T09:04:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "84babd4b-5ec7-471e-8455-8874a9980a15"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "36f1db29-bb31-4dfa-88a3-5cc2bb8a4fdd",
+        "name": "SUGGESTS_BUYING_OIL_IN",
+        "fact": "Эва tentatively suggests that it is better to buy oil in Германия (she says \"probably\").",
+        "valid_at": "2026-10-26T09:10:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:30.185546+00:00",
+        "reference_time": "2026-10-26T09:10:00+00:00",
+        "от": "Эва",
+        "к": "Германия",
+        "episodes": [
+         "7e8f0cf8-e559-43a5-bb4a-6d8b963d4b92"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 185,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 15,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Какой у Олега размер обуви?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "74ef9baf-e3e8-4942-99c8-9f3f62741506",
+        "name": "BUYS_FROM",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Lindqvist",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "ee2bdf46-f025-45b2-8967-e1c2b56ac3b9",
+        "name": "BUYS",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist in Moss.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "масло для машин",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "29e6c4ef-f452-42e1-8054-518375d0d59e",
+        "name": "REPORTS_OPENING_TIME_OF",
+        "fact": "Олег сообщает, что по субботам Нина открывает ателье в 11 (в отличие от обычного открытия в 10)",
+        "valid_at": "2026-10-26T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:20.351433+00:00",
+        "reference_time": "2026-10-26T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Нина",
+        "episodes": [
+         "64facfe6-47a3-457e-98e1-0d59da076620"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "0ce13d47-5d36-4dab-b13e-4fe93c7b22b2",
+        "name": "STATED_PRICE_OF",
+        "fact": "Олег сообщил, что сервис бытовой машины стоит 1190 крон.",
+        "valid_at": "2026-10-26T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:01.737457+00:00",
+        "reference_time": "2026-10-26T09:03:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "a6e616bc-a174-406d-b388-5668a8546c47"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "76e8f287-1775-41d2-b5d6-49fc5ee429dc",
+        "name": "ANNOUNCED_PRICE_CHANGE",
+        "fact": "Олег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.",
+        "valid_at": "2026-10-26T09:04:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:12.301384+00:00",
+        "reference_time": "2026-10-26T09:04:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "84babd4b-5ec7-471e-8455-8874a9980a15"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "882b6e0e-4e20-418d-bfb5-38c5c45808f0",
+        "name": "BUYS_OIL_FROM",
+        "fact": "Олег now buys oil for machines from Bergtun (instead of Lindqvist in Moss).",
+        "valid_at": "2026-10-26T09:12:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:37.244876+00:00",
+        "reference_time": "2026-10-26T09:12:00+00:00",
+        "от": "Олег",
+        "к": "Bergtun",
+        "episodes": [
+         "7be6680b-0e34-4be0-bb9a-0e94685d2035"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "41a84d85-85c4-42ed-a73a-98f8978a34a7",
+        "name": "LOCATED_IN",
+        "fact": "Lindqvist, the supplier from whom Олег buys oil for machines, is located in Moss.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Lindqvist",
+        "к": "Moss",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 175,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 16,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: Арне из Sola привёз Pfaff, не работает зигзаг",
+      "2026-10-26T09:16:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "f4e30a8f-7db9-469f-ae6c-035b3a11f82b",
+       "content": "Олег: Арне из Sola привёз Pfaff, не работает зигзаг",
+       "valid_at": "2026-10-26T09:16:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "8ddf7e2d-ba82-4994-80e3-b392cade23f7",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег buys oil for machines (масло для машин) from Lindqvist.\nОлег buys oil for machines (масло для машин) from Lindqvist in Moss.\nОлег сообщил, что сервис бытовой машины стоит 1190 крон.\nОлег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.\nОлег сообщает, что по субботам Нина открывает ателье в 11 (в отличие от обычного открытия в 10)\nОлег now buys oil for machines from Bergtun (instead of Lindqvist in Moss).",
+        "attributes": {}
+       },
+       {
+        "uuid": "ba7bfff4-818a-494a-b8b8-1cf386c0bb5d",
+        "name": "Арне",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Арне is from Sola.\nАрне brought a Pfaff sewing machine whose zigzag stitch does not work.",
+        "attributes": {}
+       },
+       {
+        "uuid": "3438f934-f963-4966-875a-f70dd4b26271",
+        "name": "Sola",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Арне is from Sola.",
+        "attributes": {}
+       },
+       {
+        "uuid": "0eb25728-a22e-436c-bc1a-4d7551d0ddaf",
+        "name": "Pfaff",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Арне brought a Pfaff sewing machine whose zigzag stitch does not work.",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "c7263497-2fc1-4e6b-8154-4f5e1bc37a9a",
+        "name": "IS_FROM",
+        "fact": "Арне is from Sola.",
+        "valid_at": "2026-10-26T09:16:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:50.286596+00:00",
+        "reference_time": "2026-10-26T09:16:00+00:00",
+        "от": "Арне",
+        "к": "Sola",
+        "episodes": [
+         "f4e30a8f-7db9-469f-ae6c-035b3a11f82b"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "c34c7b32-1f40-44a4-ad56-b6b9cfc9aa6f",
+        "name": "BROUGHT",
+        "fact": "Арне brought a Pfaff sewing machine whose zigzag stitch does not work.",
+        "valid_at": "2026-10-26T09:16:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:50.286596+00:00",
+        "reference_time": "2026-10-26T09:16:00+00:00",
+        "от": "Арне",
+        "к": "Pfaff",
+        "episodes": [
+         "f4e30a8f-7db9-469f-ae6c-035b3a11f82b"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 12684,
+   "обвязка": {
+    "вызовов": 5,
+    "с_инструментом": 5,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 17,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: нет, Арне не из Sola, а из Klepp",
+      "2026-10-26T09:17:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "c19b91ac-467e-4b5c-b951-5e74aa9a7013",
+       "content": "Олег: нет, Арне не из Sola, а из Klepp",
+       "valid_at": "2026-10-26T09:17:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "8ddf7e2d-ba82-4994-80e3-b392cade23f7",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег buys oil for machines (масло для машин) from Lindqvist.\nОлег buys oil for machines (масло для машин) from Lindqvist in Moss.\nОлег сообщил, что сервис бытовой машины стоит 1190 крон.\nОлег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.\nОлег сообщает, что по субботам Нина открывает ателье в 11 (в отличие от обычного открытия в 10)\nОлег now buys oil for machines from Bergtun (instead of Lindqvist in Moss).",
+        "attributes": {}
+       },
+       {
+        "uuid": "ba7bfff4-818a-494a-b8b8-1cf386c0bb5d",
+        "name": "Арне",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Арне is from Sola.\nАрне brought a Pfaff sewing machine whose zigzag stitch does not work.\nАрне is from Klepp (not from Sola, as Олег previously said); he brought a Pfaff sewing machine whose zigzag doesn't work.",
+        "attributes": {}
+       },
+       {
+        "uuid": "3438f934-f963-4966-875a-f70dd4b26271",
+        "name": "Sola",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Арне is from Sola.",
+        "attributes": {}
+       },
+       {
+        "uuid": "920a4adc-e445-433f-8a7b-4d027f781d11",
+        "name": "Klepp",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Арне is from Klepp (not from Sola, as Олег previously said); he brought a Pfaff sewing machine whose zigzag doesn't work.",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "2ca51ae8-ad6d-4ff1-9d34-c32cf3428310",
+        "name": "IS_FROM",
+        "fact": "Арне is from Klepp (not from Sola, as Олег previously said); he brought a Pfaff sewing machine whose zigzag doesn't work.",
+        "valid_at": "2026-10-26T09:17:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:57.871077+00:00",
+        "reference_time": "2026-10-26T09:17:00+00:00",
+        "от": "Арне",
+        "к": "Klepp",
+        "episodes": [
+         "c19b91ac-467e-4b5c-b951-5e74aa9a7013"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "c7263497-2fc1-4e6b-8154-4f5e1bc37a9a",
+        "name": "IS_FROM",
+        "fact": "Арне is from Sola.",
+        "valid_at": "2026-10-26T09:16:00+00:00",
+        "invalid_at": "2026-10-26T09:17:00+00:00",
+        "expired_at": "2026-11-07T17:06:59.693898+00:00",
+        "created_at": "2026-11-07T17:06:50.286596+00:00",
+        "reference_time": "2026-10-26T09:16:00+00:00",
+        "от": "Арне",
+        "к": "Sola",
+        "episodes": [
+         "f4e30a8f-7db9-469f-ae6c-035b3a11f82b"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 7539,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 18,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Откуда Арне?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "c7263497-2fc1-4e6b-8154-4f5e1bc37a9a",
+        "name": "IS_FROM",
+        "fact": "Арне is from Sola.",
+        "valid_at": "2026-10-26T09:16:00+00:00",
+        "invalid_at": "2026-10-26T09:17:00+00:00",
+        "expired_at": "2026-11-07T17:06:59.693898+00:00",
+        "created_at": "2026-11-07T17:06:50.286596+00:00",
+        "reference_time": "2026-10-26T09:16:00+00:00",
+        "от": "Арне",
+        "к": "Sola",
+        "episodes": [
+         "f4e30a8f-7db9-469f-ae6c-035b3a11f82b"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "c34c7b32-1f40-44a4-ad56-b6b9cfc9aa6f",
+        "name": "BROUGHT",
+        "fact": "Арне brought a Pfaff sewing machine whose zigzag stitch does not work.",
+        "valid_at": "2026-10-26T09:16:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:50.286596+00:00",
+        "reference_time": "2026-10-26T09:16:00+00:00",
+        "от": "Арне",
+        "к": "Pfaff",
+        "episodes": [
+         "f4e30a8f-7db9-469f-ae6c-035b3a11f82b"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "2ca51ae8-ad6d-4ff1-9d34-c32cf3428310",
+        "name": "IS_FROM",
+        "fact": "Арне is from Klepp (not from Sola, as Олег previously said); he brought a Pfaff sewing machine whose zigzag doesn't work.",
+        "valid_at": "2026-10-26T09:17:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:57.871077+00:00",
+        "reference_time": "2026-10-26T09:17:00+00:00",
+        "от": "Арне",
+        "к": "Klepp",
+        "episodes": [
+         "c19b91ac-467e-4b5c-b951-5e74aa9a7013"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 164,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 19,
+   "выходы": [
+    {
+     "вызов": [
+      "add_episode",
+      "Олег: с прошлого понедельника сервис промышленной машины 1690",
+      "2026-10-26T09:19:00+00:00"
+     ],
+     "ответ": {
+      "episode": {
+       "uuid": "395fd0ca-5fae-413d-9049-09655dcc1b94",
+       "content": "Олег: с прошлого понедельника сервис промышленной машины 1690",
+       "valid_at": "2026-10-26T09:19:00+00:00"
+      },
+      "nodes": [
+       {
+        "uuid": "8ddf7e2d-ba82-4994-80e3-b392cade23f7",
+        "name": "Олег",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег buys oil for machines (масло для машин) from Lindqvist.\nОлег buys oil for machines (масло для машин) from Lindqvist in Moss.\nОлег сообщил, что сервис бытовой машины стоит 1190 крон.\nОлег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.\nОлег сообщает, что по субботам Нина открывает ателье в 11 (в отличие от обычного открытия в 10)\nОлег now buys oil for machines from Bergtun (instead of Lindqvist in Moss).\nОлег сообщил, что сервис промышленной машины стоит 1690 крон с прошлого понедельника (19 октября 2026).",
+        "attributes": {}
+       },
+       {
+        "uuid": "88598894-c4ce-43fe-a413-e17decd1b891",
+        "name": "сервис промышленной машины",
+        "labels": [
+         "Entity"
+        ],
+        "summary": "Олег сообщил, что сервис промышленной машины стоит 1690 крон с прошлого понедельника (19 октября 2026).",
+        "attributes": {}
+       }
+      ],
+      "edges": [
+       {
+        "uuid": "663c981e-58c7-47ce-a815-a877cf5cc9a0",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег сообщил, что сервис промышленной машины стоит 1690 крон с прошлого понедельника (19 октября 2026).",
+        "valid_at": "2026-10-19T00:00:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:07:09.057754+00:00",
+        "reference_time": "2026-10-26T09:19:00+00:00",
+        "от": "Олег",
+        "к": "сервис промышленной машины",
+        "episodes": [
+         "395fd0ca-5fae-413d-9049-09655dcc1b94"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 11161,
+   "обвязка": {
+    "вызовов": 4,
+    "с_инструментом": 4,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 20,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 20.10.2026: сервис промышленной?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "663c981e-58c7-47ce-a815-a877cf5cc9a0",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег сообщил, что сервис промышленной машины стоит 1690 крон с прошлого понедельника (19 октября 2026).",
+        "valid_at": "2026-10-19T00:00:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:07:09.057754+00:00",
+        "reference_time": "2026-10-26T09:19:00+00:00",
+        "от": "Олег",
+        "к": "сервис промышленной машины",
+        "episodes": [
+         "395fd0ca-5fae-413d-9049-09655dcc1b94"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "76e8f287-1775-41d2-b5d6-49fc5ee429dc",
+        "name": "ANNOUNCED_PRICE_CHANGE",
+        "fact": "Олег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.",
+        "valid_at": "2026-10-26T09:04:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:12.301384+00:00",
+        "reference_time": "2026-10-26T09:04:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "84babd4b-5ec7-471e-8455-8874a9980a15"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "0ce13d47-5d36-4dab-b13e-4fe93c7b22b2",
+        "name": "STATED_PRICE_OF",
+        "fact": "Олег сообщил, что сервис бытовой машины стоит 1190 крон.",
+        "valid_at": "2026-10-26T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:01.737457+00:00",
+        "reference_time": "2026-10-26T09:03:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "a6e616bc-a174-406d-b388-5668a8546c47"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "29e6c4ef-f452-42e1-8054-518375d0d59e",
+        "name": "REPORTS_OPENING_TIME_OF",
+        "fact": "Олег сообщает, что по субботам Нина открывает ателье в 11 (в отличие от обычного открытия в 10)",
+        "valid_at": "2026-10-26T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:20.351433+00:00",
+        "reference_time": "2026-10-26T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Нина",
+        "episodes": [
+         "64facfe6-47a3-457e-98e1-0d59da076620"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "74ef9baf-e3e8-4942-99c8-9f3f62741506",
+        "name": "BUYS_FROM",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Lindqvist",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "ee2bdf46-f025-45b2-8967-e1c2b56ac3b9",
+        "name": "BUYS",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist in Moss.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "масло для машин",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "41a84d85-85c4-42ed-a73a-98f8978a34a7",
+        "name": "LOCATED_IN",
+        "fact": "Lindqvist, the supplier from whom Олег buys oil for machines, is located in Moss.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Lindqvist",
+        "к": "Moss",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 185,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 21,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 15.10.2026: сервис промышленной?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "663c981e-58c7-47ce-a815-a877cf5cc9a0",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег сообщил, что сервис промышленной машины стоит 1690 крон с прошлого понедельника (19 октября 2026).",
+        "valid_at": "2026-10-19T00:00:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:07:09.057754+00:00",
+        "reference_time": "2026-10-26T09:19:00+00:00",
+        "от": "Олег",
+        "к": "сервис промышленной машины",
+        "episodes": [
+         "395fd0ca-5fae-413d-9049-09655dcc1b94"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "76e8f287-1775-41d2-b5d6-49fc5ee429dc",
+        "name": "ANNOUNCED_PRICE_CHANGE",
+        "fact": "Олег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.",
+        "valid_at": "2026-10-26T09:04:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:12.301384+00:00",
+        "reference_time": "2026-10-26T09:04:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "84babd4b-5ec7-471e-8455-8874a9980a15"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "0ce13d47-5d36-4dab-b13e-4fe93c7b22b2",
+        "name": "STATED_PRICE_OF",
+        "fact": "Олег сообщил, что сервис бытовой машины стоит 1190 крон.",
+        "valid_at": "2026-10-26T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:01.737457+00:00",
+        "reference_time": "2026-10-26T09:03:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "a6e616bc-a174-406d-b388-5668a8546c47"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "29e6c4ef-f452-42e1-8054-518375d0d59e",
+        "name": "REPORTS_OPENING_TIME_OF",
+        "fact": "Олег сообщает, что по субботам Нина открывает ателье в 11 (в отличие от обычного открытия в 10)",
+        "valid_at": "2026-10-26T09:07:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:20.351433+00:00",
+        "reference_time": "2026-10-26T09:07:00+00:00",
+        "от": "Олег",
+        "к": "Нина",
+        "episodes": [
+         "64facfe6-47a3-457e-98e1-0d59da076620"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "74ef9baf-e3e8-4942-99c8-9f3f62741506",
+        "name": "BUYS_FROM",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Lindqvist",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "36f1db29-bb31-4dfa-88a3-5cc2bb8a4fdd",
+        "name": "SUGGESTS_BUYING_OIL_IN",
+        "fact": "Эва tentatively suggests that it is better to buy oil in Германия (she says \"probably\").",
+        "valid_at": "2026-10-26T09:10:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:30.185546+00:00",
+        "reference_time": "2026-10-26T09:10:00+00:00",
+        "от": "Эва",
+        "к": "Германия",
+        "episodes": [
+         "7e8f0cf8-e559-43a5-bb4a-6d8b963d4b92"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 183,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  },
+  {
+   "№": 22,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Сколько сейчас стоит сервис бытовой?"
+     ],
+     "ответ": {
+      "edges": [
+       {
+        "uuid": "0ce13d47-5d36-4dab-b13e-4fe93c7b22b2",
+        "name": "STATED_PRICE_OF",
+        "fact": "Олег сообщил, что сервис бытовой машины стоит 1190 крон.",
+        "valid_at": "2026-10-26T09:03:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:01.737457+00:00",
+        "reference_time": "2026-10-26T09:03:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "a6e616bc-a174-406d-b388-5668a8546c47"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "663c981e-58c7-47ce-a815-a877cf5cc9a0",
+        "name": "STATES_PRICE_OF",
+        "fact": "Олег сообщил, что сервис промышленной машины стоит 1690 крон с прошлого понедельника (19 октября 2026).",
+        "valid_at": "2026-10-19T00:00:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:07:09.057754+00:00",
+        "reference_time": "2026-10-26T09:19:00+00:00",
+        "от": "Олег",
+        "к": "сервис промышленной машины",
+        "episodes": [
+         "395fd0ca-5fae-413d-9049-09655dcc1b94"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "76e8f287-1775-41d2-b5d6-49fc5ee429dc",
+        "name": "ANNOUNCED_PRICE_CHANGE",
+        "fact": "Олег сообщает, что с 1 января 2027 года цена на сервис бытовой машины вырастет с 1190 до 1290 крон.",
+        "valid_at": "2026-10-26T09:04:00+00:00",
+        "invalid_at": null,
+        "expired_at": null,
+        "created_at": "2026-11-07T17:06:12.301384+00:00",
+        "reference_time": "2026-10-26T09:04:00+00:00",
+        "от": "Олег",
+        "к": "сервис бытовой машины",
+        "episodes": [
+         "84babd4b-5ec7-471e-8455-8874a9980a15"
+        ],
+        "attributes": {}
+       },
+       {
+        "uuid": "74ef9baf-e3e8-4942-99c8-9f3f62741506",
+        "name": "BUYS_FROM",
+        "fact": "Олег buys oil for machines (масло для машин) from Lindqvist.",
+        "valid_at": "2026-10-26T09:01:00+00:00",
+        "invalid_at": "2026-10-26T09:12:00+00:00",
+        "expired_at": "2026-11-07T17:06:38.909253+00:00",
+        "created_at": "2026-11-07T17:05:39.494716+00:00",
+        "reference_time": "2026-10-26T09:01:00+00:00",
+        "от": "Олег",
+        "к": "Lindqvist",
+        "episodes": [
+         "d3baf0ed-6b61-4455-92c4-6a5a574d0a57"
+        ],
+        "attributes": {}
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 241,
+   "обвязка": {
+    "вызовов": 0,
+    "с_инструментом": 0,
+    "без_инструмента": 0,
+    "без_инструмента_разобран_из_текста": 0,
+    "без_инструмента_не_разобран": 0,
+    "журнал": [],
+    "сбой_обвязки": false
+   }
+  }
+ ],
+ "стоп": "",
+ "обвязка": {
+  "вызовов": 37,
+  "с_инструментом": 37,
+  "без_инструмента": 0,
+  "без_инструмента_разобран_из_текста": 0,
+  "без_инструмента_не_разобран": 0,
+  "доля_не_разобрано": 0.0,
+  "доля_без_инструмента": 0.0,
+  "шагов_со_сбоем_обвязки": []
+ },
+ "стоп_обвязки": "",
+ "версии": {
+  "graphiti-core": "0.31.2",
+  "anthropic": "2.6.0",
+  "openai": "3.46.0",
+  "neo4j": "6.4.1"
+ },
+ "хранилище": "Neo4j Desktop (локально, Bolt)",
+ "версия_neo4j": [
+  {
+   "name": "Neo4j Kernel",
+   "versions": [
+    "2026.10.1"
+   ],
+   "edition": "enterprise"
+  },
+  {
+   "name": "Cypher",
+   "versions": [
+    "5",
+    "25"
+   ],
+   "edition": ""
+  }
+ ],
+ "модель": "claude-sonnet-5-5",
+ "когда": "2026-11-07 18:07:12"
+}

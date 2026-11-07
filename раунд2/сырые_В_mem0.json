@@ -1,0 +1,1050 @@
+{
+ "система": "mem0",
+ "набор": "В",
+ "сек": 29.8,
+ "расход": {
+  "sonnet_вызовов": 10,
+  "sonnet_in": 125947,
+  "sonnet_out": 1254,
+  "emb_токенов": 820,
+  "usd": 0.2645,
+  "deepseek_вызовов": 0,
+  "версия_mem0": "2.2.1",
+  "часы_mem0": "2026-10-26"
+ },
+ "шаги": [
+  {
+   "№": 1,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "масло для машин беру у Lindqvist в Moss"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "5920caca-cfc8-40e7-a589-998c42b35259",
+        "memory": "User buys motor oil for their cars from Lindqvist in Moss",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2143
+  },
+  {
+   "№": 2,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "Нина открывает ателье в 10"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "e3c13916-fecd-4f99-bd05-b2996b882c48",
+        "memory": "Нина открывает ателье в 10 (по состоянию на 26 октября 2026 года)",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 1643
+  },
+  {
+   "№": 3,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "сервис бытовой машины стоит 1190 крон"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "3bba55ba-136a-44e7-aa42-696521bdcf2e",
+        "memory": "User stated that servicing a household machine costs 1190 kroner (сервис бытовой машины — 1190 крон), as of October 26, 2026",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2167
+  },
+  {
+   "№": 4,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "с 1 января сервис бытовой будет 1290"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "0a02fbad-e51b-4b18-b84f-43236f4a446f",
+        "memory": "User stated that starting January 1, 2027, the price of servicing a household machine (сервис бытовой) will be 1290 kroner, up from 1190 kroner",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2809
+  },
+  {
+   "№": 5,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 15.12.2026: цена сервиса бытовой?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "0a02fbad-e51b-4b18-b84f-43236f4a446f",
+        "memory": "User stated that starting January 1, 2027, the price of servicing a household machine (сервис бытовой) will be 1290 kroner, up from 1190 kroner",
+        "hash": "0b9e83fcf9f6e256e0df1c56479b4653",
+        "metadata": null,
+        "score": 0.5220281593957778,
+        "created_at": "2026-10-26T17:07:49.092273+00:00",
+        "updated_at": "2026-10-26T17:07:49.092273+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "3bba55ba-136a-44e7-aa42-696521bdcf2e",
+        "memory": "User stated that servicing a household machine costs 1190 kroner (сервис бытовой машины — 1190 крон), as of October 26, 2026",
+        "hash": "610ffe5a36d4d6427c5ccfa8a068d2cb",
+        "metadata": null,
+        "score": 0.46822277007163954,
+        "created_at": "2026-10-26T17:07:46.275920+00:00",
+        "updated_at": "2026-10-26T17:07:46.275920+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "e3c13916-fecd-4f99-bd05-b2996b882c48",
+        "memory": "Нина открывает ателье в 10 (по состоянию на 26 октября 2026 года)",
+        "hash": "38e58924eacfa1ed9537bf47a7ad26d1",
+        "metadata": null,
+        "score": 0.265733496298519,
+        "created_at": "2026-10-26T17:07:44.111299+00:00",
+        "updated_at": "2026-10-26T17:07:44.111299+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 189
+  },
+  {
+   "№": 6,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 10.01.2027: цена сервиса бытовой?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "0a02fbad-e51b-4b18-b84f-43236f4a446f",
+        "memory": "User stated that starting January 1, 2027, the price of servicing a household machine (сервис бытовой) will be 1290 kroner, up from 1190 kroner",
+        "hash": "0b9e83fcf9f6e256e0df1c56479b4653",
+        "metadata": null,
+        "score": 0.5514789744974087,
+        "created_at": "2026-10-26T17:07:49.092273+00:00",
+        "updated_at": "2026-10-26T17:07:49.092273+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "3bba55ba-136a-44e7-aa42-696521bdcf2e",
+        "memory": "User stated that servicing a household machine costs 1190 kroner (сервис бытовой машины — 1190 крон), as of October 26, 2026",
+        "hash": "610ffe5a36d4d6427c5ccfa8a068d2cb",
+        "metadata": null,
+        "score": 0.47418616734602564,
+        "created_at": "2026-10-26T17:07:46.275920+00:00",
+        "updated_at": "2026-10-26T17:07:46.275920+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "e3c13916-fecd-4f99-bd05-b2996b882c48",
+        "memory": "Нина открывает ателье в 10 (по состоянию на 26 октября 2026 года)",
+        "hash": "38e58924eacfa1ed9537bf47a7ad26d1",
+        "metadata": null,
+        "score": 0.2655582160775273,
+        "created_at": "2026-10-26T17:07:44.111299+00:00",
+        "updated_at": "2026-10-26T17:07:44.111299+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "5920caca-cfc8-40e7-a589-998c42b35259",
+        "memory": "User buys motor oil for their cars from Lindqvist in Moss",
+        "hash": "1441ca866b02ba3c0e43d98377420272",
+        "metadata": null,
+        "score": 0.10281233674632441,
+        "created_at": "2026-10-26T17:07:42.462616+00:00",
+        "updated_at": "2026-10-26T17:07:42.462616+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 201
+  },
+  {
+   "№": 7,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "по субботам Нина открывает в 11"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "c16e6a38-ca1a-4b62-ba5a-0efb299113e6",
+        "memory": "Нина по субботам открывает ателье в 11 (по состоянию на 26 октября 2026 года), в отличие от обычного времени открытия в 10",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 1908
+  },
+  {
+   "№": 8,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Во сколько Нина открывает в среду?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "c16e6a38-ca1a-4b62-ba5a-0efb299113e6",
+        "memory": "Нина по субботам открывает ателье в 11 (по состоянию на 26 октября 2026 года), в отличие от обычного времени открытия в 10",
+        "hash": "2c8b2c2362a9c6e75343dcd058236b16",
+        "metadata": null,
+        "score": 0.6138166787767445,
+        "created_at": "2026-10-26T17:07:51.389258+00:00",
+        "updated_at": "2026-10-26T17:07:51.389258+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "e3c13916-fecd-4f99-bd05-b2996b882c48",
+        "memory": "Нина открывает ателье в 10 (по состоянию на 26 октября 2026 года)",
+        "hash": "38e58924eacfa1ed9537bf47a7ad26d1",
+        "metadata": null,
+        "score": 0.5351473080170881,
+        "created_at": "2026-10-26T17:07:44.111299+00:00",
+        "updated_at": "2026-10-26T17:07:44.111299+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "0a02fbad-e51b-4b18-b84f-43236f4a446f",
+        "memory": "User stated that starting January 1, 2027, the price of servicing a household machine (сервис бытовой) will be 1290 kroner, up from 1190 kroner",
+        "hash": "0b9e83fcf9f6e256e0df1c56479b4653",
+        "metadata": null,
+        "score": 0.14099604135090696,
+        "created_at": "2026-10-26T17:07:49.092273+00:00",
+        "updated_at": "2026-10-26T17:07:49.092273+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "3bba55ba-136a-44e7-aa42-696521bdcf2e",
+        "memory": "User stated that servicing a household machine costs 1190 kroner (сервис бытовой машины — 1190 крон), as of October 26, 2026",
+        "hash": "610ffe5a36d4d6427c5ccfa8a068d2cb",
+        "metadata": null,
+        "score": 0.11327798610273003,
+        "created_at": "2026-10-26T17:07:46.275920+00:00",
+        "updated_at": "2026-10-26T17:07:46.275920+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 177
+  },
+  {
+   "№": 9,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Во сколько Нина открывает в субботу?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "c16e6a38-ca1a-4b62-ba5a-0efb299113e6",
+        "memory": "Нина по субботам открывает ателье в 11 (по состоянию на 26 октября 2026 года), в отличие от обычного времени открытия в 10",
+        "hash": "2c8b2c2362a9c6e75343dcd058236b16",
+        "metadata": null,
+        "score": 0.671269744652609,
+        "created_at": "2026-10-26T17:07:51.389258+00:00",
+        "updated_at": "2026-10-26T17:07:51.389258+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "e3c13916-fecd-4f99-bd05-b2996b882c48",
+        "memory": "Нина открывает ателье в 10 (по состоянию на 26 октября 2026 года)",
+        "hash": "38e58924eacfa1ed9537bf47a7ad26d1",
+        "metadata": null,
+        "score": 0.491511670108486,
+        "created_at": "2026-10-26T17:07:44.111299+00:00",
+        "updated_at": "2026-10-26T17:07:44.111299+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "0a02fbad-e51b-4b18-b84f-43236f4a446f",
+        "memory": "User stated that starting January 1, 2027, the price of servicing a household machine (сервис бытовой) will be 1290 kroner, up from 1190 kroner",
+        "hash": "0b9e83fcf9f6e256e0df1c56479b4653",
+        "metadata": null,
+        "score": 0.16385213895604178,
+        "created_at": "2026-10-26T17:07:49.092273+00:00",
+        "updated_at": "2026-10-26T17:07:49.092273+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "3bba55ba-136a-44e7-aa42-696521bdcf2e",
+        "memory": "User stated that servicing a household machine costs 1190 kroner (сервис бытовой машины — 1190 крон), as of October 26, 2026",
+        "hash": "610ffe5a36d4d6427c5ccfa8a068d2cb",
+        "metadata": null,
+        "score": 0.13434781429629328,
+        "created_at": "2026-10-26T17:07:46.275920+00:00",
+        "updated_at": "2026-10-26T17:07:46.275920+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 207
+  },
+  {
+   "№": 10,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "assistant",
+      "Наверное, масло лучше брать в Германии."
+     ],
+     "ответ": {
+      "results": []
+     }
+    }
+   ],
+   "мс": 1349
+  },
+  {
+   "№": 11,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Где Олег берёт масло?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "5920caca-cfc8-40e7-a589-998c42b35259",
+        "memory": "User buys motor oil for their cars from Lindqvist in Moss",
+        "hash": "1441ca866b02ba3c0e43d98377420272",
+        "metadata": null,
+        "score": 0.38159879280570175,
+        "created_at": "2026-10-26T17:07:42.462616+00:00",
+        "updated_at": "2026-10-26T17:07:42.462616+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "3bba55ba-136a-44e7-aa42-696521bdcf2e",
+        "memory": "User stated that servicing a household machine costs 1190 kroner (сервис бытовой машины — 1190 крон), as of October 26, 2026",
+        "hash": "610ffe5a36d4d6427c5ccfa8a068d2cb",
+        "metadata": null,
+        "score": 0.1411753763094563,
+        "created_at": "2026-10-26T17:07:46.275920+00:00",
+        "updated_at": "2026-10-26T17:07:46.275920+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "e3c13916-fecd-4f99-bd05-b2996b882c48",
+        "memory": "Нина открывает ателье в 10 (по состоянию на 26 октября 2026 года)",
+        "hash": "38e58924eacfa1ed9537bf47a7ad26d1",
+        "metadata": null,
+        "score": 0.11182611771127539,
+        "created_at": "2026-10-26T17:07:44.111299+00:00",
+        "updated_at": "2026-10-26T17:07:44.111299+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 206
+  },
+  {
+   "№": 12,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "масло теперь беру у Bergtun"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "ea001518-1b44-4e12-9328-8d44c9362689",
+        "memory": "User now buys motor oil for their cars from Bergtun, changing from their previous supplier Lindqvist in Moss (as of October 26, 2026)",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 1737
+  },
+  {
+   "№": 13,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Где Олег берёт масло?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "5920caca-cfc8-40e7-a589-998c42b35259",
+        "memory": "User buys motor oil for their cars from Lindqvist in Moss",
+        "hash": "1441ca866b02ba3c0e43d98377420272",
+        "metadata": null,
+        "score": 0.38159879280570175,
+        "created_at": "2026-10-26T17:07:42.462616+00:00",
+        "updated_at": "2026-10-26T17:07:42.462616+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "ea001518-1b44-4e12-9328-8d44c9362689",
+        "memory": "User now buys motor oil for their cars from Bergtun, changing from their previous supplier Lindqvist in Moss (as of October 26, 2026)",
+        "hash": "e526d63c996c96eb8a3742ca64cb1939",
+        "metadata": null,
+        "score": 0.31132339539320647,
+        "created_at": "2026-10-26T17:07:55.066484+00:00",
+        "updated_at": "2026-10-26T17:07:55.066484+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "3bba55ba-136a-44e7-aa42-696521bdcf2e",
+        "memory": "User stated that servicing a household machine costs 1190 kroner (сервис бытовой машины — 1190 крон), as of October 26, 2026",
+        "hash": "610ffe5a36d4d6427c5ccfa8a068d2cb",
+        "metadata": null,
+        "score": 0.1411753763094563,
+        "created_at": "2026-10-26T17:07:46.275920+00:00",
+        "updated_at": "2026-10-26T17:07:46.275920+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "e3c13916-fecd-4f99-bd05-b2996b882c48",
+        "memory": "Нина открывает ателье в 10 (по состоянию на 26 октября 2026 года)",
+        "hash": "38e58924eacfa1ed9537bf47a7ad26d1",
+        "metadata": null,
+        "score": 0.11182611771127539,
+        "created_at": "2026-10-26T17:07:44.111299+00:00",
+        "updated_at": "2026-10-26T17:07:44.111299+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 194
+  },
+  {
+   "№": 14,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Где Олег брал масло раньше?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "5920caca-cfc8-40e7-a589-998c42b35259",
+        "memory": "User buys motor oil for their cars from Lindqvist in Moss",
+        "hash": "1441ca866b02ba3c0e43d98377420272",
+        "metadata": null,
+        "score": 0.3580492670710011,
+        "created_at": "2026-10-26T17:07:42.462616+00:00",
+        "updated_at": "2026-10-26T17:07:42.462616+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "ea001518-1b44-4e12-9328-8d44c9362689",
+        "memory": "User now buys motor oil for their cars from Bergtun, changing from their previous supplier Lindqvist in Moss (as of October 26, 2026)",
+        "hash": "e526d63c996c96eb8a3742ca64cb1939",
+        "metadata": null,
+        "score": 0.3119367220066811,
+        "created_at": "2026-10-26T17:07:55.066484+00:00",
+        "updated_at": "2026-10-26T17:07:55.066484+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "3bba55ba-136a-44e7-aa42-696521bdcf2e",
+        "memory": "User stated that servicing a household machine costs 1190 kroner (сервис бытовой машины — 1190 крон), as of October 26, 2026",
+        "hash": "610ffe5a36d4d6427c5ccfa8a068d2cb",
+        "metadata": null,
+        "score": 0.13625601797426326,
+        "created_at": "2026-10-26T17:07:46.275920+00:00",
+        "updated_at": "2026-10-26T17:07:46.275920+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "0a02fbad-e51b-4b18-b84f-43236f4a446f",
+        "memory": "User stated that starting January 1, 2027, the price of servicing a household machine (сервис бытовой) will be 1290 kroner, up from 1190 kroner",
+        "hash": "0b9e83fcf9f6e256e0df1c56479b4653",
+        "metadata": null,
+        "score": 0.10546486484902547,
+        "created_at": "2026-10-26T17:07:49.092273+00:00",
+        "updated_at": "2026-10-26T17:07:49.092273+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 185
+  },
+  {
+   "№": 15,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Какой у Олега размер обуви?"
+     ],
+     "ответ": {
+      "results": []
+     }
+    }
+   ],
+   "мс": 165
+  },
+  {
+   "№": 16,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "Арне из Sola привёз Pfaff, не работает зигзаг"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "a19fe748-b836-439a-b2e7-8300196ffb07",
+        "memory": "Арне из Sola привёз в ателье швейную машину Pfaff, у которой не работает зигзаг (по состоянию на 26 октября 2026 года)",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2490
+  },
+  {
+   "№": 17,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "нет, Арне не из Sola, а из Klepp"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "0326cc3a-e81d-4c26-91df-e4386fd2f8d0",
+        "memory": "Арне, который привёз в ателье швейную машину Pfaff с неработающим зигзагом, не из Sola, а из Klepp (исправление, сделанное 26 октября 2026 года)",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 2155
+  },
+  {
+   "№": 18,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Откуда Арне?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "0326cc3a-e81d-4c26-91df-e4386fd2f8d0",
+        "memory": "Арне, который привёз в ателье швейную машину Pfaff с неработающим зигзагом, не из Sola, а из Klepp (исправление, сделанное 26 октября 2026 года)",
+        "hash": "04059db61a0691ed0413f4227de70f4a",
+        "metadata": null,
+        "score": 0.4843249529613419,
+        "created_at": "2026-10-26T17:08:00.261245+00:00",
+        "updated_at": "2026-10-26T17:08:00.261245+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a19fe748-b836-439a-b2e7-8300196ffb07",
+        "memory": "Арне из Sola привёз в ателье швейную машину Pfaff, у которой не работает зигзаг (по состоянию на 26 октября 2026 года)",
+        "hash": "905d9992ec8815e2dac4422e3ba2b015",
+        "metadata": null,
+        "score": 0.47270313592519525,
+        "created_at": "2026-10-26T17:07:58.100485+00:00",
+        "updated_at": "2026-10-26T17:07:58.100485+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "ea001518-1b44-4e12-9328-8d44c9362689",
+        "memory": "User now buys motor oil for their cars from Bergtun, changing from their previous supplier Lindqvist in Moss (as of October 26, 2026)",
+        "hash": "e526d63c996c96eb8a3742ca64cb1939",
+        "metadata": null,
+        "score": 0.1350885107834761,
+        "created_at": "2026-10-26T17:07:55.066484+00:00",
+        "updated_at": "2026-10-26T17:07:55.066484+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "e3c13916-fecd-4f99-bd05-b2996b882c48",
+        "memory": "Нина открывает ателье в 10 (по состоянию на 26 октября 2026 года)",
+        "hash": "38e58924eacfa1ed9537bf47a7ad26d1",
+        "metadata": null,
+        "score": 0.1334398143449792,
+        "created_at": "2026-10-26T17:07:44.111299+00:00",
+        "updated_at": "2026-10-26T17:07:44.111299+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "5920caca-cfc8-40e7-a589-998c42b35259",
+        "memory": "User buys motor oil for their cars from Lindqvist in Moss",
+        "hash": "1441ca866b02ba3c0e43d98377420272",
+        "metadata": null,
+        "score": 0.10546067135941872,
+        "created_at": "2026-10-26T17:07:42.462616+00:00",
+        "updated_at": "2026-10-26T17:07:42.462616+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 193
+  },
+  {
+   "№": 19,
+   "выходы": [
+    {
+     "вызов": [
+      "add",
+      "user",
+      "с прошлого понедельника сервис промышленной машины 1690"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "3f678009-c500-43f5-bef0-7db620970eb4",
+        "memory": "User stated that since last Monday (October 19, 2026), servicing an industrial machine (сервис промышленной машины) costs 1690; currency not stated",
+        "event": "ADD"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 5096
+  },
+  {
+   "№": 20,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 20.10.2026: сервис промышленной?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "3f678009-c500-43f5-bef0-7db620970eb4",
+        "memory": "User stated that since last Monday (October 19, 2026), servicing an industrial machine (сервис промышленной машины) costs 1690; currency not stated",
+        "hash": "e3df2562b431bf62c35897f7c22c5d27",
+        "metadata": null,
+        "score": 0.5185649192732179,
+        "created_at": "2026-10-26T17:08:05.550443+00:00",
+        "updated_at": "2026-10-26T17:08:05.550443+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "3bba55ba-136a-44e7-aa42-696521bdcf2e",
+        "memory": "User stated that servicing a household machine costs 1190 kroner (сервис бытовой машины — 1190 крон), as of October 26, 2026",
+        "hash": "610ffe5a36d4d6427c5ccfa8a068d2cb",
+        "metadata": null,
+        "score": 0.3798803349048857,
+        "created_at": "2026-10-26T17:07:46.275920+00:00",
+        "updated_at": "2026-10-26T17:07:46.275920+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "0a02fbad-e51b-4b18-b84f-43236f4a446f",
+        "memory": "User stated that starting January 1, 2027, the price of servicing a household machine (сервис бытовой) will be 1290 kroner, up from 1190 kroner",
+        "hash": "0b9e83fcf9f6e256e0df1c56479b4653",
+        "metadata": null,
+        "score": 0.3761451054502515,
+        "created_at": "2026-10-26T17:07:49.092273+00:00",
+        "updated_at": "2026-10-26T17:07:49.092273+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "e3c13916-fecd-4f99-bd05-b2996b882c48",
+        "memory": "Нина открывает ателье в 10 (по состоянию на 26 октября 2026 года)",
+        "hash": "38e58924eacfa1ed9537bf47a7ad26d1",
+        "metadata": null,
+        "score": 0.3481763083048329,
+        "created_at": "2026-10-26T17:07:44.111299+00:00",
+        "updated_at": "2026-10-26T17:07:44.111299+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "c16e6a38-ca1a-4b62-ba5a-0efb299113e6",
+        "memory": "Нина по субботам открывает ателье в 11 (по состоянию на 26 октября 2026 года), в отличие от обычного времени открытия в 10",
+        "hash": "2c8b2c2362a9c6e75343dcd058236b16",
+        "metadata": null,
+        "score": 0.32699401516380977,
+        "created_at": "2026-10-26T17:07:51.389258+00:00",
+        "updated_at": "2026-10-26T17:07:51.389258+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "ea001518-1b44-4e12-9328-8d44c9362689",
+        "memory": "User now buys motor oil for their cars from Bergtun, changing from their previous supplier Lindqvist in Moss (as of October 26, 2026)",
+        "hash": "e526d63c996c96eb8a3742ca64cb1939",
+        "metadata": null,
+        "score": 0.27561196034575364,
+        "created_at": "2026-10-26T17:07:55.066484+00:00",
+        "updated_at": "2026-10-26T17:07:55.066484+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "0326cc3a-e81d-4c26-91df-e4386fd2f8d0",
+        "memory": "Арне, который привёз в ателье швейную машину Pfaff с неработающим зигзагом, не из Sola, а из Klepp (исправление, сделанное 26 октября 2026 года)",
+        "hash": "04059db61a0691ed0413f4227de70f4a",
+        "metadata": null,
+        "score": 0.26150875515578453,
+        "created_at": "2026-10-26T17:08:00.261245+00:00",
+        "updated_at": "2026-10-26T17:08:00.261245+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a19fe748-b836-439a-b2e7-8300196ffb07",
+        "memory": "Арне из Sola привёз в ателье швейную машину Pfaff, у которой не работает зигзаг (по состоянию на 26 октября 2026 года)",
+        "hash": "905d9992ec8815e2dac4422e3ba2b015",
+        "metadata": null,
+        "score": 0.25532252298358554,
+        "created_at": "2026-10-26T17:07:58.100485+00:00",
+        "updated_at": "2026-10-26T17:07:58.100485+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "5920caca-cfc8-40e7-a589-998c42b35259",
+        "memory": "User buys motor oil for their cars from Lindqvist in Moss",
+        "hash": "1441ca866b02ba3c0e43d98377420272",
+        "metadata": null,
+        "score": 0.11993721448768545,
+        "created_at": "2026-10-26T17:07:42.462616+00:00",
+        "updated_at": "2026-10-26T17:07:42.462616+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 185
+  },
+  {
+   "№": 21,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Что правда на 15.10.2026: сервис промышленной?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "3f678009-c500-43f5-bef0-7db620970eb4",
+        "memory": "User stated that since last Monday (October 19, 2026), servicing an industrial machine (сервис промышленной машины) costs 1690; currency not stated",
+        "hash": "e3df2562b431bf62c35897f7c22c5d27",
+        "metadata": null,
+        "score": 0.5052861143827792,
+        "created_at": "2026-10-26T17:08:05.550443+00:00",
+        "updated_at": "2026-10-26T17:08:05.550443+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "0a02fbad-e51b-4b18-b84f-43236f4a446f",
+        "memory": "User stated that starting January 1, 2027, the price of servicing a household machine (сервис бытовой) will be 1290 kroner, up from 1190 kroner",
+        "hash": "0b9e83fcf9f6e256e0df1c56479b4653",
+        "metadata": null,
+        "score": 0.3784151196899596,
+        "created_at": "2026-10-26T17:07:49.092273+00:00",
+        "updated_at": "2026-10-26T17:07:49.092273+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "3bba55ba-136a-44e7-aa42-696521bdcf2e",
+        "memory": "User stated that servicing a household machine costs 1190 kroner (сервис бытовой машины — 1190 крон), as of October 26, 2026",
+        "hash": "610ffe5a36d4d6427c5ccfa8a068d2cb",
+        "metadata": null,
+        "score": 0.368003996928576,
+        "created_at": "2026-10-26T17:07:46.275920+00:00",
+        "updated_at": "2026-10-26T17:07:46.275920+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "e3c13916-fecd-4f99-bd05-b2996b882c48",
+        "memory": "Нина открывает ателье в 10 (по состоянию на 26 октября 2026 года)",
+        "hash": "38e58924eacfa1ed9537bf47a7ad26d1",
+        "metadata": null,
+        "score": 0.33113134776557496,
+        "created_at": "2026-10-26T17:07:44.111299+00:00",
+        "updated_at": "2026-10-26T17:07:44.111299+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "c16e6a38-ca1a-4b62-ba5a-0efb299113e6",
+        "memory": "Нина по субботам открывает ателье в 11 (по состоянию на 26 октября 2026 года), в отличие от обычного времени открытия в 10",
+        "hash": "2c8b2c2362a9c6e75343dcd058236b16",
+        "metadata": null,
+        "score": 0.30610348947692667,
+        "created_at": "2026-10-26T17:07:51.389258+00:00",
+        "updated_at": "2026-10-26T17:07:51.389258+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "ea001518-1b44-4e12-9328-8d44c9362689",
+        "memory": "User now buys motor oil for their cars from Bergtun, changing from their previous supplier Lindqvist in Moss (as of October 26, 2026)",
+        "hash": "e526d63c996c96eb8a3742ca64cb1939",
+        "metadata": null,
+        "score": 0.26265697124005005,
+        "created_at": "2026-10-26T17:07:55.066484+00:00",
+        "updated_at": "2026-10-26T17:07:55.066484+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "0326cc3a-e81d-4c26-91df-e4386fd2f8d0",
+        "memory": "Арне, который привёз в ателье швейную машину Pfaff с неработающим зигзагом, не из Sola, а из Klepp (исправление, сделанное 26 октября 2026 года)",
+        "hash": "04059db61a0691ed0413f4227de70f4a",
+        "metadata": null,
+        "score": 0.2587542016806117,
+        "created_at": "2026-10-26T17:08:00.261245+00:00",
+        "updated_at": "2026-10-26T17:08:00.261245+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a19fe748-b836-439a-b2e7-8300196ffb07",
+        "memory": "Арне из Sola привёз в ателье швейную машину Pfaff, у которой не работает зигзаг (по состоянию на 26 октября 2026 года)",
+        "hash": "905d9992ec8815e2dac4422e3ba2b015",
+        "metadata": null,
+        "score": 0.2517065573679688,
+        "created_at": "2026-10-26T17:07:58.100485+00:00",
+        "updated_at": "2026-10-26T17:07:58.100485+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 193
+  },
+  {
+   "№": 22,
+   "выходы": [
+    {
+     "вызов": [
+      "search",
+      "Сколько сейчас стоит сервис бытовой?"
+     ],
+     "ответ": {
+      "results": [
+       {
+        "id": "3bba55ba-136a-44e7-aa42-696521bdcf2e",
+        "memory": "User stated that servicing a household machine costs 1190 kroner (сервис бытовой машины — 1190 крон), as of October 26, 2026",
+        "hash": "610ffe5a36d4d6427c5ccfa8a068d2cb",
+        "metadata": null,
+        "score": 0.5507762424572855,
+        "created_at": "2026-10-26T17:07:46.275920+00:00",
+        "updated_at": "2026-10-26T17:07:46.275920+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "0a02fbad-e51b-4b18-b84f-43236f4a446f",
+        "memory": "User stated that starting January 1, 2027, the price of servicing a household machine (сервис бытовой) will be 1290 kroner, up from 1190 kroner",
+        "hash": "0b9e83fcf9f6e256e0df1c56479b4653",
+        "metadata": null,
+        "score": 0.5242897119921718,
+        "created_at": "2026-10-26T17:07:49.092273+00:00",
+        "updated_at": "2026-10-26T17:07:49.092273+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "3f678009-c500-43f5-bef0-7db620970eb4",
+        "memory": "User stated that since last Monday (October 19, 2026), servicing an industrial machine (сервис промышленной машины) costs 1690; currency not stated",
+        "hash": "e3df2562b431bf62c35897f7c22c5d27",
+        "metadata": null,
+        "score": 0.5045742132322448,
+        "created_at": "2026-10-26T17:08:05.550443+00:00",
+        "updated_at": "2026-10-26T17:08:05.550443+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "c16e6a38-ca1a-4b62-ba5a-0efb299113e6",
+        "memory": "Нина по субботам открывает ателье в 11 (по состоянию на 26 октября 2026 года), в отличие от обычного времени открытия в 10",
+        "hash": "2c8b2c2362a9c6e75343dcd058236b16",
+        "metadata": null,
+        "score": 0.1918482806077327,
+        "created_at": "2026-10-26T17:07:51.389258+00:00",
+        "updated_at": "2026-10-26T17:07:51.389258+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "ea001518-1b44-4e12-9328-8d44c9362689",
+        "memory": "User now buys motor oil for their cars from Bergtun, changing from their previous supplier Lindqvist in Moss (as of October 26, 2026)",
+        "hash": "e526d63c996c96eb8a3742ca64cb1939",
+        "metadata": null,
+        "score": 0.17029019437445575,
+        "created_at": "2026-10-26T17:07:55.066484+00:00",
+        "updated_at": "2026-10-26T17:07:55.066484+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "5920caca-cfc8-40e7-a589-998c42b35259",
+        "memory": "User buys motor oil for their cars from Lindqvist in Moss",
+        "hash": "1441ca866b02ba3c0e43d98377420272",
+        "metadata": null,
+        "score": 0.16902910968844406,
+        "created_at": "2026-10-26T17:07:42.462616+00:00",
+        "updated_at": "2026-10-26T17:07:42.462616+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "a19fe748-b836-439a-b2e7-8300196ffb07",
+        "memory": "Арне из Sola привёз в ателье швейную машину Pfaff, у которой не работает зигзаг (по состоянию на 26 октября 2026 года)",
+        "hash": "905d9992ec8815e2dac4422e3ba2b015",
+        "metadata": null,
+        "score": 0.15069939785735212,
+        "created_at": "2026-10-26T17:07:58.100485+00:00",
+        "updated_at": "2026-10-26T17:07:58.100485+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "e3c13916-fecd-4f99-bd05-b2996b882c48",
+        "memory": "Нина открывает ателье в 10 (по состоянию на 26 октября 2026 года)",
+        "hash": "38e58924eacfa1ed9537bf47a7ad26d1",
+        "metadata": null,
+        "score": 0.12461199946888613,
+        "created_at": "2026-10-26T17:07:44.111299+00:00",
+        "updated_at": "2026-10-26T17:07:44.111299+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       },
+       {
+        "id": "0326cc3a-e81d-4c26-91df-e4386fd2f8d0",
+        "memory": "Арне, который привёз в ателье швейную машину Pfaff с неработающим зигзагом, не из Sola, а из Klepp (исправление, сделанное 26 октября 2026 года)",
+        "hash": "04059db61a0691ed0413f4227de70f4a",
+        "metadata": null,
+        "score": 0.10972030567996133,
+        "created_at": "2026-10-26T17:08:00.261245+00:00",
+        "updated_at": "2026-10-26T17:08:00.261245+00:00",
+        "user_id": "oleg",
+        "attributed_to": "user"
+       }
+      ]
+     }
+    }
+   ],
+   "мс": 188
+  }
+ ],
+ "когда": "2026-11-07 18:08:06"
+}

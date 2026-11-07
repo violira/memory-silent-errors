@@ -19,6 +19,8 @@ In a 50-step test, both systems answered most questions correctly. The real diff
 
 Run date: 20 October 2026. Author: Ole Rein.
 
+**Round 2, 7 November 2026:** Graphiti (the open-source memory engine behind Zep) and a new set C were added. Results and details are in [Round 2](#round-2-graphiti-zep).
+
 ## Why silent errors
 
 Most memory benchmarks report the share of correct answers. That is useful, but it hides the failure that hurts most in daily use.
@@ -61,6 +63,42 @@ These are the mechanisms described in the prior-art disclosure published in Marc
 
 The same mechanisms are also where Eva broke: in B17 the replacement was linked to the wrong earlier record. Explicit structure makes errors visible, but it does not make them impossible.
 
+## Round 2: Graphiti (Zep)
+
+On 7 November 2026 a third system was added: **Graphiti 0.31.2**, the open-source memory engine behind Zep, a temporal knowledge graph. Unlike Mem0, its facts carry real validity dates: it closes an old fact instead of leaving it next to the new one. That makes it a direct competitor built on the same idea as Eva. A new set **C** (22 steps, `В` in the files) was added too. I wrote it after round 1, with invented people and prices.
+
+| | Eva | Mem0 2.2.1 | Graphiti 0.31.2 |
+|---|---|---|---|
+| Set A (30 steps) | 30 | 23–25 | 15–17 ¹ |
+| Set B (20 steps) | 19 ² | 15–17 | 12 |
+| Set C (22 steps) | 18 | 17 | **20** |
+| **Correct, total of 72** | **67** | **55–59** | **47–49** |
+| **Silent errors** | **2** ² | **13** | **13** |
+| Wall time, all three sets | 104 s | 146 s | 343 s |
+| API cost, all three sets | $0.13 | $1.02 | $1.03 |
+
+Where there are two numbers, they are the two judge runs.
+¹ Three more steps count neither as correct nor as errors: my adapter for the model failed there (see conditions below).
+² The new judge marked Eva's B17 as correct. The raw data is the same as in round 1, so I keep the strict count: B17 is a silent error.
+
+**Where Graphiti is stronger.** On set C it beat Eva, 20 to 18. A Graphiti fact is always a relation between two things, and almost every sentence in set C has two (Nina and her studio, Oleg and his oil supplier). Its replacements are real: the old fact gets an end date.
+
+**Where Graphiti loses.** Sets A and B have many statements about a single thing: "the workshop is closed tomorrow", "Erik is happy with the machine". Graphiti made no fact from them, and later searches found nothing. Neither its answers nor its data say so. So Graphiti's silent errors are mostly lost facts, while Mem0's are outdated facts left current.
+
+**Two real gaps in Eva** found by set C:
+1. **A recurring exception** (C7–C9). Eva did not take "on Saturdays Nina opens at 11" as an exception to "Nina opens at 10". Both records stayed true, and when asked about Wednesday and Saturday she asked whether one replaces the other. Not silent, but wrong. A one-day exception (A11) she handles; a weekly one she does not.
+2. **A retroactive correction without the word "correct"** (C17). "No, Arne is not from Sola, he's from Klepp": all three systems stored it as a move starting today, as if Arne used to be from Sola. Silent for all three. With the word "correct" (A19), Eva gets it right.
+
+Both gaps go into a fix of Eva's memory core. After the fix set C will be re-run, and the before/after result will be added here.
+
+**Round 2 conditions.**
+- Graphiti with default settings, its prompts untouched. Model `claude-sonnet-5-5`, embeddings OpenAI `text-embedding-3-small`, storage Neo4j Desktop 2026.10.1 locally, no plugins. Each sentence is a separate episode dated the day it was said. Questions go to its normal search as written. "What changed today" returns all facts of the group with their dates.
+- **Adapter.** The Anthropic client in Graphiti 0.31.2 does not work with `claude-sonnet-5-5`: it passes `temperature`, which the current SDK no longer accepts, and forces a tool call, which the model rejects with HTTP 400. The adapter (`раунд2/клиент_sonnet55.py`) changes only that: no `temperature`, and the tool is requested without forcing it. Prompts, schemas and response parsing are Graphiti's own. Without forcing, the model answered without the tool 3 times out of 59 on set A. Those 3 steps are marked as harness failures and not counted. Sets B and C had none.
+- The built-in Kuzu storage is broken in this version; runs on it are not published and not counted.
+- Eva and Mem0 were not re-run on sets A and B: their raw outputs from round 1 are reused. Set C was run for all three.
+- Same judge: the prompts are word for word the same (checked in code, `раунд2/сверка_судьи.py`), and it is not told which system it is judging. The only difference: for set C, "today" is 26 October 2026.
+- The whole round cost about $5.4, of which the judge was $3.4.
+
 ## Conditions
 
 - **Mem0** 2.2.1 (`pip install mem0ai`, nothing extra), default configuration. LLM `claude-sonnet-5-5`, embeddings OpenAI `text-embedding-3-small`, default local storage (qdrant), telemetry off. A fresh store per set.
@@ -95,6 +133,7 @@ The code and data are in Russian, as they were run.
 | `сырые_А_эва.json` and three others | Raw outputs: every call, every reply, cost and timing |
 | `судья_А.json`, `судья_Б.json` | Main judge run: what each system did, the verdict and why |
 | `судья_*_прогон1.json` | First judge run |
+| `раунд2/` | Round 2: set C (`набор_В.py`), the Graphiti and set C runners, the adapter, the three-system judge (`судья3.py`), raw outputs, both judge runs and the summary `отчёт2.md` (rebuilt by `отчёт2.py` from the published files) |
 
 ## Re-running
 
