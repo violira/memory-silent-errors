@@ -1,21 +1,28 @@
-MIT License
+Copyright (c) 2026 Ole Rein. All rights reserved.
 
-Copyright (c) 2026 Ole Rein
+You may view the files in this repository and run the code solely to
+reproduce and verify the published results. You may quote the results,
+with a link to this repository.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Any other use, including copying, modifying, redistributing, or using the
+code, data, test sets or methods in other products or services, requires
+prior written permission from the author.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Versions of this repository published before 7 November 2026 were released
+under the MIT License. That grant remains valid for those earlier versions
+only.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+---
+
+Все права принадлежат Ole Rein, 2026.
+
+Файлы можно смотреть, а код запускать только для того, чтобы повторить и
+проверить опубликованные результаты. Результаты можно цитировать со ссылкой
+на этот репозиторий.
+
+Любое другое использование, в том числе копирование, изменение,
+распространение, использование кода, данных, наборов или методов в других
+продуктах и сервисах, только с письменного разрешения автора.
+
+Версии репозитория, выложенные до 7 ноября 2026 года, были выпущены под
+лицензией MIT. Для этих ранних версий она остаётся в силе.

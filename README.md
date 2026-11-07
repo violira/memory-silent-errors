@@ -152,4 +152,4 @@ The simplest check needs no Mem0 at all: run `судья.py` on the published ra
 
 ## License
 
-MIT, see `LICENSE`.
+All rights reserved by the author. You may view the files and run the code to reproduce and verify the results, and quote the results with a link. Any other use requires written permission. Details in `LICENSE`.
