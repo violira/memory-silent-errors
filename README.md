@@ -1,5 +1,7 @@
 # Silent errors in agent memory
 
+[Русская версия](./README.ru.md)
+
 A small, reproducible comparison of two memory systems on facts that change over time.
 
 In a 50-step test, both systems answered most questions correctly. The real difference was elsewhere: in **silent errors**, where the memory ends up in a wrong state and says nothing about it.
