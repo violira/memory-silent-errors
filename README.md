@@ -41,6 +41,24 @@ The seventh (B14) is a related fact rather than a change, and the judge disagree
 
 Step B17: a fact that switches **back**. Dog food from store X, then from store Y, then "since last Wednesday, back to X". Eva parsed the date correctly, but linked the change to the wrong earlier record and gave it an end date nobody had said, so "back to X" had already expired the day before it was written. It gave no warning. Switching back to a previous value is the hardest case for a two-time-axis memory, and this is where mine broke.
 
+## Why Eva behaves this way
+
+Eva's memory core is not published here, but you don't have to take its design on trust. Every write in `сырые_*_эва.json` returns the decision the memory made, so the mechanism is visible in the raw data. Mem0's write returns one thing every time: `ADD`.
+
+| Step | What was said | Eva's recorded decision | Mem0 |
+|---|---|---|---|
+| A7 | "I now sell the Walker for 19,900" | Replaces record #1 from 19.10. The old price stays in history, no longer current. | `ADD`, old price still current (silent error) |
+| A19 | "Correction: not 1F, but 5F" | Record #12 retired with reason "correction", pointing to its successor #13. | `ADD`, old record still current (silent error) |
+| A11 | "This Saturday, 24 October, the workshop is closed" | An exception for one day. "General rule untouched": Saturdays stay open the rest of the time. | `ADD` |
+| A16 | "Ingrid got the machine" (Latin spelling) | Complements record #3 about "Ингрид" (Cyrillic). Same person, both records alive. | `ADD` |
+| A26 | "Eva said the call-out is 850" | Stored as Eva's own note, not a fact. The user's 700 stays true. | `ADD` as an assistant message |
+
+Step A26 shows the core idea best. Inside Eva, the language model that classifies each new statement suggested treating "850" as a replacement for the user's "700". The structure overruled it: a statement whose source is Eva herself cannot replace what the user said. The model proposes, the structure decides.
+
+These are the mechanisms described in the prior-art disclosure published in March 2026, [EVA Memory Bank](https://github.com/violira/eva-memory-bank), items 31 (an append-only ledger where a new fact explicitly supersedes an old one, with source and validity dates) and 33 (one identity for all spellings and transliterations of a name). This test is the first time I measured them against another system.
+
+The same mechanisms are also where Eva broke: in B17 the replacement was linked to the wrong earlier record. Explicit structure makes errors visible, but it does not make them impossible.
+
 ## Conditions
 
 - **Mem0** 2.2.1 (`pip install mem0ai`, nothing extra), default configuration. LLM `claude-sonnet-5-5`, embeddings OpenAI `text-embedding-3-small`, default local storage (qdrant), telemetry off. A fresh store per set.
